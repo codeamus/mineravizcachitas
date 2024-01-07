@@ -1,14 +1,15 @@
 import CardBlog from '../molecules/CardBlog'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { getAllNews } from '@/api'
 const TemplateBlog = () => {
   const [news, setNews] = useState([])
   useEffect(() => {
-    fetch(
-      'http://blog-amusdev.local/wp-json/wp/v2/noticia/?acf_format=standard'
-    )
-      .then(result => result.json())
-      .then(response => setNews(response))
+    const fetchNews = async () => {
+      const result = await getAllNews()
+      setNews(result)
+    }
+    fetchNews()
   }, [])
   return (
     <main>
