@@ -1,7 +1,8 @@
 import CardBlog from '../molecules/CardBlog'
+import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 const TemplateBlog = () => {
-  const [news, setNews] = useState(null)
+  const [news, setNews] = useState([])
   useEffect(() => {
     fetch(
       'http://blog-amusdev.local/wp-json/wp/v2/noticia/?acf_format=standard'
@@ -13,7 +14,7 @@ const TemplateBlog = () => {
     <main>
       <h1>Blog</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
-        {news &&
+        {news.length > 0 &&
           news.map(
             (noticia: {
               id: number
@@ -30,6 +31,9 @@ const TemplateBlog = () => {
             )
           )}
       </div>
+      <Link to='/' unstable_viewTransition>
+        Volver home
+      </Link>
     </main>
   )
 }
