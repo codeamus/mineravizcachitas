@@ -23,7 +23,8 @@
     "paths": {
       "@/*": ["./src/*", "./dist/*", ""],
       "pages/*": ["src/pages/*"],
-      "components/*": ["src/components/*"]
+      "components/*": ["src/components/*"],
+      "molecules/*": ["src/components/molecules/*"]
     }
   },
   "include": ["src"],

@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
-const TemplateHome = () => {
+const TemplateSingleBlog = ({ slug }) => {
   return (
     <div>
-      <h1 className='text-3xl font-bold underline'>Home</h1>
+      <h1>{slug}</h1>
       <Link to='/blog' unstable_viewTransition>
-        Blog
+        volver
       </Link>
     </div>
   )
 }
 
-export default TemplateHome
+export default TemplateSingleBlog
