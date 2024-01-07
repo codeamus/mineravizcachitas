@@ -1,5 +1,7 @@
+import TemplateBlog from '../components/templates/TemplateBlog'
+
 const Blog = () => {
-  return <div>Blog</div>
+  return <TemplateBlog />
 }
 
 export default Blog
