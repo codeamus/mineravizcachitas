@@ -1,7 +1,7 @@
 import TemplateBlog from '../components/templates/TemplateBlog'
 
-const Blog = () => {
+const BlogPage = () => {
   return <TemplateBlog />
 }
 
-export default Blog
+export default BlogPage

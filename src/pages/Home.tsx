@@ -1,7 +1,7 @@
 import TemplateHome from '@/components/templates/TemplateHome'
 
-const Home = () => {
+const HomePage = () => {
   return <TemplateHome />
 }
 
-export default Home
+export default HomePage
