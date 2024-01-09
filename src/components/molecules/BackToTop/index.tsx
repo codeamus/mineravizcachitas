@@ -1,7 +1,7 @@
 import './index.css'
 const BackToTop = () => {
   return (
-    <a id='back-top' className='mt-' href='#top'>
+    <a id='back-top' href='#top'>
       Volver
     </a>
   )

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import BackToTop from '../molecules/BackToTop'
+import BackToTop from '@/components/molecules/BackToTop'
+
 const TemplateHome = () => {
   return (
     <div>
