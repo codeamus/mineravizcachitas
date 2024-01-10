@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import BackToTop from '@/components/molecules/BackToTop'
+import { Button } from '@/stories/Button'
 
 const TemplateHome = () => {
   return (
@@ -78,7 +79,8 @@ const TemplateHome = () => {
           Blog
         </Link>
       </div>
-      <BackToTop />
+      <Button label='Button' onClick={() => {}} primary />
+      {/* <BackToTop /> */}
     </div>
   )
 }
