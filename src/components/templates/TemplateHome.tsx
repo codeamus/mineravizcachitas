@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import BackToTop from '@/components/molecules/BackToTop'
+// import BackToTop from '@/components/molecules/BackToTop'
 import { Button } from '@/stories/Button'
 
 const TemplateHome = () => {
