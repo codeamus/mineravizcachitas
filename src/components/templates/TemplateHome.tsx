@@ -1,20 +1,18 @@
-import { Link } from 'react-router-dom'
-import { Button } from '@nextui-org/button'
 // import Button from '../molecules/Button/Button'
 // import BackToTop from '@/components/molecules/BackToTop'
 
+import Navbar from '@/components/organism/MenuNav'
+import PrincipalSection from '@/components/organism/Home/PrincipalSection'
+
 const TemplateHome = () => {
   return (
-    <div>
-      <div>
-        <h1 className='text-3xl font-bold underline'>Home</h1>
-        <Link to='/blog' unstable_viewTransition>
-          Blog
-        </Link>
-      </div>
-      <Button color='primary'>Press me</Button>
-      {/* <BackToTop /> */}
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <PrincipalSection />
+      </main>
+      <footer>Footer ...</footer>
+    </>
   )
 }
 
