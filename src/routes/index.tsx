@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     element: <SostenibilidadPage />,
   },
   {
-    path: '/sostenibilidad',
+    path: '/aporte-regional',
     element: <AporteRegionalPage />,
   },
   {
