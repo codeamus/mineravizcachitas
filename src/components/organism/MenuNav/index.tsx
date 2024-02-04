@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import Logo from '@/assets/logo/logo-example.png'
+// import Logo from '@/assets/logo/logo-example.png'
 import InstaIcon from '@/assets/icons/icon-instagram.svg'
 import FBIcon from '@/assets/icons/icon-fb.svg'
 
