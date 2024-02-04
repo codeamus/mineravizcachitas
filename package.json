@@ -11,8 +11,6 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@nextui-org/react": "^2.2.9",
-    "framer-motion": "^11.0.3",
     "localforage": "1.10.0",
     "match-sorter": "6.3.1",
     "million": "^3.0.2",
