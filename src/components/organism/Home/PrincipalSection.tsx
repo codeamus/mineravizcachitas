@@ -1,21 +1,26 @@
+import Video from '@/assets/videos/home.mp4'
+import IconEconomico from '@/assets/icons/icon-economico.svg'
+import IconEmpleabilidad from '@/assets/icons/icon-empleabilidad.svg'
+import IconAmbiente from '@/assets/icons/icon-ambiente.svg'
+import IconCalidad from '@/assets/icons/icon-calidad.svg'
+
 const PrincipalSection = () => {
   return (
-    <section className='relative w-full'>
-      <div className='hidden w-full lg:block'>
+    <section className='relative flex h-full w-full items-center justify-center lg:h-[100vh]'>
+      <div className='absolute top-0 -z-20 w-full'>
         <video
           autoPlay
           loop
           muted
           playsInline
           preload='metadata'
-          className='h-[100vh] w-full object-cover'
+          className='h-[100vh] w-full object-cover brightness-50'
         >
-          <source src='/assets/videos/video.webm' type='video/webm' />
-          <source src='/assets/videos/video.mp4' type='video/mp4' />
+          <source src={Video} type='video/mp4' />
         </video>
       </div>
-      <div className='relative top-0 flex h-full flex-col items-center justify-center bg-[url(/assets/images/backgrounds/bg-cover.webp)] px-6  pt-20 md:px-20 lg:absolute lg:bg-none lg:px-40 lg:pt-0 xl:px-60'>
-        <div className='flex flex-col gap-10 lg:flex-row lg:gap-20'>
+      <div className='px-6 pt-40 lg:px-40 lg:pt-0'>
+        <div className='flex flex-col items-center gap-10 lg:flex-row lg:gap-20'>
           <h1 className='text-center text-5xl font-bold text-white lg:text-balance'>
             Lorem ipsum{' '}
             <span className='text-[#E8732D]'>dolor sit amet, consectetur</span>{' '}
@@ -30,30 +35,46 @@ const PrincipalSection = () => {
               placerat tortor orci, a dignissim dolor lobortis sit amet. Sed
               eleifend orci vitae malesuada aliquet.
             </p>
-            <ul className='my-6 grid grid-cols-2 gap-2 md:grid-cols-4 lg:my-20'>
-              <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
-                <p>ICON</p>
-                <p className='text-center'>
-                  Desarrollo <br /> económico
-                </p>
-              </li>
-              <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
-                <p>ICON</p>
-                <p className='text-center'>Empleabilidad</p>
-              </li>
-              <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
-                <p>ICON</p>
-                <p className='text-center'>
-                  Medio <br /> Ambiente
-                </p>
-              </li>
-              <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
-                <p>ICON</p>
-                <p className='text-center'>Calidad de vida</p>
-              </li>
-            </ul>
           </div>
         </div>
+        <ul className='grid grid-cols-2 place-content-between gap-20 pt-20 md:grid-cols-4'>
+          <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
+            <img
+              className='size-16'
+              src={IconEconomico}
+              alt='Icono referencial a Desarrollo Económico'
+            />
+            <p className='text-center'>
+              Desarrollo <br /> económico
+            </p>
+          </li>
+          <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
+            <img
+              className='size-16'
+              src={IconEmpleabilidad}
+              alt='Icono referencial a Desarrollo Económico'
+            />
+            <p className='text-center'>Empleabilidad</p>
+          </li>
+          <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
+            <img
+              className='size-16'
+              src={IconAmbiente}
+              alt='Icono referencial a Desarrollo Económico'
+            />
+            <p className='text-center'>
+              Medio <br /> Ambiente
+            </p>
+          </li>
+          <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
+            <img
+              className='size-16'
+              src={IconCalidad}
+              alt='Icono referencial a Desarrollo Económico'
+            />
+            <p className='text-center'>Calidad de vida</p>
+          </li>
+        </ul>
       </div>
     </section>
   )
