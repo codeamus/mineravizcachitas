@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-// import Logo from '@/assets/logo/logo-example.png'
+import Logo from '@/assets/logo/logo-example.png'
 import InstaIcon from '@/assets/icons/icon-instagram.svg'
 import FBIcon from '@/assets/icons/icon-fb.svg'
 
@@ -10,28 +10,48 @@ const Menu = () => {
   return (
     <>
       <li>
-        <Link to='/proyecto' unstable_viewTransition>
+        <Link
+          className='menuLink after:absolute after:bottom-[-10px] after:left-0 after:right-0 after:m-auto after:h-[1px] after:w-[7px] after:bg-white after:content-[""]'
+          to='/proyecto'
+          unstable_viewTransition
+        >
           El proyecto
         </Link>
       </li>
 
       <li>
-        <Link to='/sostenibilidad' unstable_viewTransition>
+        <Link
+          className='menuLink after:absolute after:bottom-[-10px] after:left-0 after:right-0 after:m-auto after:h-[1px] after:w-[7px] after:bg-white after:content-[""]'
+          to='/sostenibilidad'
+          unstable_viewTransition
+        >
           Sostenibilidad
         </Link>
       </li>
       <li>
-        <Link to='/aporte-regional' unstable_viewTransition>
+        <Link
+          className='menuLink after:absolute after:bottom-[-10px] after:left-0 after:right-0 after:m-auto after:h-[1px] after:w-[7px] after:bg-white after:content-[""]'
+          to='/aporte-regional'
+          unstable_viewTransition
+        >
           Aporte Regional
         </Link>
       </li>
       <li>
-        <Link to='/quienes-somos' unstable_viewTransition>
+        <Link
+          className='menuLink after:absolute after:bottom-[-10px] after:left-0 after:right-0 after:m-auto after:h-[1px] after:w-[7px] after:bg-white after:content-[""]'
+          to='/quienes-somos'
+          unstable_viewTransition
+        >
           Quiénes somos
         </Link>
       </li>
       <li>
-        <Link to='/preguntas-frecuentes' unstable_viewTransition>
+        <Link
+          className='menuLink after:absolute after:bottom-[-10px] after:left-0 after:right-0 after:m-auto after:h-[1px] after:w-[7px] after:bg-white after:content-[""]'
+          to='/preguntas-frecuentes'
+          unstable_viewTransition
+        >
           Preguntas frecuentes
         </Link>
       </li>
@@ -41,11 +61,11 @@ const Menu = () => {
 
 const Navbar = () => {
   return (
-    <nav className='navbar bg-transparent px-4 md:px-10'>
+    <nav className='navbar absolute top-0 z-40 bg-transparent px-4 md:px-10'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
-            <Link to='/' unstable_viewTransition>
+            <Link to='/#' unstable_viewTransition>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='h-5 w-5'
@@ -64,12 +84,14 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow'
+            className='menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow'
           >
             <Menu />
           </ul>
         </div>
-        <a className='btn btn-ghost text-xl'>daisyUI</a>
+        <a className='btn btn-ghost text-xl'>
+          <img src={Logo} className='w-28' />
+        </a>
       </div>
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>
