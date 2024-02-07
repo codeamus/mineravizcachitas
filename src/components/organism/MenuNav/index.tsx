@@ -65,8 +65,18 @@ const Navbar = () => {
       <nav className='navbar border-none border-white bg-transparent lg:border-b lg:border-solid'>
         <div className='navbar-start'>
           <div className='dropdown'>
-            <div tabIndex={0} role='button' className='lg:hidden'>
-              <Link to='/#' unstable_viewTransition>
+            <div
+              tabIndex={0}
+              role='button'
+              id='Icono de menu'
+              className='lg:hidden'
+            >
+              <Link
+                to='/#'
+                unstable_viewTransition
+                aria-label='Icono para abrir menu'
+                aria-labelledby='Icono de menu'
+              >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-8 w-8'
@@ -94,10 +104,12 @@ const Navbar = () => {
             to='/'
             unstable_viewTransition
             className='flex w-full flex-row items-center justify-end lg:justify-start'
+            aria-label='Logo de Minera Vizcachitas que lleva a la home'
           >
             <img
               src={Logo}
               className='size-24 transition-all hover:scale-110'
+              alt='Logo de Minera Vizcachitas'
             />
             <div className='mx-4 hidden h-[60px] w-[1px] bg-white text-lg xl:block' />
             <span className='hidden text-lg xl:block'>
