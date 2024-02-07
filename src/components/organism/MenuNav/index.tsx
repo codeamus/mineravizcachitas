@@ -30,7 +30,7 @@ const Menu = () => {
       </li>
       <li>
         <Link
-          className='menuLink after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] '
+          className='menuLink after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
           to='/aporte-regional'
           unstable_viewTransition
         >
