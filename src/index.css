@@ -11,8 +11,8 @@ html {
   to {
     box-shadow:
       0 5px 50px -5px #0000001a,
-      0 0 0 1px #0000004d;
-    background: #0000004d;
+      0 0 0 1px #000000dc;
+    background: #000000dc;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
@@ -22,4 +22,22 @@ html {
   animation: blur linear both;
   animation-timeline: scroll();
   animation-range: 0 500px;
+}
+
+@keyframes fullWidth {
+  0% {
+    width: 10px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.menuLink::after {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.menuLink:hover::after {
+  animation-name: fullWidth;
 }
