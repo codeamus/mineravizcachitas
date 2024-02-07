@@ -1,11 +1,13 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
+import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import Image from '@/assets/images/presentacion-home-poster.webp'
 import Ubicacion from '@/assets/images/ubicacion.webp'
 
 const PresentacionUbicacion = () => {
   return (
-    <section id='presentacion'>
+    <section id='presentacion' className='relative'>
+      <BtnScrollDown section='presentacion' />
       <div className='flex flex-col bg-white lg:flex-row'>
         <div className='w-full  lg:w-1/2'>
           <span className='block w-fit bg-[#03773A] px-4 py-2 text-sm font-bold uppercase text-white'>
@@ -39,7 +41,6 @@ const PresentacionUbicacion = () => {
           <LazyLoadImage
             src={Ubicacion}
             alt='Imagen de ubicación proyecto Vizcachitas'
-            effect='blur'
           />
         </picture>
         <div className='flex w-full flex-col justify-center lg:w-1/2'>
