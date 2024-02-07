@@ -8,7 +8,10 @@ import './menunav.styles.css'
 
 const Navbar = () => {
   return (
-    <header id='header-nav' className='fixed top-0 z-10 w-full px-6 py-4'>
+    <header
+      id='header-nav'
+      className='fixed top-0 z-10 w-full px-6 py-0 md:py-4'
+    >
       <div className='mx-auto flex max-w-7xl items-center justify-between gap-16'>
         <a
           href='#header-menu'
