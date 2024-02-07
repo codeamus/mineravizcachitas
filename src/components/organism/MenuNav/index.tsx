@@ -62,8 +62,8 @@ const Navbar = () => {
             X
           </a>
           <ul className='flex w-full flex-col items-center justify-center gap-4 md:flex-row'>
-            {MENU.map(({ title, path }) => (
-              <li className='relative'>
+            {MENU.map(({ title, path }, index) => (
+              <li className='relative' key={index}>
                 <Link
                   className='menuLink text-sm text-white after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
                   to={path}

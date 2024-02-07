@@ -3,8 +3,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Image from '@/assets/images/presentacion-home-poster.webp'
 import Ubicacion from '@/assets/images/ubicacion.webp'
 
-import 'react-lazy-load-image-component/src/effects/blur.css'
-
 const PresentacionUbicacion = () => {
   return (
     <section id='presentacion'>
@@ -33,7 +31,6 @@ const PresentacionUbicacion = () => {
           <LazyLoadImage
             src={Image}
             alt='Imagen de presentación proyecto Vizcachitas'
-            effect='blur'
           />
         </picture>
       </div>

@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import Navbar from '@/components/organism/MenuNav'
 import PrincipalSection from '@/components/organism/Home/PrincipalSection'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
+import AporteRegional from '@/components/organism/Home/AporteRegional'
 
 const TemplateHome = () => {
   return (
@@ -19,6 +20,7 @@ const TemplateHome = () => {
       <main>
         <PrincipalSection />
         <PresentacionUbicacion />
+        <AporteRegional />
       </main>
       <footer>Footer ...</footer>
     </>
