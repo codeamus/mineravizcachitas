@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import { MENU } from '@/const/menu'
 import Logo from '@/assets/logo/logo.svg'
 import InstaIcon from '@/assets/icons/icon-instagram.svg'
 import FBIcon from '@/assets/icons/icon-fb.svg'
@@ -9,52 +9,17 @@ import './menunav.styles.css'
 const Menu = () => {
   return (
     <>
-      <li>
-        <Link
-          className='menuLink after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
-          to='/proyecto'
-          unstable_viewTransition
-        >
-          El proyecto
-        </Link>
-      </li>
-
-      <li>
-        <Link
-          className='menuLink after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
-          to='/sostenibilidad'
-          unstable_viewTransition
-        >
-          Sostenibilidad
-        </Link>
-      </li>
-      <li>
-        <Link
-          className='menuLink after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
-          to='/aporte-regional'
-          unstable_viewTransition
-        >
-          Aporte Regional
-        </Link>
-      </li>
-      <li>
-        <Link
-          className='menuLink after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
-          to='/quienes-somos'
-          unstable_viewTransition
-        >
-          Quiénes somos
-        </Link>
-      </li>
-      <li>
-        <Link
-          className='menuLink after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
-          to='/preguntas-frecuentes'
-          unstable_viewTransition
-        >
-          Preguntas frecuentes
-        </Link>
-      </li>
+      {MENU.map(({ title, path }) => (
+        <li>
+          <Link
+            className='menuLink after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
+            to={path}
+            unstable_viewTransition
+          >
+            {title}
+          </Link>
+        </li>
+      ))}
     </>
   )
 }
