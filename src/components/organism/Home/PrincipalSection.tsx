@@ -1,4 +1,5 @@
-import Video from '@/assets/videos/home.mp4'
+import VideoMP4 from '@/assets/videos/home.mp4'
+import VideoWebm from '@/assets/videos/home.webm'
 import IconEconomico from '@/assets/icons/icon-economico.svg'
 import IconEmpleabilidad from '@/assets/icons/icon-empleabilidad.svg'
 import IconAmbiente from '@/assets/icons/icon-ambiente.svg'
@@ -17,7 +18,8 @@ const PrincipalSection = () => {
           className='h-[100vh] w-full object-cover brightness-50'
           poster='/assets/images/posters/poster-video-home.webp'
         >
-          <source src={Video} type='video/mp4' />
+          <source src={VideoMP4} type='video/mp4' />
+          <source src={VideoWebm} type='video/webm' />
         </video>
       </div>
       <div className='bg-[url(/assets/images/posters/poster-video-home.webp)] px-6 pt-40 md:bg-none lg:px-40 lg:pt-0'>
