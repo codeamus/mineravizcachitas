@@ -10,15 +10,15 @@ const PresentacionUbicacion = () => {
     <section id='presentacion'>
       <div className='flex flex-col bg-white lg:flex-row'>
         <div className='w-full  lg:w-1/2'>
-          <span className='block w-fit bg-[#009145] px-4 py-2 text-sm font-bold uppercase text-white'>
+          <span className='block w-fit bg-[#005e23] px-4 py-2 text-sm font-bold uppercase text-white'>
             Presentación y ubicación
           </span>
-          <div className='ml-0 mr-6 mt-6 max-w-full border-none pb-4 pt-4 lg:ml-auto lg:max-w-xl lg:border-r lg:border-solid lg:border-[#009145]'>
+          <div className='ml-0 mr-6 mt-6 max-w-full border-none pb-4 pt-4 lg:ml-auto lg:max-w-xl lg:border-r lg:border-solid lg:border-[#005e23]'>
             <h2 className='pr-4 text-center text-4xl font-bold text-black lg:text-end'>
               ¿Qué es proyecto <br />
               Vizcachitas?
             </h2>
-            <hr className='my-4 w-full border-[#009145]' />
+            <hr className='my-4 w-full border-[#005e23]' />
             <p className='pr-4 text-end leading-loose text-black'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               semper ornare ante eget facilisis. Quisque lacinia gravida sapien,
@@ -46,11 +46,11 @@ const PresentacionUbicacion = () => {
           />
         </picture>
         <div className='flex w-full flex-col justify-center lg:w-1/2'>
-          <div className='ml-6 mr-0 mt-6 max-w-full border-none pb-4 pr-4 lg:max-w-xl lg:border-l lg:border-solid lg:border-[#009145]'>
+          <div className='ml-6 mr-0 mt-6 max-w-full border-none pb-4 pr-4 lg:max-w-xl lg:border-l lg:border-solid lg:border-[#005e23]'>
             <h2 className='pl-4 text-center text-4xl font-bold text-black lg:text-start'>
               ¿Dónde estamos?
             </h2>
-            <hr className='my-4 w-full border-[#009145]' />
+            <hr className='my-4 w-full border-[#005e23]' />
             <p className='pl-4 leading-loose text-black'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               semper ornare ante eget facilisis. Quisque lacinia gravida sapien,

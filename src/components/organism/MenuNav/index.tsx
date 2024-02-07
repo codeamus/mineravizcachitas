@@ -40,7 +40,11 @@ const Navbar = () => {
           unstable_viewTransition
           aria-label='Logo de Minera Vizcachitas que lleva a la home'
         >
-          <img className='size-28 transition-all hover:scale-110' src={Logo} />
+          <img
+            className='size-28 transition-all hover:scale-110'
+            src={Logo}
+            alt='Logo de Minera Vizcachitas'
+          />
           <div className='mx-4 hidden h-[60px] w-[1px] bg-white text-lg xl:block' />
           <span className='hidden text-lg text-white xl:block'>
             Proyecto <br />
