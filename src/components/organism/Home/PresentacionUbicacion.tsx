@@ -10,7 +10,7 @@ const PresentacionUbicacion = () => {
     <section id='presentacion'>
       <div className='flex flex-col bg-white lg:flex-row'>
         <div className='w-full  lg:w-1/2'>
-          <span className='block w-fit bg-[#005e23] px-4 py-2 text-sm font-bold uppercase text-white'>
+          <span className='block w-fit bg-[#03773A] px-4 py-2 text-sm font-bold uppercase text-white'>
             Presentación y ubicación
           </span>
           <div className='ml-0 mr-6 mt-6 max-w-full border-none pb-4 pt-4 lg:ml-auto lg:max-w-xl lg:border-r lg:border-solid lg:border-[#009145]'>
