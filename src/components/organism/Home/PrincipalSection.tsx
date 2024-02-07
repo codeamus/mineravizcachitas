@@ -7,7 +7,7 @@ import IconCalidad from '@/assets/icons/icon-calidad.svg'
 const PrincipalSection = () => {
   return (
     <section className='relative flex h-full w-full items-center justify-center lg:h-[100vh]'>
-      <div className='absolute top-0 -z-20 w-full'>
+      <div className='absolute top-0 -z-20 hidden w-full md:block'>
         <video
           autoPlay
           loop
@@ -15,11 +15,12 @@ const PrincipalSection = () => {
           playsInline
           preload='metadata'
           className='h-[100vh] w-full object-cover brightness-50'
+          poster='/assets/images/posters/poster-video-home.webp'
         >
           <source src={Video} type='video/mp4' />
         </video>
       </div>
-      <div className='px-6 pt-40 lg:px-40 lg:pt-0'>
+      <div className='bg-[url(/assets/images/posters/poster-video-home.webp)] px-6 pt-40 md:bg-none lg:px-40 lg:pt-0'>
         <div className='flex flex-col items-center gap-10 lg:flex-row lg:gap-20'>
           <h1 className='text-center text-5xl font-bold text-white lg:text-balance'>
             Lorem ipsum{' '}
