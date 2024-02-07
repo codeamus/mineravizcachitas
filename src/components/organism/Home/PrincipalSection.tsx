@@ -22,7 +22,7 @@ const PrincipalSection = () => {
           <source src={VideoWebm} type='video/webm' />
         </video>
       </div>
-      <div className='bg-[url(/assets/images/posters/poster-video-home.webp)] px-6 pt-40 md:bg-none lg:px-40 lg:pt-0'>
+      <div className='bg-[url(/assets/images/posters/poster-video-home.webp)] bg-cover px-6 pt-40 md:bg-none lg:px-40 lg:pt-0'>
         <div className='flex flex-col items-center gap-10 lg:flex-row lg:gap-20'>
           <h1 className='text-center text-5xl font-bold text-white lg:text-balance'>
             Lorem ipsum{' '}
@@ -47,7 +47,7 @@ const PrincipalSection = () => {
               src={IconEconomico}
               alt='Icono referencial a Desarrollo Económico'
             />
-            <p className='text-center'>
+            <p className='text-center text-white'>
               Desarrollo <br /> económico
             </p>
           </li>
@@ -57,7 +57,7 @@ const PrincipalSection = () => {
               src={IconEmpleabilidad}
               alt='Icono referencial a Desarrollo Económico'
             />
-            <p className='text-center'>Empleabilidad</p>
+            <p className='text-center text-white'>Empleabilidad</p>
           </li>
           <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
             <img
@@ -65,7 +65,7 @@ const PrincipalSection = () => {
               src={IconAmbiente}
               alt='Icono referencial a Desarrollo Económico'
             />
-            <p className='text-center'>
+            <p className='text-center text-white'>
               Medio <br /> Ambiente
             </p>
           </li>
@@ -75,7 +75,7 @@ const PrincipalSection = () => {
               src={IconCalidad}
               alt='Icono referencial a Desarrollo Económico'
             />
-            <p className='text-center'>Calidad de vida</p>
+            <p className='text-center text-white'>Calidad de vida</p>
           </li>
         </ul>
       </div>
