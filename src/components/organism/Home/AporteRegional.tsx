@@ -17,22 +17,22 @@ const AporteRegional = () => {
       <div className='mt-10 grid grid-cols-1 justify-items-center gap-1 md:grid-cols-2 lg:grid-cols-4'>
         <RegionalCard
           title={`Desarrollo ${'\n'} Económico`}
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper ornare ante eget facilisis. Quisque lacinia gravida sapien, vitae blandit est. Aliquam feugiat, elit sed faucibus varius, ante risus commodo velit'
+          description='Se proyecta que Vizcachitas genere un aumento del 3% del PIB de la Región de Valparaíso, con oportunidades de crecimiento sostenido en el largo plazo para toda la zona.'
           image={ImageDesarrollo}
         />
         <RegionalCard
           title='Empleabilidad'
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper ornare ante eget facilisis. Quisque lacinia gravida sapien, vitae blandit est. Aliquam feugiat, elit sed faucibus varius, ante risus commodo velit'
+          description='Más de 5.500 puestos de trabajo en fase de construcción y 1.200 en operación, sin considerar la importante cantidad de empleos indirectos y oportunidades de negocios que se crearán con motivo de los servicios asociados a la faena.'
           image={ImageEmpleabilidad}
         />
         <RegionalCard
           title={`Medio ${'\n'} Ambiente`}
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper ornare ante eget facilisis. Quisque lacinia gravida sapien, vitae blandit est. Aliquam feugiat, elit sed faucibus varius, ante risus commodo velit'
+          description={`El Proyecto Vizcachitas ha tomado el compromiso de utilizar agua de mar desalinizada y no consumir agua continental para los procesos productivos mineros. ${'\n'} Asimismo, contempla el uso de depósitos de relaves espesados mezclados con el material sin mineral que se extraiga del rajo. Con relaves cuya humedad no supera el 15%, el proyecto no requiere el uso de tranques de relaves. Ello, porque la baja presencia de arcillas permite filtrar los relaves y reducir el consumo de agua del proyecto hasta en 50%, contribuyendo a la sustentabilidad ambiental del proyecto en múltiples dimensiones: mejora la estabilidad física del depósito de relaves, evitando la acumulación e infiltración del agua contenida en los relaves; y minimiza el espacio utilizado por los relaves, al reducir el volumen de agua contenido en los relaves.`}
           image={ImageAmbiente}
         />
         <RegionalCard
           title={`Calidad ${'\n'} de vida`}
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper ornare ante eget facilisis. Quisque lacinia gravida sapien, vitae blandit est. Aliquam feugiat, elit sed faucibus varius, ante risus commodo velit'
+          description='Más de 5.500 puestos de trabajo en fase de construcción y 1.200 en operación, sin considerar la importante cantidad de empleos indirectos y oportunidades de negocios que se crearán con motivo de los servicios asociados a la faena.'
           image={ImageCalidad}
         />
       </div>

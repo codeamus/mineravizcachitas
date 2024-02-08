@@ -19,13 +19,30 @@ const PresentacionUbicacion = () => {
               Vizcachitas?
             </h2>
             <hr className='my-4 w-full border-[#009145]' />
-            <p className='pr-4 text-end leading-loose text-black'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              semper ornare ante eget facilisis. Quisque lacinia gravida sapien,
-              vitae blandit est. Aliquam feugiat, elit sed faucibus varius, ante
-              risus commodo velit, in dapibus lacus libero eget erat. Praesent
-              placerat tortor orci, a dignissim dolor lobortis sit amet. Sed
-              eleifend orci vitae malesuada aliquet.
+            <p className='pr-4 text-end text-sm leading-loose text-black'>
+              Nuestro proyecto minero explotará un gran cuerpo mineralizado
+              ubicado en el valle del río Rocín, con recursos medidos e
+              indicados ya demostrados por 13.021 millones de libras de cobre,
+              526 millones de libras de molibdeno y 54 millones de onzas de
+              plata.
+            </p>
+            <p className='pr-4 text-end text-sm leading-loose text-black'>
+              De acuerdo con nuestro estudio de prefactibilidad, el proyecto
+              considera una inversión de US$ 2.800 millones y una vida útil
+              inicial de 26 años. Más sondajes y estudios adicionales nos
+              permitirán ampliar las reservas mineras y extender la vida útil en
+              varios años. Una vez en operación, se estima que producirá cerca
+              de 180.000 toneladas de cobre fino al año durante los primeros 8
+              años, y 150.000 toneladas/año durante la vida útil.
+            </p>
+            <p className='pr-4 text-end text-sm leading-loose text-black'>
+              Se trata de una iniciativa de clase mundial, en la cual se
+              incorporan estándares tecnológicos y ambientales de última
+              generación, que dan cuenta de una nueva forma de hacer minería,
+              más verde, comprometida con una producción que reduce impactos
+              ambientales y genera externalidades positivas sostenidas en el
+              tiempo en materia de empleo local, desarrollo de proveedores y
+              servicios locales.
             </p>
           </div>
         </div>
@@ -50,12 +67,14 @@ const PresentacionUbicacion = () => {
             </h2>
             <hr className='my-4 w-full border-[#009145]' />
             <p className='pl-4 leading-loose text-black'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              semper ornare ante eget facilisis. Quisque lacinia gravida sapien,
-              vitae blandit est. Aliquam feugiat, elit sed faucibus varius, ante
-              risus commodo velit, in dapibus lacus libero eget erat. Praesent
-              placerat tortor orci, a dignissim dolor lobortis sit amet. Sed
-              eleifend orci vitae malesuada aliquet.
+              El proyecto Vizcachitas está ubicado a 46 kilómetros del centro de
+              Putaendo, provincia de San Felipe, en la Región de Valparaíso.
+            </p>
+            <p className='pl-4 leading-loose text-black'>
+              Distante a 150 kilómetros al norte de Santiago, se encuentra en
+              una zona dotada con buena conectividad a carreteras, puertos y
+              líneas eléctricas. Dada su baja altitud -1.950 metros sobre el
+              nivel del mar- permitirá operar durante todo el año.
             </p>
           </div>
         </div>

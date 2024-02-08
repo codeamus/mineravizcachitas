@@ -22,21 +22,18 @@ const PrincipalSection = () => {
           <source src={VideoWebm} type='video/webm' />
         </video>
       </div>
-      <div className='bg-[url(/assets/images/posters/poster-video-home.webp)] bg-cover px-6 pt-40 md:bg-none lg:px-40 lg:pt-0'>
+      <div className='lg:mt-130 mt-40 bg-[url(/assets/images/posters/poster-video-home.webp)] bg-cover px-6 md:bg-none lg:px-40'>
         <div className='flex flex-col items-center gap-10 lg:flex-row lg:gap-20'>
           <h1 className='text-center text-5xl font-bold text-white lg:text-balance'>
-            Lorem ipsum{' '}
-            <span className='text-[#E8732D]'>dolor sit amet, consectetur</span>{' '}
-            adipiscing elit.
+            Proyecto
+            <span className='text-[#E8732D]'> Vizcachitas</span>
           </h1>
           <div>
             <p className='text-md text-pretty border-b border-t border-[#E8732D] py-4 leading-8 text-white'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              semper ornare ante eget facilisis. Quisque lacinia gravida sapien,
-              vitae blandit est. Aliquam feugiat, elit sed faucibus varius, ante
-              risus commodo velit, in dapibus lacus libero eget erat. Praesent
-              placerat tortor orci, a dignissim dolor lobortis sit amet. Sed
-              eleifend orci vitae malesuada aliquet.
+              Minería sostenible y responsable comprometida con el desarrollo
+              social y económico de Putaendo, San Felipe y la Región de
+              Valparaíso. Desarrollo con las comunidades y cuidado del medio
+              ambiente para un futuro mejor.
             </p>
           </div>
         </div>
