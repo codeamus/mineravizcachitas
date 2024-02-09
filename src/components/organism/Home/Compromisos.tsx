@@ -20,11 +20,19 @@ const Compromisos = () => {
       <div className='flex flex-row justify-center gap-40 p-10'>
         <article className='max-w-xl'>
           <picture>
-            <img className='aspect-[1/1]' src={ImageAmbiental} alt='' />
+            <img
+              className='aspect-[1/1]'
+              src={ImageAmbiental}
+              alt='Imagen representativa de Responsabilidad Ambiental'
+            />
           </picture>
           <div>
             <div className='mb-4 flex flex-row items-center gap-4 border-b border-white pt-4'>
-              <img src={IconAmbiental} alt='' className='size-16' />
+              <img
+                src={IconAmbiental}
+                alt='Icono de responsabilidad ambiental'
+                className='size-16'
+              />
               <h2 className='border-l border-white pl-4 text-2xl  font-bold uppercase leading-10 text-white'>
                 Responsabilidad <br /> Ambiental
               </h2>
@@ -39,11 +47,19 @@ const Compromisos = () => {
         </article>
         <article className='max-w-xl'>
           <picture>
-            <img className='aspect-[1/1]' src={ImageResponsabilidad} alt='' />
+            <img
+              className='aspect-[1/1]'
+              src={ImageResponsabilidad}
+              alt='Imagen que representa la Responsabilidad Social'
+            />
           </picture>
           <div>
             <div className='mb-4 flex flex-row items-center gap-4 border-b border-white pt-4'>
-              <img src={IconSocial} alt='' className='size-16' />
+              <img
+                src={IconSocial}
+                alt='Icono de responsabilidad social'
+                className='size-16'
+              />
               <h2 className='border-l border-white pl-4 text-2xl  font-bold uppercase leading-10 text-white'>
                 Responsabilidad <br /> Social
               </h2>
