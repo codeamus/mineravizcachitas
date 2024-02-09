@@ -3,6 +3,7 @@ import Navbar from '@/components/organism/MenuNav'
 import PrincipalSection from '@/components/organism/Home/PrincipalSection'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
 import AporteRegional from '@/components/organism/Home/AporteRegional'
+import Compromisos from '@/components/organism/Home/Compromisos'
 
 const TemplateHome = () => {
   return (
@@ -20,6 +21,7 @@ const TemplateHome = () => {
       <main>
         <PrincipalSection />
         <PresentacionUbicacion />
+        <Compromisos />
         <AporteRegional />
       </main>
       <footer>Footer ...</footer>
