@@ -16,13 +16,13 @@ const PrincipalSection = () => {
           playsInline
           preload='metadata'
           className='h-[100vh] w-full object-cover brightness-50'
-          poster='/assets/images/posters/poster-video-home.webp'
+          poster='/assets/images/posters/poster-video-home-desktop.webp'
         >
           <source src={VideoMP4} type='video/mp4' />
           <source src={VideoWebm} type='video/webm' />
         </video>
       </div>
-      <div className='lg:mt-130 bg-[url(/assets/images/posters/poster-video-home.webp)] bg-cover px-6 pt-40 md:bg-none lg:px-40'>
+      <div className='lg:mt-130 bg-[url(/assets/images/posters/poster-video-home-mobile.webp)] bg-cover px-6 pt-40 md:bg-none lg:px-40'>
         <div className='flex flex-col items-center gap-10 lg:flex-row lg:gap-20'>
           <h1 className='text-center text-5xl font-bold text-white lg:text-balance lg:text-6xl'>
             Proyecto
