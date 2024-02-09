@@ -59,7 +59,7 @@ const Navbar = () => {
           >
             X
           </a>
-          <ul className='flex w-full flex-col items-center justify-center gap-10 md:flex-row'>
+          <ul className='flex w-full flex-col items-center justify-center gap-10 md:hidden md:flex-row lg:flex'>
             {MENU.map(({ title, path }, index) => (
               <li className='relative' key={index}>
                 <Link
