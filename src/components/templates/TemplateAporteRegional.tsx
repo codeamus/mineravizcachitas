@@ -1,4 +1,6 @@
 import { Helmet } from 'react-helmet-async'
+import Navbar from '@/components/organism/MenuNav'
+import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
 
 const TemplateAporteRegional = () => {
   return (
@@ -12,6 +14,8 @@ const TemplateAporteRegional = () => {
           content='Descubre el impacto positivo de Minera Vizcachitas en la región, fomentando el desarrollo local a través de empleo, educación y proyectos comunitarios.'
         />
       </Helmet>
+      <Navbar />
+      <PresentacionUbicacion />
       <footer>Footer ...</footer>
     </>
   )
