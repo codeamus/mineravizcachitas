@@ -6,7 +6,7 @@ import ImageCalidad from '@/assets/images/img-calida.webp'
 
 const AporteRegional = () => {
   return (
-    <section className='bg-white p-4 md:p-8'>
+    <section className='mt-20 bg-white p-4 md:p-8'>
       <div className='flex flex-row items-center justify-center'>
         <hr className='w-full border-[#8B8B8B]' />
         <h2 className='w-fit whitespace-nowrap px-4 text-center text-4xl font-bold uppercase text-[#8B8B8B]'>
@@ -27,7 +27,7 @@ const AporteRegional = () => {
         />
         <RegionalCard
           title={`Medio ${'\n'} Ambiente`}
-          description={`El Proyecto Vizcachitas ha tomado el compromiso de utilizar agua de mar desalinizada y no consumir agua continental para los procesos productivos mineros. ${'\n'} Asimismo, contempla el uso de depósitos de relaves espesados mezclados con el material sin mineral que se extraiga del rajo. Con relaves cuya humedad no supera el 15%, el proyecto no requiere el uso de tranques de relaves. Ello, porque la baja presencia de arcillas permite filtrar los relaves y reducir el consumo de agua del proyecto hasta en 50%, contribuyendo a la sustentabilidad ambiental del proyecto en múltiples dimensiones: mejora la estabilidad física del depósito de relaves, evitando la acumulación e infiltración del agua contenida en los relaves; y minimiza el espacio utilizado por los relaves, al reducir el volumen de agua contenido en los relaves.`}
+          description={`El Proyecto Vizcachitas ha tomado el compromiso de utilizar agua de mar desalinizada y no consumir agua continental para los procesos productivos mineros. ${'\n'} Asimismo, contempla el uso de depósitos de relaves espesados mezclados con el material sin mineral que se extraiga del rajo.`}
           image={ImageAmbiente}
         />
         <RegionalCard

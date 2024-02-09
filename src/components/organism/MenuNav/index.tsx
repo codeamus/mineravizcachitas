@@ -44,7 +44,7 @@ const Navbar = () => {
             alt='Logo de Minera Vizcachitas'
           />
           <hr className='mx-4 hidden h-[60px] w-[1px] bg-white text-lg xl:block' />
-          <span className='hidden text-2xl font-medium text-white xl:block'>
+          <span className='hidden text-xl font-medium text-white xl:block'>
             Proyecto <br />
             Vizcachitas
           </span>
@@ -63,7 +63,7 @@ const Navbar = () => {
             {MENU.map(({ title, path }, index) => (
               <li className='relative' key={index}>
                 <Link
-                  className='menuLink text-sm uppercase text-white after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
+                  className='menuLink text-xs uppercase text-white after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
                   to={path}
                   unstable_viewTransition
                 >
