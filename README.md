@@ -1,3 +1,5 @@
+<img src="https://mineravizcachitas-qa.vercel.app/assets/logo-1siUyLjZ.svg" alt="Logo MInera" width="150" />
+
 # **Minera Vizcachitas**
 
 Minera Vizcachitas, en Chile, es uno de los nuevos y grandes yacimientos de cobre en América, comprometido con el desarrollo sostenible y la generación de empleo.
