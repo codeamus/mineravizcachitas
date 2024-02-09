@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# **Minera Vizcachitas**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Minera Vizcachitas, en Chile, es uno de los nuevos y grandes yacimientos de cobre en América, comprometido con el desarrollo sostenible y la generación de empleo.
 
-Currently, two official plugins are available:
+## Inicio Rápido
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Instrucciones para clonar el proyecto y ejecutarlo localmente para desarrollo y pruebas.
 
-## Expanding the ESLint configuration
+### Prerrequisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Lista de software necesario para instalar y cómo instalarlos. Por ejemplo:
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (v14 o superior)
+- npm (v6 o superior)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Instalación
+
+Pasos para instalar y configurar el proyecto:
+
+```bash
+git clone https://github.com/amus-dev/mineravizcachitas.git
+cd mineravizcachitas
+npm install
+npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
