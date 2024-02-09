@@ -6,8 +6,11 @@ import FBIcon from '@/assets/icons/icon-fb.svg'
 
 const Navbar = () => {
   return (
-    <header id='header-nav' className='fixed top-0 z-10 w-full px-6'>
-      <div className='mx-auto flex max-w-7xl items-center justify-between gap-16'>
+    <header id='header-nav' className='fixed top-0 z-10 w-full px-10'>
+      <div
+        id='headerBox'
+        className='mx-auto flex items-center justify-between gap-16 border-b border-none border-white lg:border-solid'
+      >
         <a
           href='#header-menu'
           className='md:hidden'
@@ -36,12 +39,12 @@ const Navbar = () => {
           aria-label='Logo de Minera Vizcachitas que lleva a la home'
         >
           <img
-            className='size-28 transition-all hover:scale-110'
+            className='size-36 transition-all hover:scale-110'
             src={Logo}
             alt='Logo de Minera Vizcachitas'
           />
-          <div className='mx-4 hidden h-[60px] w-[1px] bg-white text-lg xl:block' />
-          <span className='hidden text-lg text-white xl:block'>
+          <hr className='mx-4 hidden h-[60px] w-[1px] bg-white text-lg xl:block' />
+          <span className='hidden text-2xl font-medium text-white xl:block'>
             Proyecto <br />
             Vizcachitas
           </span>
@@ -56,11 +59,11 @@ const Navbar = () => {
           >
             X
           </a>
-          <ul className='flex w-full flex-col items-center justify-center gap-4 md:flex-row'>
+          <ul className='flex w-full flex-col items-center justify-center gap-10 md:flex-row'>
             {MENU.map(({ title, path }, index) => (
               <li className='relative' key={index}>
                 <Link
-                  className='menuLink text-sm text-white after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
+                  className='menuLink text-sm uppercase text-white after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
                   to={path}
                   unstable_viewTransition
                 >

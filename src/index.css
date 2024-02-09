@@ -5,6 +5,7 @@
 html {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
+  background-color: #fff;
 }
 
 @keyframes blur {
@@ -18,10 +19,27 @@ html {
   }
 }
 
+@keyframes removeBorder {
+  0% {
+    border-bottom: 1px solid;
+  }
+  100% {
+    border: none;
+  }
+}
+
 #header-nav {
   animation: blur linear both;
   animation-timeline: scroll();
   animation-range: 0 500px;
+}
+
+@media (min-width: 991px) {
+  #header-nav #headerBox {
+    animation: removeBorder linear both;
+    animation-timeline: scroll();
+    animation-range: 0 10px;
+  }
 }
 
 @keyframes fullWidth {

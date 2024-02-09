@@ -19,7 +19,7 @@ const RegionalCard = ({ title, description, image }: Props) => {
         <h3 className='min-h-[90px] whitespace-pre border-b border-white pb-4 text-center text-2xl font-bold uppercase text-white'>
           {title}
         </h3>
-        <p className=' absolute bottom-4 text-center text-sm text-white'>
+        <p className=' absolute bottom-4 text-center text-lg text-white'>
           {description}
         </p>
       </div>
