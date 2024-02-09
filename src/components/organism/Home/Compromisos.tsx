@@ -11,13 +11,13 @@ const Compromisos = () => {
   return (
     <section
       id='compromisos'
-      className='relative bg-[url(/assets/images/backgrounds/compromisos-background.webp)] bg-cover'
+      className='relative bg-[url(/assets/images/backgrounds/compromisos-background.webp)] bg-contain lg:bg-cover'
     >
       <BtnScrollDown section='compromisos' />
       <span className='block w-fit bg-[#03773A] px-4 py-2 text-sm font-bold uppercase text-white'>
         Compromisos Sostenibles
       </span>
-      <div className='flex flex-row justify-center gap-40 p-10'>
+      <div className='flex flex-col justify-center gap-10 p-10 lg:flex-row lg:gap-40'>
         <article className='max-w-xl'>
           <picture>
             <img
