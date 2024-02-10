@@ -79,6 +79,7 @@ const Compromisos = () => {
           textSecond='sostenibles'
           backgroundColor='#E8732D'
           hoverBackgroundColor='#03773A'
+          customStyle={{}}
         />
       </div>
     </section>

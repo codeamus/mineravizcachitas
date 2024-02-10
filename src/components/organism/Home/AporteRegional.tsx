@@ -46,7 +46,6 @@ const AporteRegional = () => {
           backgroundColor='#03773A'
           hoverBackgroundColor='#E8732D'
           customStyle={{
-            marginInline: 20,
             minWidth: 215,
           }}
         />
