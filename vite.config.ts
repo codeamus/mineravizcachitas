@@ -12,4 +12,7 @@ export default defineConfig({
       components: `${resolve(__dirname, './src/components/')}`,
     },
   },
+  build: {
+    minify: true,
+  },
 })
