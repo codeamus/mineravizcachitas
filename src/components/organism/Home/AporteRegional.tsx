@@ -1,8 +1,9 @@
-import RegionalCard from '@/components/molecules/Cards/RegionalCard'
-import ImageDesarrollo from '@/assets/images/img-desarrollo.webp'
-import ImageEmpleabilidad from '@/assets/images/img-empleabilidad.webp'
 import ImageAmbiente from '@/assets/images/img-ambiente.webp'
 import ImageCalidad from '@/assets/images/img-calida.webp'
+import ImageDesarrollo from '@/assets/images/img-desarrollo.webp'
+import ImageEmpleabilidad from '@/assets/images/img-empleabilidad.webp'
+import DefaultButton from '@/components/molecules/Buttons/DefaultButton'
+import RegionalCard from '@/components/molecules/Cards/RegionalCard'
 
 const AporteRegional = () => {
   return (
@@ -35,6 +36,21 @@ const AporteRegional = () => {
           description='Más de 5.500 puestos de trabajo en fase de construcción y 1.200 en operación, sin considerar la importante cantidad de empleos indirectos y oportunidades de negocios que se crearán con motivo de los servicios asociados a la faena.'
           image={ImageCalidad}
         />
+      </div>
+      <div className='mt-10 flex w-full items-center justify-center'>
+        <hr className='w-full border-[#03773A]' />
+        <DefaultButton
+          url='/sostenibilidad'
+          textFirst='Ver todos los'
+          textSecond='Aportes regionales'
+          backgroundColor='#03773A'
+          hoverBackgroundColor='#E8732D'
+          customStyle={{
+            marginInline: 20,
+            minWidth: 215,
+          }}
+        />
+        <hr className='w-full border-[#03773A]' />
       </div>
     </section>
   )
