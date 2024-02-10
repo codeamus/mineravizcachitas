@@ -6,6 +6,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
   background-color: #fff;
+  scrollbar-color: #e8732d #d1cfcf;
 }
 
 @keyframes blur {
