@@ -75,11 +75,13 @@ const Compromisos = () => {
       <div className='relative -bottom-5 flex justify-center'>
         <DefaultButton
           url='/sostenibilidad'
-          textFirst='Ver todos los compromisos'
-          textSecond='sostenibles'
-          backgroundColor='#E8732D'
-          hoverBackgroundColor='#03773A'
-          customStyle={{}}
+          textFirst='Ver todos los'
+          textSecond='Aportes regionales'
+          backgroundColor='#03773A'
+          hoverBackgroundColor='#E8732D'
+          customStyle={{
+            minWidth: 215,
+          }}
         />
       </div>
     </section>
