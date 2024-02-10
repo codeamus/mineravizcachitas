@@ -77,7 +77,7 @@ const Compromisos = () => {
         <Link
           to='sostenibilidad'
           unstable_viewTransition
-          className='flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm transition-all duration-300 hover:bg-[#03773A]'
+          className='flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
         >
           <span>
             Ver todos los compromisos <br />
