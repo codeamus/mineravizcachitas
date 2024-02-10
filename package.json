@@ -11,6 +11,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@radix-ui/react-tabs": "^1.0.4",
     "localforage": "1.10.0",
     "match-sorter": "6.3.1",
     "million": "^3.0.2",

@@ -1,6 +1,7 @@
 import Footer from '@/components/organism/Footer'
 import AporteRegional from '@/components/organism/Home/AporteRegional'
 import Compromisos from '@/components/organism/Home/Compromisos'
+import EtapasProyecto from '@/components/organism/Home/EtapasProyecto'
 import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
 import PrincipalSection from '@/components/organism/Home/PrincipalSection'
@@ -26,6 +27,7 @@ const TemplateHome = () => {
         <Compromisos />
         <AporteRegional />
         <PreguntasFrecuentes />
+        <EtapasProyecto />
       </main>
       <Footer />
     </>
