@@ -37,7 +37,11 @@ const PreguntasFrecuentes = () => {
               className='collapse collapse-plus mt-4 rounded-none border border-[#E8732D] bg-white'
               key={index}
             >
-              <input type='radio' name='accordion' />
+              <input
+                type='radio'
+                name='accordion'
+                aria-label={`Input de accordio para la pregunta ${title}`}
+              />
               <div className='collapse-title text-sm font-bold text-black after:text-3xl after:font-normal after:text-[#E8732D]'>
                 {title}
               </div>
