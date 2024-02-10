@@ -1,10 +1,11 @@
-import { Helmet } from 'react-helmet-async'
-import Navbar from '@/components/organism/MenuNav'
-import PrincipalSection from '@/components/organism/Home/PrincipalSection'
-import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
+import Footer from '@/components/organism/Footer'
 import AporteRegional from '@/components/organism/Home/AporteRegional'
 import Compromisos from '@/components/organism/Home/Compromisos'
-import Footer from '@/components/organism/Footer'
+import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
+import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
+import PrincipalSection from '@/components/organism/Home/PrincipalSection'
+import Navbar from '@/components/organism/MenuNav'
+import { Helmet } from 'react-helmet-async'
 
 const TemplateHome = () => {
   return (
@@ -24,6 +25,7 @@ const TemplateHome = () => {
         <PresentacionUbicacion />
         <Compromisos />
         <AporteRegional />
+        <PreguntasFrecuentes />
       </main>
       <Footer />
     </>
