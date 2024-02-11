@@ -20,7 +20,6 @@ const Compromisos = () => {
         <article className='max-w-xl'>
           <picture>
             <img
-              className='aspect-[1/1]'
               src={ImageAmbiental}
               alt='Imagen representativa de Responsabilidad Ambiental'
             />
@@ -47,7 +46,6 @@ const Compromisos = () => {
         <article className='max-w-xl'>
           <picture>
             <img
-              className='aspect-[1/1]'
               src={ImageResponsabilidad}
               alt='Imagen que representa la Responsabilidad Social'
             />
