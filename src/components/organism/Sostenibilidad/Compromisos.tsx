@@ -1,3 +1,9 @@
+type CompromisosProps = {
+  reverse: boolean
+  ambiental: boolean
+  title: string
+}
+
 import ImageAmbiental from '@/assets/images/compromiso-ambiental.webp'
 import ImageSocial from '@/assets/images/compromiso-responsabilidad.webp'
 import {
@@ -5,7 +11,11 @@ import {
   COMPROMISOS_SOCIALES,
 } from '@/const/sostenibilidad'
 
-const ComponentCompromisos = ({ reverse, ambiental, title }) => {
+const ComponentCompromisos = ({
+  reverse,
+  ambiental,
+  title,
+}: CompromisosProps) => {
   const currentCompromiso = ambiental
     ? COMPROMISOS_AMBIENTALES
     : COMPROMISOS_SOCIALES

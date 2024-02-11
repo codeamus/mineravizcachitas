@@ -1,6 +1,6 @@
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import Icon from '@/assets/icons/icon-ambiental-black.svg'
-import Compromisos from './Compromisos'
+import Compromisos from '@/components/organism/Sostenibilidad/Compromisos'
 
 const Info = () => {
   return (
