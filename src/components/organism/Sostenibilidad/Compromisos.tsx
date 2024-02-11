@@ -1,7 +1,7 @@
 type CompromisosProps = {
   reverse: boolean
   ambiental: boolean
-  title: string
+  title: React.ReactNode
 }
 
 import ImageAmbiental from '@/assets/images/compromiso-ambiental.webp'
