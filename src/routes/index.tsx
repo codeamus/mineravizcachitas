@@ -8,6 +8,7 @@ const SomosPage = lazy(() => import('@/pages/Somos'))
 const FaqPage = lazy(() => import('@/pages/PreguntasFrecuentes'))
 const BlogPage = lazy(() => import('@/pages/Blog'))
 const SingleBlogPage = lazy(() => import('@/pages/SingleBlog'))
+const NotFoundPage = lazy(() => import('@/pages/NotFound'))
 
 // Sistema de rutas con sus componentes
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: 'blog/:slug',
     element: <SingleBlogPage />,
+  },
+  {
+    path: '*',
+    element: <NotFoundPage />,
   },
 ])
 const Route = () => {
