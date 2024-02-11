@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Noticias = () => {
   return (
     <section className='relative bg-[#E8E8E8]'>
-      <h2 className='after:content[] after:cp-v w-full bg-[#009145] py-4 text-center text-5xl font-bold uppercase after:absolute after:left-0 after:right-0 after:top-[80px] after:m-auto after:h-[80px] after:w-[80px] after:bg-[#009145]'>
+      <h2 className='after:content[] after:cp-v w-full bg-[#009145] py-4 text-center text-4xl font-bold uppercase after:absolute after:left-0 after:right-0 after:top-[70px] after:m-auto after:h-[80px] after:w-[80px] after:bg-[#009145]'>
         Noticias
       </h2>
       <div className='mt-20 grid grid-cols-1 gap-10 px-10 py-4 lg:grid-cols-3 lg:px-20'>

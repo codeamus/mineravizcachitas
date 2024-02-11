@@ -9,7 +9,7 @@ const PreguntasFrecuentes = () => {
       className='mb-12 flex flex-col items-center justify-center gap-10 p-4 md:p-8 lg:flex-row'
     >
       <div className='flex w-full flex-col items-center justify-center lg:w-1/2 lg:items-end lg:justify-end'>
-        <h2 className='text-balance text-center text-5xl font-bold text-black lg:text-end'>
+        <h2 className='text-balance text-center text-4xl font-bold text-black lg:text-end'>
           Velamos por una{' '}
           <span className='text-[#03773A]'>comunidad Informada</span>
         </h2>
