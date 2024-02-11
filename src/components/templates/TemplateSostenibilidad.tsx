@@ -3,7 +3,6 @@ import VideoWebm from '@/assets/videos/sostenibilidad.webm'
 import VideoBanner from '@/components/molecules/VideoBanner'
 import Navbar from '@/components/organism/MenuNav'
 import { Helmet } from 'react-helmet-async'
-import Sostenibilidad from '../../pages/Sostenibilidad'
 
 const TemplateSostenibilidad = () => {
   return (
