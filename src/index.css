@@ -60,3 +60,8 @@ html {
 .menuLink:hover::after {
   animation-name: fullWidth;
 }
+
+/* ACTIVE CLASS FOR TABS */
+.tab[data-state='active'] {
+  background-color: #03773a;
+}

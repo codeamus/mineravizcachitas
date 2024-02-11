@@ -14,7 +14,7 @@ const EtapasProyecto = () => {
       <BtnScrollDown section='etapas' />
       <h2 className='text-center text-4xl font-bold'>Etapas del proyecto</h2>
       <div className='mt-14 flex items-center justify-center'>
-        <Tabs.Root defaultValue='tab1'>
+        <Tabs.Root defaultValue='tab0'>
           <div className='mb-10'>
             <Tabs.List
               className='flex justify-center gap-2'
@@ -22,7 +22,7 @@ const EtapasProyecto = () => {
             >
               {ETAPAS.map(({ titleTab }, index) => (
                 <Tabs.Trigger
-                  className='tab mx-2 flex h-[45px] w-fit flex-row gap-2 bg-[#E8732D] leading-[15px] text-white transition-all duration-500 ease-in-out focus:bg-[#03773A] focus:outline-[0px] focus:outline-offset-0 lg:!w-[190px]'
+                  className='tab mx-2 flex h-[45px] w-fit flex-row gap-2 bg-[#E8732D] leading-[15px] text-white transition-all duration-500 ease-in-out focus:outline-[0px] focus:outline-offset-0 lg:!w-[190px]'
                   value={`tab${index}`}
                   key={index}
                 >
