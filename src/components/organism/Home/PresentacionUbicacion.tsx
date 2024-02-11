@@ -13,20 +13,20 @@ const PresentacionUbicacion = () => {
           <span className='block w-fit bg-[#03773A] px-4 py-2 text-sm font-bold uppercase text-white'>
             Presentación y ubicación
           </span>
-          <div className='ml-0 mr-6 mt-6 max-w-full border-none pb-4 pt-4 lg:ml-auto lg:max-w-4xl lg:border-r lg:border-solid lg:border-[#009145]'>
+          <div className='ml-0 mr-0 mt-6 max-w-full border-none px-4 pb-4 pt-4 lg:ml-auto lg:mr-6 lg:max-w-4xl lg:border-r lg:border-solid lg:border-[#009145] lg:px-0'>
             <h2 className='pr-4 text-center text-4xl font-bold text-black lg:text-end'>
               ¿Qué es proyecto <br />
               Vizcachitas?
             </h2>
             <hr className='my-4 w-full border-[#009145]' />
-            <p className='pr-4 text-end text-sm leading-relaxed text-black'>
+            <p className='text-pretty pr-0 text-center text-sm leading-relaxed text-black lg:pr-4 lg:text-end'>
               Nuestro proyecto minero explotará un gran cuerpo mineralizado
               ubicado en el valle del río Rocín, con recursos medidos e
               indicados ya demostrados por 13.021 millones de libras de cobre,
               526 millones de libras de molibdeno y 54 millones de onzas de
               plata.
             </p>
-            <p className='pr-4 text-end text-sm leading-relaxed text-black'>
+            <p className='text-pretty pr-0 text-center text-sm leading-relaxed text-black lg:pr-4 lg:text-end'>
               De acuerdo con nuestro estudio de prefactibilidad, el proyecto
               considera una inversión de US$ 2.800 millones y una vida útil
               inicial de 26 años. Más sondajes y estudios adicionales nos
@@ -35,7 +35,7 @@ const PresentacionUbicacion = () => {
               de 180.000 toneladas de cobre fino al año durante los primeros 8
               años, y 150.000 toneladas/año durante la vida útil.
             </p>
-            <p className='pr-4 text-end text-sm leading-relaxed text-black'>
+            <p className='text-pretty pr-0 text-center text-sm leading-relaxed text-black lg:pr-4 lg:text-end'>
               Se trata de una iniciativa de clase mundial, en la cual se
               incorporan estándares tecnológicos y ambientales de última
               generación, que dan cuenta de una nueva forma de hacer minería,
