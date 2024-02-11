@@ -9,10 +9,10 @@ const EtapasProyecto = () => {
   return (
     <section
       id='etapas'
-      className='relative bg-[url(/assets/images/backgrounds/bg-etapas.webp)] bg-cover bg-no-repeat px-4 pb-10 pt-20 xl:px-20'
+      className='relative bg-[url(/assets/images/backgrounds/bg-etapas.webp)] bg-cover bg-fixed bg-no-repeat px-4 pb-10 pt-20 xl:px-20'
     >
       <BtnScrollDown section='etapas' />
-      <h2 className='text-center text-5xl font-bold'>Etapas del proyecto</h2>
+      <h2 className='text-center text-4xl font-bold'>Etapas del proyecto</h2>
       <div className='mt-14 flex items-center justify-center'>
         <Tabs.Root defaultValue='tab1'>
           <div className='mb-10'>

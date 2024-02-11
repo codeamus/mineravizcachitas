@@ -11,7 +11,7 @@ const Compromisos = () => {
   return (
     <section
       id='compromisos'
-      className='relative bg-[url(/assets/images/backgrounds/compromisos-background.webp)] bg-contain lg:bg-cover'
+      className='relative bg-[url(/assets/images/backgrounds/compromisos-background.webp)] bg-contain bg-fixed lg:bg-cover'
     >
       <BtnScrollDown section='compromisos' />
       <span className='block w-fit bg-[#03773A] px-4 py-2 text-sm font-bold uppercase text-white'>
