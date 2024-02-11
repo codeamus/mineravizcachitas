@@ -1,6 +1,7 @@
 type VideoProps = {
   videoMP4: string
   videoWEBM: string
+  bgMobile: string
   title: React.ReactNode
   description: string
   list?: boolean
@@ -14,6 +15,7 @@ import IconCalidad from '@/assets/icons/icon-calidad.svg'
 const VideoBanner = ({
   videoMP4,
   videoWEBM,
+  bgMobile,
   title,
   description,
   list,
@@ -28,13 +30,14 @@ const VideoBanner = ({
           playsInline
           preload='metadata'
           className='h-[100vh] w-full object-cover brightness-50'
-          poster='/assets/images/posters/poster-video-home-desktop.webp'
         >
           <source src={videoMP4} type='video/mp4' />
           <source src={videoWEBM} type='video/webm' />
         </video>
       </div>
-      <div className='lg:mt-130 bg-[url(/assets/images/posters/poster-video-home-mobile.webp)] bg-cover px-6 pt-40 md:bg-none lg:px-40'>
+      <div
+        className={`lg:mt-130 bg-[url(${bgMobile})] bg-cover px-6 pt-40 md:bg-none lg:px-40`}
+      >
         <div className='flex flex-col items-center gap-10 lg:flex-row lg:gap-20'>
           {title}
           <div>
