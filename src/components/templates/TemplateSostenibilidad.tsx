@@ -1,7 +1,9 @@
 import VideoMP4 from '@/assets/videos/sostenibilidad.mp4'
 import VideoWebm from '@/assets/videos/sostenibilidad.webm'
 import VideoBanner from '@/components/molecules/VideoBanner'
+import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
+import Info from '@/components/organism/Sostenibilidad/Info'
 import { Helmet } from 'react-helmet-async'
 
 const TemplateSostenibilidad = () => {
@@ -33,8 +35,9 @@ const TemplateSostenibilidad = () => {
           }
           description='Una nueva forma de hacer minería, comprometida con una producción que reduce impactos ambientales y genera externalidades positivas sostenidas en el tiempo, tanto en lo ambiental como lo comunitario.'
         />
+        <Info />
       </main>
-      <footer>Footer ...</footer>
+      <Footer />
     </>
   )
 }
