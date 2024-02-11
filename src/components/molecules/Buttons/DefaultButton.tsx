@@ -1,6 +1,6 @@
 type Props = {
   textFirst: string
-  textSecond: string
+  textSecond?: string
   backgroundColor: string
   hoverBackgroundColor: string
   url: string
@@ -20,7 +20,7 @@ const DefaultButton = ({
 }: Props) => {
   return (
     <Link
-      className={`flex cursor-pointer flex-row items-center rounded-none border border-white bg-[${backgroundColor}] p-0 text-center font-bold text-white hover:bg-[${hoverBackgroundColor}] shadow-xl transition-all duration-700 hover:shadow-stone-400`}
+      className={`flex cursor-pointer flex-row items-center rounded-none border border-white bg-[${backgroundColor}] p-0 text-center font-bold text-white hover:bg-[${hoverBackgroundColor}] w-fit shadow-xl transition-all duration-700 hover:shadow-stone-400`}
       to={url}
       unstable_viewTransition
       style={customStyle && customStyle}
