@@ -3,7 +3,6 @@ import IconSocial from '@/assets/icons/icon-social-white.svg'
 import ImageAmbiental from '@/assets/images/compromiso-ambiental.webp'
 import ImageResponsabilidad from '@/assets/images/compromiso-responsabilidad.webp'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
-// import DefaultButton from '@/components/molecules/Buttons/DefaultButton'
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
 import { Link } from 'react-router-dom'
 

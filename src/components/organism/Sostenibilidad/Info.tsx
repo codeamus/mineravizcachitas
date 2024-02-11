@@ -1,5 +1,6 @@
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import Icon from '@/assets/icons/icon-ambiental-black.svg'
+import Compromisos from './Compromisos'
 
 const Info = () => {
   return (
@@ -54,6 +55,7 @@ const Info = () => {
           </div>
         </div>
       </div>
+      <Compromisos />
     </section>
   )
 }
