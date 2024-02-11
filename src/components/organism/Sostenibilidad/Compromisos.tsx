@@ -33,6 +33,9 @@ const ComponentCompromisos = ({
         <img
           className='brightness-[0.3]'
           src={ambiental ? ImageAmbiental : ImageSocial}
+          alt={`Imagen respcto al compromiso ${
+            ambiental ? 'Ambiental' : 'Social'
+          }`}
         />
         <div className={`absolute ${reverse ? 'lg:ml-20 ' : 'lg:mr-20 '}`}>
           {title}

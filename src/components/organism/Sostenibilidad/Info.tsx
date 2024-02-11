@@ -20,7 +20,11 @@ const Info = () => {
         </div>
         <div className='mt-14 flex w-full flex-col px-8 lg:mt-0 lg:w-[56.4%] lg:px-0'>
           <div className='flex items-center justify-start pb-10'>
-            <img src={Icon} className='mr-4 size-20' />
+            <img
+              src={Icon}
+              className='mr-4 size-20'
+              alt='Icono de compromisos para Responsabilidad Ambiental'
+            />
             <div className='flex max-w-lg flex-col border-l border-[#03773A]'>
               <div className=''>
                 <h3 className='pl-4 text-xl font-bold uppercase text-[#E8732C]'>
@@ -37,7 +41,11 @@ const Info = () => {
             </div>
           </div>
           <div className='flex items-center justify-start pb-10'>
-            <img src={Icon} className='mr-4 size-20' />
+            <img
+              src={Icon}
+              className='mr-4 size-20'
+              alt='Icono de compromisos para Responsabilidad Social'
+            />
             <div className='flex max-w-lg flex-col border-l border-[#03773A]'>
               <div className=''>
                 <h3 className='pl-4 text-xl font-bold uppercase text-[#E8732C]'>
