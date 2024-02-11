@@ -6,12 +6,10 @@ const TemplateNotFound = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Minera Vizcachitas: Líder en Minería Responsable y Sostenible
-        </title>
+        <title>Página No Encontrada | Minera Vizcachitas</title>
         <meta
           name='description'
-          content='Descubre cómo Minera Vizcachitas lidera la innovación en la minería con prácticas responsables y sostenibles para un futuro mejor. Únete a nuestra misión.'
+          content='Lo sentimos, pero la página que buscas no existe en Minera Vizcachitas. Puede que haya sido movida o eliminada. Explora nuestro sitio para descubrir más sobre nuestra minería responsable y sostenible.'
         />
       </Helmet>
       <Navbar />
