@@ -1,5 +1,5 @@
 import { ETAPAS } from '@/const/etapas'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import ImageEtapas from '@/assets/images/img-etapas.webp'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import * as Tabs from '@radix-ui/react-tabs'
@@ -60,7 +60,7 @@ const EtapasProyecto = () => {
                       {content}
                     </p>
                   </div>
-                  <img
+                  <LazyLoadImage
                     className='hidden size-[550px] xl:block'
                     src={ImageEtapas}
                     alt='Imagen de la sección etapas'

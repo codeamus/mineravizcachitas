@@ -6,7 +6,7 @@ type VideoProps = {
   description: string
   list?: boolean
 }
-
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import IconEconomico from '@/assets/icons/icon-economico.svg'
 import IconEmpleabilidad from '@/assets/icons/icon-empleabilidad.svg'
 import IconAmbiente from '@/assets/icons/icon-ambiente.svg'
@@ -56,7 +56,7 @@ const VideoBanner = ({
         {list && (
           <ul className='grid grid-cols-2 place-content-between gap-0 pt-20 md:grid-cols-4 md:gap-20'>
             <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
-              <img
+              <LazyLoadImage
                 className='size-16'
                 src={IconEconomico}
                 alt='Icono referencial a Desarrollo Económico'
@@ -66,7 +66,7 @@ const VideoBanner = ({
               </p>
             </li>
             <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
-              <img
+              <LazyLoadImage
                 className='size-16'
                 src={IconEmpleabilidad}
                 alt='Icono referencial a Desarrollo Económico'
@@ -76,7 +76,7 @@ const VideoBanner = ({
               </p>
             </li>
             <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
-              <img
+              <LazyLoadImage
                 className='size-16'
                 src={IconAmbiente}
                 alt='Icono referencial a Desarrollo Económico'
@@ -86,7 +86,7 @@ const VideoBanner = ({
               </p>
             </li>
             <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
-              <img
+              <LazyLoadImage
                 className='size-16'
                 src={IconCalidad}
                 alt='Icono referencial a Desarrollo Económico'

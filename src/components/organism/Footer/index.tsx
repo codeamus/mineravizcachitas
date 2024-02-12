@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import InstaIcon from '@/assets/icons/icon-instagram.svg'
 import FBIcon from '@/assets/icons/icon-fb.svg'
 
@@ -113,7 +114,7 @@ const Footer = () => {
             rel='noopener noreferrer'
             aria-label='Link que te dirige al perfil de Facebook de Minera Vizcachitas'
           >
-            <img
+            <LazyLoadImage
               className='size-5 sepia-0 transition-all hover:scale-125 hover:sepia'
               src={InstaIcon}
               alt='Icono de Instagram en el footer'
@@ -125,7 +126,7 @@ const Footer = () => {
             rel='noopener noreferrer'
             aria-label='Link que te dirige al perfil de Facebook de Minera Vizcachitas'
           >
-            <img
+            <LazyLoadImage
               className='size-5 sepia-0 transition-all hover:scale-125 hover:sepia'
               src={FBIcon}
               alt='Icono de Facebook en el footer'

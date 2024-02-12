@@ -8,6 +8,7 @@ type Props = {
 }
 
 import ArrowIcon from '@/assets/icons/arrow-right-bold.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 
 const DefaultButton = ({
@@ -30,7 +31,7 @@ const DefaultButton = ({
         {textSecond && <br />}
         {textSecond}
       </span>
-      <img
+      <LazyLoadImage
         src={ArrowIcon}
         alt={`Icono de flecha que lleva a ${textFirst} ${textFirst} ${textSecond}`}
         className='mx-2 size-8'

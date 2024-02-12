@@ -1,6 +1,7 @@
 import ImageBlog from '@/assets/images/noticia-01.webp'
 import DefaultButton from '@/components/molecules/Buttons/DefaultButton'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Noticias = () => {
   return (
@@ -12,7 +13,7 @@ const Noticias = () => {
         <article className='flex flex-col justify-center'>
           <picture>
             <Link to='/noticias' unstable_viewTransition>
-              <img
+              <LazyLoadImage
                 src={ImageBlog}
                 alt='Imagen de la noticia'
                 className='m-auto block brightness-50 transition-all duration-300 hover:brightness-100'
@@ -45,7 +46,7 @@ const Noticias = () => {
         <article className='flex flex-col justify-center'>
           <picture>
             <Link to='/noticias' unstable_viewTransition>
-              <img
+              <LazyLoadImage
                 src={ImageBlog}
                 alt='Imagen de la noticia'
                 className='m-auto block brightness-50 transition-all duration-300 hover:brightness-100'
@@ -78,7 +79,7 @@ const Noticias = () => {
         <article className='flex flex-col justify-center'>
           <picture>
             <Link to='/noticias' unstable_viewTransition>
-              <img
+              <LazyLoadImage
                 src={ImageBlog}
                 alt='Imagen de la noticia'
                 className='m-auto block brightness-50 transition-all duration-300 hover:brightness-100'

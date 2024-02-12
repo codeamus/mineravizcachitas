@@ -1,9 +1,10 @@
+import IconArrow from '@/assets/icons/arrow-right-bold.svg'
 import IconAmbiental from '@/assets/icons/icon-ambiental-white.svg'
 import IconSocial from '@/assets/icons/icon-social-white.svg'
 import ImageAmbiental from '@/assets/images/compromiso-ambiental.webp'
 import ImageResponsabilidad from '@/assets/images/compromiso-responsabilidad.webp'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
-import IconArrow from '@/assets/icons/arrow-right-bold.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 
 const Compromisos = () => {
@@ -19,14 +20,14 @@ const Compromisos = () => {
       <div className='flex flex-col justify-center gap-10 p-10 lg:flex-row lg:gap-40'>
         <article className='max-w-xl'>
           <picture>
-            <img
+            <LazyLoadImage
               src={ImageAmbiental}
               alt='Imagen representativa de Responsabilidad Ambiental'
             />
           </picture>
           <div>
             <div className='mb-4 flex flex-row items-center gap-4 border-b border-white pt-4'>
-              <img
+              <LazyLoadImage
                 src={IconAmbiental}
                 alt='Icono de responsabilidad ambiental'
                 className='size-16'
@@ -45,14 +46,14 @@ const Compromisos = () => {
         </article>
         <article className='max-w-xl'>
           <picture>
-            <img
+            <LazyLoadImage
               src={ImageResponsabilidad}
               alt='Imagen que representa la Responsabilidad Social'
             />
           </picture>
           <div>
             <div className='mb-4 flex flex-row items-center gap-4 border-b border-white pt-4'>
-              <img
+              <LazyLoadImage
                 src={IconSocial}
                 alt='Icono de responsabilidad social'
                 className='size-16'
@@ -81,7 +82,7 @@ const Compromisos = () => {
             sostenibles
           </span>
           <hr className='mx-4 h-[50px] w-[1px] bg-white' />
-          <img src={IconArrow} alt='' className='w-[16px]' />
+          <LazyLoadImage src={IconArrow} alt='' className='w-[16px]' />
         </Link>
       </div>
     </section>

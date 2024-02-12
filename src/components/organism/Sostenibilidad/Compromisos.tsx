@@ -4,6 +4,7 @@ type CompromisosProps = {
   title: React.ReactNode
 }
 
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import ImageAmbiental from '@/assets/images/compromiso-ambiental.webp'
 import ImageSocial from '@/assets/images/compromiso-responsabilidad.webp'
 import {
@@ -30,7 +31,7 @@ const ComponentCompromisos = ({
           reverse ? 'lg:justify-start' : 'lg:justify-end'
         }`}
       >
-        <img
+        <LazyLoadImage
           className='brightness-[0.3]'
           src={ambiental ? ImageAmbiental : ImageSocial}
           alt={`Imagen respcto al compromiso ${

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
 import { FAQS } from '@/const/faqs'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const PreguntasFrecuentes = () => {
   return (
@@ -24,7 +25,11 @@ const PreguntasFrecuentes = () => {
             preguntas frecuentes
           </span>
           <hr className='mx-4 h-[50px] w-[1px] bg-white' />
-          <img src={IconArrow} alt='' className='w-[16px]' />
+          <LazyLoadImage
+            src={IconArrow}
+            alt='Icono de flecha de preguntas frecuentes'
+            className='w-[16px]'
+          />
         </Link>
       </div>
       <div className='flex w-full flex-col'>
