@@ -12,7 +12,11 @@ const Noticias = () => {
       <div className='mt-20 grid grid-cols-1 gap-10 px-10 py-4 lg:grid-cols-3 lg:px-20'>
         <article className='flex flex-col justify-center'>
           <picture>
-            <Link to='/noticias' unstable_viewTransition>
+            <Link
+              to='/noticias'
+              unstable_viewTransition
+              aria-label='Link hacia la noticia'
+            >
               <LazyLoadImage
                 src={ImageBlog}
                 alt='Imagen de la noticia'
@@ -45,7 +49,11 @@ const Noticias = () => {
         </article>
         <article className='flex flex-col justify-center'>
           <picture>
-            <Link to='/noticias' unstable_viewTransition>
+            <Link
+              to='/noticias'
+              unstable_viewTransition
+              aria-label='Link hacia la noticia'
+            >
               <LazyLoadImage
                 src={ImageBlog}
                 alt='Imagen de la noticia'
@@ -78,7 +86,11 @@ const Noticias = () => {
         </article>
         <article className='flex flex-col justify-center'>
           <picture>
-            <Link to='/noticias' unstable_viewTransition>
+            <Link
+              to='/noticias'
+              unstable_viewTransition
+              aria-label='Link hacia la noticia'
+            >
               <LazyLoadImage
                 src={ImageBlog}
                 alt='Imagen de la noticia'
