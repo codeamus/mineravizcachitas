@@ -6,7 +6,7 @@ import FBIcon from '@/assets/icons/icon-fb.svg'
 
 const Navbar = () => {
   return (
-    <header id='header-nav' className='absolute top-0 z-10 w-full px-10'>
+    <header id='header-nav' className='absolute top-0 z-20 w-full px-10'>
       <div
         id='headerBox'
         className='mx-auto flex items-center justify-between gap-16 border-b border-none border-white lg:border-solid'
