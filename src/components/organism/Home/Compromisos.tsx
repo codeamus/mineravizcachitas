@@ -35,7 +35,7 @@ const Compromisos = () => {
                 Responsabilidad <br /> Ambiental
               </h2>
             </div>
-            <p className='text-balance'>
+            <p className='text-balance text-white'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
               illum vel quos quidem tempora tenetur asperiores id nemo omnis
               neque. Laudantium cumque dolorum, libero maxime officia commodi
@@ -61,7 +61,7 @@ const Compromisos = () => {
                 Responsabilidad <br /> Social
               </h2>
             </div>
-            <p className='text-balance'>
+            <p className='text-balance text-white'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
               illum vel quos quidem tempora tenetur asperiores id nemo omnis
               neque. Laudantium cumque dolorum, libero maxime officia commodi
@@ -74,7 +74,7 @@ const Compromisos = () => {
         <Link
           to='sostenibilidad'
           unstable_viewTransition
-          className='flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
+          className='flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
         >
           <span>
             Ver todos los compromisos <br />

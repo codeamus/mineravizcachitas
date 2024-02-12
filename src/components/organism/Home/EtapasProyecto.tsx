@@ -18,7 +18,9 @@ const EtapasProyecto = () => {
       }}
     >
       <BtnScrollDown section='etapas' />
-      <h2 className='text-center text-4xl font-bold'>Etapas del proyecto</h2>
+      <h2 className='text-center text-4xl font-bold text-white'>
+        Etapas del proyecto
+      </h2>
       <div className='mt-14 flex items-center justify-center'>
         <Tabs.Root
           defaultValue='tab0'
@@ -35,7 +37,7 @@ const EtapasProyecto = () => {
                   value={`tab${index}`}
                   key={index}
                 >
-                  <span className='w-[180px]'>{titleTab}</span>
+                  <span className='w-[180px] text-white'>{titleTab}</span>
                 </Tabs.Trigger>
               ))}
             </Tabs.List>
@@ -50,11 +52,11 @@ const EtapasProyecto = () => {
                 <div className='flex w-fit flex-col items-center gap-8 xl:flex-row'>
                   <div className='text-center xl:text-start'>
                     {titleContent && (
-                      <h3 className='mb-4 text-2xl font-bold'>
+                      <h3 className='mb-4 text-2xl font-bold text-white'>
                         {titleContent}
                       </h3>
                     )}
-                    <p className='text-balance text-sm leading-loose'>
+                    <p className='text-balance text-sm leading-loose text-white'>
                       {content}
                     </p>
                   </div>

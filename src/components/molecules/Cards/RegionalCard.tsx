@@ -15,11 +15,11 @@ const RegionalCard = ({ title, description, image }: Props) => {
           alt={`Imagen representativa de ${title}`}
         />
       </picture>
-      <div className='absolute top-0 h-full w-full p-4'>
+      <div className='absolute top-0 flex h-full w-full flex-col justify-between p-4'>
         <h3 className='min-h-[75px] whitespace-pre border-b border-white pb-2 text-center text-2xl font-bold uppercase text-white'>
           {title}
         </h3>
-        <p className=' absolute bottom-4 text-center text-sm text-white'>
+        <p className='text-balance text-start align-bottom text-sm text-white lg:text-center'>
           {description}
         </p>
       </div>

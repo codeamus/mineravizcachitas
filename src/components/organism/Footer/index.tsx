@@ -5,14 +5,14 @@ import FBIcon from '@/assets/icons/icon-fb.svg'
 
 const Footer = () => {
   return (
-    <footer className='grid grid-cols-1 justify-items-center gap-10 bg-[#626262] px-16 pb-10 pt-28 md:grid-cols-2 lg:grid-cols-4'>
+    <footer className='grid grid-cols-1 justify-items-center gap-10 bg-[#626262] px-16 pb-10 pt-14 md:grid-cols-2 lg:grid-cols-4 lg:pt-28'>
       <div className='flex flex-col gap-6'>
-        <h2 className='text-xl font-bold'>
+        <h2 className='text-xl font-bold text-white'>
           ¿Necesitas <br /> contactarnos?
         </h2>
         <a
           href='/'
-          className='w-fit border border-white px-10 py-2 uppercase transition-all duration-300 hover:bg-[#E8732C]'
+          className='w-fit border border-white px-10 py-2 uppercase text-white transition-all duration-300 hover:bg-[#E8732C]'
         >
           Hablemos
         </a>
@@ -76,7 +76,9 @@ const Footer = () => {
         </ul>
       </div>
       <div className='flex flex-col gap-2'>
-        <h3 className='text-xs font-bold uppercase'>Oficina central</h3>
+        <h3 className='text-xs font-bold uppercase text-white'>
+          Oficina central
+        </h3>
         <p className='text-xs text-white'>Augusto Leguia Norte 100</p>
         <p className='text-xs text-white'>Oficina 812, Las Condes,</p>
         <p className='text-xs text-white'>Santiago, Chile</p>
@@ -91,7 +93,9 @@ const Footer = () => {
         </div>
       </div>
       <div className='flex flex-col gap-2'>
-        <h3 className='text-xs font-bold uppercase'>Oficina putaendo</h3>
+        <h3 className='text-xs font-bold uppercase text-white'>
+          Oficina putaendo
+        </h3>
         <p className='text-xs text-white'>Camus 290, Putaendo, Chile</p>
         <div className='flex flex-row gap-1'>
           <span className='text-xs font-bold text-white'>Tel:</span>

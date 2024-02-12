@@ -16,7 +16,7 @@ const PreguntasFrecuentes = () => {
         <Link
           to='sostenibilidad'
           unstable_viewTransition
-          className='mt-10 flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
+          className='mt-10 flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
         >
           <span>
             Ver todas las
