@@ -19,16 +19,16 @@ const EtapasProyecto = () => {
         >
           <div className='mb-10'>
             <Tabs.List
-              className='flex w-max justify-start gap-2 overflow-y-hidden overflow-x-scroll lg:w-full lg:justify-center lg:overflow-x-hidden'
+              className='flex justify-start gap-2 overflow-x-auto overflow-y-hidden pb-2 lg:justify-center lg:overflow-x-hidden'
               aria-label='Manage your account'
             >
               {ETAPAS.map(({ titleTab }, index) => (
                 <Tabs.Trigger
-                  className='tab h-[45px] w-[190px] bg-[#E8732D] leading-[15px] text-white transition-all duration-500 ease-in-out focus:outline-[0px] focus:outline-offset-0'
+                  className='tab h-[45px] bg-[#E8732D] leading-[15px] text-white transition-all duration-500 ease-in-out focus:outline-[0px] focus:outline-offset-0'
                   value={`tab${index}`}
                   key={index}
                 >
-                  <span>{titleTab}</span>
+                  <span className='w-[180px]'>{titleTab}</span>
                 </Tabs.Trigger>
               ))}
             </Tabs.List>
