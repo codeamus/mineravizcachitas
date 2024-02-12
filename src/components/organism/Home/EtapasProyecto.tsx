@@ -8,7 +8,14 @@ const EtapasProyecto = () => {
   return (
     <section
       id='etapas'
-      className='relative bg-[url(/assets/images/backgrounds/bg-etapas.webp)] bg-cover bg-fixed bg-no-repeat px-4 pb-10 pt-20 xl:px-20'
+      className='relative bg-cover bg-fixed bg-no-repeat px-4 pb-10 pt-20 xl:px-20'
+      style={{
+        backgroundImage: `${
+          window.innerWidth < 768
+            ? 'url(/assets/images/backgrounds/bg-etapas-mobile.jpeg)'
+            : 'url(/assets/images/backgrounds/bg-etapas.webp)'
+        }`,
+      }}
     >
       <BtnScrollDown section='etapas' />
       <h2 className='text-center text-4xl font-bold'>Etapas del proyecto</h2>
