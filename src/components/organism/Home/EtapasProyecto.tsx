@@ -12,7 +12,7 @@ const EtapasProyecto = () => {
       style={{
         backgroundImage: `${
           window.innerWidth < 768
-            ? 'url(/assets/images/backgrounds/bg-etapas-mobile.jpeg)'
+            ? 'url(/assets/images/backgrounds/bg-etapas-mobile.webp)'
             : 'url(/assets/images/backgrounds/bg-etapas.webp)'
         }`,
       }}
