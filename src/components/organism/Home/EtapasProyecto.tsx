@@ -19,7 +19,7 @@ const EtapasProyecto = () => {
         >
           <div className='mb-10'>
             <Tabs.List
-              className='scrollbar-hide flex w-max justify-start gap-2 overflow-y-hidden overflow-x-scroll lg:w-full lg:justify-center lg:overflow-x-hidden'
+              className='flex w-max justify-start gap-2 overflow-y-hidden overflow-x-scroll lg:w-full lg:justify-center lg:overflow-x-hidden'
               aria-label='Manage your account'
             >
               {ETAPAS.map(({ titleTab }, index) => (
