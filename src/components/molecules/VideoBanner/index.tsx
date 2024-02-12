@@ -48,7 +48,7 @@ const VideoBanner = ({
         <div className='flex flex-col items-center gap-10 lg:flex-row lg:gap-20'>
           {title}
           <div>
-            <p className='text-pretty border-b border-t border-[#E8732D] py-4 text-center text-lg leading-10 text-white lg:text-start'>
+            <p className='text-pretty border-b border-t border-[#E8732D] py-4 text-center text-lg leading-normal text-white lg:text-start lg:leading-10'>
               {description}
             </p>
           </div>
