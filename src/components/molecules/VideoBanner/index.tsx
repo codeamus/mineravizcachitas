@@ -22,7 +22,7 @@ const VideoBanner = ({
 }: VideoProps) => {
   return (
     <section className='relative flex h-full w-full items-center justify-center lg:h-[100vh]'>
-      <div className='absolute top-0 -z-20 hidden w-full md:block'>
+      <div className='absolute top-0 hidden w-full md:block'>
         <video
           autoPlay
           loop
@@ -30,13 +30,15 @@ const VideoBanner = ({
           playsInline
           preload='metadata'
           className='h-[100vh] w-full object-cover brightness-50'
+          poster='/assets/images/backgrounds/bg-etapas.webp'
+          controls
         >
           <source src={videoMP4} type='video/mp4' />
           <source src={videoWEBM} type='video/webm' />
         </video>
       </div>
       <div
-        className={`lg:mt-130 bg-[url(${bgMobile})] bg-cover px-6 pt-40 md:bg-none lg:px-40`}
+        className={`lg:mt-130 bg-[url(${bgMobile})] z-10 bg-cover px-6 pt-40 md:bg-none lg:px-40`}
         style={{
           backgroundImage: `${
             window.innerWidth < 768 ? `url(${bgMobile})` : ''
