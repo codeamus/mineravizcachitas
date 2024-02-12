@@ -37,6 +37,11 @@ const VideoBanner = ({
       </div>
       <div
         className={`lg:mt-130 bg-[url(${bgMobile})] bg-cover px-6 pt-40 md:bg-none lg:px-40`}
+        style={{
+          backgroundImage: `${
+            window.innerWidth < 768 ? `url(${bgMobile})` : ''
+          }`,
+        }}
       >
         <div className='flex flex-col items-center gap-10 lg:flex-row lg:gap-20'>
           {title}
