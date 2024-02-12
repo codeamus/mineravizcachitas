@@ -8,7 +8,7 @@ const EtapasProyecto = () => {
   return (
     <section
       id='etapas'
-      className='relative bg-cover bg-fixed bg-no-repeat px-4 pb-10 pt-20 xl:px-20'
+      className='relative bg-cover bg-no-repeat px-4 pb-10 pt-20 lg:bg-fixed xl:px-20'
       style={{
         backgroundImage: `${
           window.innerWidth < 768
