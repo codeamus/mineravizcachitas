@@ -9,7 +9,7 @@ html {
   scrollbar-color: #e8732d #d1cfcf;
 }
 
-@keyframes blur {
+/* @keyframes blur {
   to {
     box-shadow:
       0 5px 50px -5px #0000001a,
@@ -41,7 +41,7 @@ html {
     animation-timeline: scroll();
     animation-range: 0 10px;
   }
-}
+} */
 
 @keyframes fullWidth {
   0% {
