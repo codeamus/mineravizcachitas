@@ -1,7 +1,7 @@
 export const MENU = [
   {
     title: 'El proyecto',
-    path: '/proyecto',
+    path: '/',
   },
   {
     title: 'Sostenibilidad',

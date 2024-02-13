@@ -1,7 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 const HomePage = lazy(() => import('@/pages/Home'))
-const ProyectoPage = lazy(() => import('@/pages/Proyecto'))
 const SostenibilidadPage = lazy(() => import('@/pages/Sostenibilidad'))
 const AporteRegionalPage = lazy(() => import('@/pages/AporteRegional'))
 const SomosPage = lazy(() => import('@/pages/Somos'))
@@ -15,10 +14,6 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />,
-  },
-  {
-    path: '/proyecto',
-    element: <ProyectoPage />,
   },
   {
     path: '/sostenibilidad',
