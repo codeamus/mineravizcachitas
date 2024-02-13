@@ -62,7 +62,7 @@ const ComponentCompromisos = ({
               {title}
             </div>
             <div className='collapse-content border-t border-[#E8732D] !p-0'>
-              <p className='p-3 text-xs text-black'>{content}</p>
+              <p className='p-3 text-sm text-black'>{content}</p>
             </div>
           </div>
         ))}
