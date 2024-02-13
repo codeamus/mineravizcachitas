@@ -1,8 +1,9 @@
-import { ETAPAS } from '@/const/etapas'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import IconCalidad from '@/assets/icons/icon-calidad.svg'
 import ImageEtapas from '@/assets/images/img-etapas.webp'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
+import { ETAPAS } from '@/const/etapas'
 import * as Tabs from '@radix-ui/react-tabs'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const EtapasProyecto = () => {
   return (
@@ -22,22 +23,26 @@ const EtapasProyecto = () => {
         Etapas del proyecto
       </h2>
       <div className='mt-14 flex items-center justify-center'>
-        <Tabs.Root
-          defaultValue='tab0'
-          className='overflow-hidden lg:overflow-auto'
-        >
+        <Tabs.Root defaultValue='tab0'>
           <div className='mb-10'>
             <Tabs.List
-              className='flex justify-start gap-2 overflow-x-auto overflow-y-hidden pb-2 lg:justify-center lg:overflow-x-hidden'
-              aria-label='Manage your account'
+              className='flex justify-center gap-2 pb-2 '
+              aria-label='Etapas del proyecto'
             >
               {ETAPAS.map(({ titleTab }, index) => (
                 <Tabs.Trigger
-                  className='tab h-[45px] bg-[#E8732D] leading-[15px] text-white transition-all duration-500 ease-in-out focus:outline-[0px] focus:outline-offset-0'
+                  className='tab flex h-full flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0'
                   value={`tab${index}`}
                   key={index}
                 >
-                  <span className='w-[180px] text-white'>{titleTab}</span>
+                  <img
+                    src={IconCalidad}
+                    className='size-12 transition-all duration-500 lg:size-16'
+                    alt={`Icono relacionado a la etapa ${titleTab}`}
+                  />
+                  <span className='mt-3 hidden border-b border-t border-white py-2 text-white transition-all duration-500 ease-in-out lg:block'>
+                    {titleTab}
+                  </span>
                 </Tabs.Trigger>
               ))}
             </Tabs.List>
