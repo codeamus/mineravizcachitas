@@ -37,10 +37,13 @@ const Compromisos = () => {
               </h2>
             </div>
             <p className='text-balance text-white'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              illum vel quos quidem tempora tenetur asperiores id nemo omnis
-              neque. Laudantium cumque dolorum, libero maxime officia commodi
-              dicta quam molestias.
+              El diseño de prefactibilidad de Vizcachitas ha recurrido a las
+              mejores herramientas de innovación y tecnología disponibles, que
+              permiten un desarrollo armónico con la sostenibilidad ambiental de
+              la zona. El perfeccionamiento del proyecto durante la siguiente
+              fase (de factibilidad) continuará buscando oportunidades de mejora
+              para construir un proyecto de excelencia que sea un ejemplo para
+              Chile y el mundo.
             </p>
           </div>
         </article>
@@ -63,10 +66,9 @@ const Compromisos = () => {
               </h2>
             </div>
             <p className='text-balance text-white'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              illum vel quos quidem tempora tenetur asperiores id nemo omnis
-              neque. Laudantium cumque dolorum, libero maxime officia commodi
-              dicta quam molestias.
+              Buscamos que los beneficios del desarrollo lleguen a los vecinos
+              de Putaendo, San Felipe y la Región de Valparaíso, que sean social
+              y ambientalmente sostenibles, además de sostenidos en el tiempo.
             </p>
           </div>
         </article>
