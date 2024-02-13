@@ -35,9 +35,11 @@ const Info = () => {
               </div>
               <hr className='my-3 border-[#03773A]' />
               <p className='pl-4 text-sm text-black'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                quam velit, vulputate eu pharetra nec, mattis ac neque. Duis
-                vulputate commodo lectus, ac blandit elit tincidunt id.
+                Vizcachitas es un proyecto minero de clase mundial, que ha
+                incorporado tecnología y estándares ambientales de última
+                generación, que se hace cargo de las inquietudes de la comunidad
+                y cuida el uso del agua, protege el entorno y promueve la
+                sustentabilidad.
               </p>
             </div>
           </div>
@@ -56,9 +58,12 @@ const Info = () => {
               </div>
               <hr className='my-3 border-[#03773A]' />
               <p className='pl-4 text-sm text-black'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                quam velit, vulputate eu pharetra nec, mattis ac neque. Duis
-                vulputate commodo lectus, ac blandit elit tincidunt id.
+                Escuchamos a las personas, sus anhelos, inquietudes y sueños,
+                para co-construir juntos un proyecto que genere mejores
+                condiciones de vida para los habitantes de Putaendo. Impulsamos
+                una relación de largo plazo, basada en el diálogo permanente, la
+                confianza y transparencia para mirar al futuro con optimismo.
+                Queremos un futuro con oportunidades para Putaendo.
               </p>
             </div>
           </div>
