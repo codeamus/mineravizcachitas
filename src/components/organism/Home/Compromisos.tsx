@@ -38,13 +38,10 @@ const Compromisos = () => {
               </h2>
             </div>
             <p className='text-balance text-white'>
-              El diseño de prefactibilidad de Vizcachitas ha recurrido a las
-              mejores herramientas de innovación y tecnología disponibles, que
-              permiten un desarrollo armónico con la sostenibilidad ambiental de
-              la zona. El perfeccionamiento del proyecto durante la siguiente
-              fase (de factibilidad) continuará buscando oportunidades de mejora
-              para construir un proyecto de excelencia que sea un ejemplo para
-              Chile y el mundo.
+              El diseño de Vizcachitas integra tecnología innovadora para
+              garantizar un desarrollo sostenible en armonía con el medio
+              ambiente. Nos seguiremos perfeccionando para convertirnos en un
+              modelo a nivel nacional e internacional.
             </p>
           </div>
         </article>

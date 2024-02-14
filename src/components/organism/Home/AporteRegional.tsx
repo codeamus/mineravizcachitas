@@ -28,8 +28,7 @@ const AporteRegional = () => {
         />
         <RegionalCard
           title={`Medio ${'\n'} Ambiente`}
-          description={`EEl Proyecto Vizcachitas ha tomado el compromiso de utilizar agua de mar desalinizada y no consumir agua continental para los procesos productivos mineros. 
-Asimismo, contempla el uso de depósitos de relaves espesados mezclados con el material sin mineral que se extraiga del rajo. Con relaves cuya humedad no supera el 15%, el proyecto no requiere el uso de tranques de relaves. Ello, porque la baja presencia de arcillas permite filtrar los relaves y reducir el consumo de agua del proyecto hasta en 50%, contribuyendo a la sustentabilidad ambiental del proyecto en múltiples dimensiones: mejora la estabilidad física del depósito de relaves, evitando la acumulación e infiltración del agua contenida en los relaves; y minimiza el espacio utilizado por los relaves, al reducir el volumen de agua contenido en los relaves. 
+          description={`Vizcachitas se compromete a usar agua de mar desalinizada, evitando así el uso de agua continental en sus operaciones. Además, emplea depósitos de relaves espesados combinados con material sin mineral, reduciendo el consumo de agua hasta en un 50%. Esto mejora la estabilidad del depósito, previene la acumulación de agua y minimiza el espacio utilizado por los relaves.. 
 `}
           image={ImageAmbiente}
         />
