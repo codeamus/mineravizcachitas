@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
-import { FAQS } from '@/const/faqs'
+import { FAQS_HOME } from '@/const/faqs'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const PreguntasFrecuentes = () => {
@@ -37,7 +37,7 @@ const PreguntasFrecuentes = () => {
           Preguntas Frecuentes
         </h3>
         <div>
-          {FAQS.map(({ title, content }, index) => (
+          {FAQS_HOME.map(({ title, content }, index) => (
             <div
               className='collapse collapse-plus mt-4 rounded-none border border-[#E8732D] bg-white'
               key={index}
