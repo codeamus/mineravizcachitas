@@ -1,6 +1,5 @@
 import FBIcon from '@/assets/icons/icon-fb.svg'
 import InstaIcon from '@/assets/icons/icon-instagram.svg'
-import Logo from '@/assets/logo/logo.svg'
 import { MENU } from '@/const/menu'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
@@ -41,7 +40,7 @@ const Navbar = () => {
         >
           <LazyLoadImage
             className='size-24 transition-all hover:scale-110'
-            src={Logo}
+            src='/assets/logo/logo.svg'
             alt='Logo de Minera Vizcachitas'
           />
           <hr className='mx-4 hidden h-[60px] w-[1px] bg-white text-lg xl:block' />
