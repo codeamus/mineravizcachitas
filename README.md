@@ -4,6 +4,11 @@
 
 Este proyecto utiliza [React](https://reactjs.org/) y [Vite](https://vitejs.dev/) para crear una aplicación web moderna y eficiente. Describe brevemente qué hace tu aplicación y qué problema resuelve.
 
+## Ambientes
+
+- **Pruebas y QA**: [https://mineravizcachitas-qa.vercel.app](https://mineravizcachitas-qa.vercel.app)
+- **Producción**: [https://www.mineravizcachitas.cl/](https://www.mineravizcachitas.cl/)
+
 ## Características
 
 - **Interfaz Moderna y Responsiva**: Diseñada con React, nuestra aplicación proporciona una experiencia de usuario fluida y adaptativa en cualquier dispositivo, desde móviles hasta desktops.
