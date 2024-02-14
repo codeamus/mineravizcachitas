@@ -6,8 +6,8 @@ Este proyecto utiliza [React](https://reactjs.org/) y [Vite](https://vitejs.dev/
 
 ## Ambientes
 
-- **Pruebas y QA**: <a href="https://mineravizcachitas-qa.vercel.app">mineravizcachitas-qa.vercel.app</a>
-- **Producción**: <a href="https://www.mineravizcachitas.cl/">mineravizcachitas.cl</a>
+- **Pruebas y QA**: <a href="https://mineravizcachitas-qa.vercel.app" target="_blank">mineravizcachitas-qa.vercel.app</a>
+- **Producción**: <a href="https://www.mineravizcachitas.cl/" target="_blank">mineravizcachitas.cl</a>
 
 ## Características
 
