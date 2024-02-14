@@ -40,7 +40,7 @@ const Navbar = () => {
         >
           <LazyLoadImage
             className='size-24 transition-all hover:scale-110'
-            src='/assets/logo/logo.svg'
+            src='/assets/logos/logo.svg'
             alt='Logo de Minera Vizcachitas'
           />
           <hr className='mx-4 hidden h-[60px] w-[1px] bg-white text-lg xl:block' />
