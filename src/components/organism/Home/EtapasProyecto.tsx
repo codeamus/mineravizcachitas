@@ -7,7 +7,7 @@ const EtapasProyecto = () => {
   return (
     <section
       id='etapas'
-      className='relative min-h-[720px] bg-cover bg-no-repeat px-4 pb-10 pt-20 lg:min-h-0 lg:bg-fixed xl:px-20'
+      className='relative min-h-[770px] bg-cover bg-no-repeat px-4 pb-10 pt-20 lg:min-h-0 lg:bg-fixed xl:px-20'
       style={{
         backgroundImage: `${
           window.innerWidth < 768
