@@ -1,9 +1,7 @@
-import IconCalidad from '@/assets/icons/icon-calidad.svg'
 import ImageEtapas from '@/assets/images/img-etapas.webp'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import { ETAPAS } from '@/const/etapas'
 import * as Tabs from '@radix-ui/react-tabs'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const EtapasProyecto = () => {
   return (
@@ -29,14 +27,14 @@ const EtapasProyecto = () => {
               className='flex justify-center gap-2 pb-2 '
               aria-label='Etapas del proyecto'
             >
-              {ETAPAS.map(({ titleTab }, index) => (
+              {ETAPAS.map(({ titleTab, icon }, index) => (
                 <Tabs.Trigger
                   className='tab flex h-full flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0'
                   value={`tab${index}`}
                   key={index}
                 >
                   <img
-                    src={IconCalidad}
+                    src={icon}
                     className='size-12 transition-all duration-500 lg:size-16'
                     alt={`Icono relacionado a la etapa ${titleTab}`}
                   />
@@ -65,7 +63,7 @@ const EtapasProyecto = () => {
                       {content}
                     </p>
                   </div>
-                  <LazyLoadImage
+                  <img
                     className='hidden size-[550px] xl:block'
                     src={ImageEtapas}
                     alt='Imagen de la sección etapas'
