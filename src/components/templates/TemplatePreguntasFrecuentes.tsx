@@ -1,5 +1,5 @@
-import VideoMP4 from '@/assets/videos/sostenibilidad.mp4'
-import VideoWebm from '@/assets/videos/sostenibilidad.webm'
+import VideoMP4 from '@/assets/videos/preguntas.mp4'
+import VideoWebm from '@/assets/videos/preguntas.webm'
 import VideoBanner from '@/components/molecules/VideoBanner'
 import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
@@ -24,7 +24,8 @@ const TemplatePreguntasFrecuentes = () => {
         <VideoBanner
           videoMP4={VideoMP4}
           videoWEBM={VideoWebm}
-          bgMobile='/assets/images/posters/poster-video-home-mobile.webp'
+          bgMobile='/assets/images/posters/poster-video-preguntas-mobile.webp'
+          poster='/assets/images/posters/poster-video-preguntas-desktop.webp'
           title={
             <h1 className='text-center text-5xl font-bold text-white lg:text-balance lg:text-6xl'>
               Preguntas
