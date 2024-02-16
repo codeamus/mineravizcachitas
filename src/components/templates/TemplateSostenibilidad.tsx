@@ -23,6 +23,7 @@ const TemplateSostenibilidad = () => {
         <VideoBanner
           videoMP4={VideoMP4}
           videoWEBM={VideoWebm}
+          poster='/assets/images/posters/poster-video-sostenibilidad-desktop.webp'
           bgMobile='/assets/images/posters/poster-video-sostenibilidad-mobile.webp'
           title={
             <h1 className='text-center text-5xl font-bold text-white lg:text-balance lg:text-6xl'>
