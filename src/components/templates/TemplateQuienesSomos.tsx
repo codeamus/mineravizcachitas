@@ -3,6 +3,10 @@ import VideoWebm from '@/assets/videos/quienes-somos.webm'
 import VideoBanner from '@/components/molecules/VideoBanner'
 import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
+import Contacto from '@/components/organism/Somos/Contacto'
+import Documentos from '@/components/organism/Somos/Documentos'
+import Equipo from '@/components/organism/Somos/Equipo'
+import Sobre from '@/components/organism/Somos/Sobre'
 import { Helmet } from 'react-helmet-async'
 
 const TemplateQuienesSomos = () => {
@@ -31,6 +35,11 @@ const TemplateQuienesSomos = () => {
           description='Somos un proyecto que mira al futuro, desarrollando una minería sostenible y responsable con el entorno y de la mano con el progreso de la comunidad de Putaendo, San Felipe y la región.'
           list={false}
         />
+
+        <Sobre />
+        <Equipo />
+        <Documentos />
+        <Contacto />
       </main>
       <Footer />
     </>
