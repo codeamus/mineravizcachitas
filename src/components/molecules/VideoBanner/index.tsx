@@ -5,6 +5,7 @@ type VideoProps = {
   title: React.ReactNode
   description: string
   list?: boolean
+  poster?: string
 }
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import IconEconomico from '@/assets/icons/icon-economico.svg'
@@ -19,6 +20,7 @@ const VideoBanner = ({
   title,
   description,
   list,
+  poster,
 }: VideoProps) => {
   return (
     <section className='relative flex h-full w-full items-center justify-center lg:h-[100vh]'>
@@ -30,7 +32,7 @@ const VideoBanner = ({
           playsInline
           preload='metadata'
           className='h-[100vh] w-full object-cover brightness-50'
-          poster='/assets/images/backgrounds/bg-etapas.webp'
+          poster={poster}
           controls
         >
           <source src={videoMP4} type='video/mp4' />
