@@ -33,7 +33,6 @@ const VideoBanner = ({
           preload='metadata'
           className='h-[100vh] w-full object-cover brightness-50'
           poster={poster}
-          controls
         >
           <source src={videoMP4} type='video/mp4' />
           <source src={videoWEBM} type='video/webm' />
