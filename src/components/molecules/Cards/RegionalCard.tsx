@@ -7,7 +7,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const RegionalCard = ({ title, description, image }: Props) => {
   return (
-    <article className='article duration-400 relative w-full  max-w-[320px] transition-all hover:shadow-xl hover:shadow-zinc-700 [&_div]:hover:opacity-100 [&_picture_img]:hover:brightness-[0.40]'>
+    <article className='article duration-400 relative w-full max-w-[320px] transition-all hover:shadow-xl hover:shadow-zinc-700 [&_div]:hover:opacity-100 [&_picture_img]:hover:brightness-[0.40]'>
       <picture>
         <LazyLoadImage
           src={image}
