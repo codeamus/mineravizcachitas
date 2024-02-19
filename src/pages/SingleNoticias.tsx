@@ -1,9 +1,9 @@
-import TemplateSingleBlog from '@/components/templates/TemplateSingleBlog'
+import TemplateSingleNoticia from '@/components/templates/TemplateSingleNoticia'
 import { useParams } from 'react-router-dom'
 
 const SingleBlogPage = () => {
   const { slug } = useParams()
-  return <TemplateSingleBlog slug={slug} />
+  return <TemplateSingleNoticia slug={slug} />
 }
 
 export default SingleBlogPage

@@ -1,12 +1,20 @@
+interface MenuNavProps {
+  position?: string
+  bgColor?: string
+}
+
 import FBIcon from '@/assets/icons/icon-fb.svg'
 import InstaIcon from '@/assets/icons/icon-instagram.svg'
 import { MENU } from '@/const/menu'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
   return (
-    <header id='header-nav' className='absolute top-0 z-20 w-full px-10'>
+    <header
+      id='header-nav'
+      className={`${position} top-0 z-20 w-full ${bgColor && bgColor} px-10`}
+    >
       <div
         id='headerBox'
         className='mx-auto flex items-center justify-between gap-16 border-b border-none border-white lg:border-solid'

@@ -124,7 +124,7 @@ const Noticias = () => {
       </div>
       <div className='relative -bottom-6 flex justify-center'>
         <DefaultButton
-          url='/sostenibilidad'
+          url='/noticias'
           textFirst='Ver todas las noticias'
           backgroundColor='#03773A'
           hoverBackgroundColor='#E8732D'

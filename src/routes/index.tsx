@@ -5,8 +5,8 @@ const SostenibilidadPage = lazy(() => import('@/pages/Sostenibilidad'))
 const AporteRegionalPage = lazy(() => import('@/pages/AporteRegional'))
 const SomosPage = lazy(() => import('@/pages/Somos'))
 const FaqPage = lazy(() => import('@/pages/PreguntasFrecuentes'))
-const BlogPage = lazy(() => import('@/pages/Blog'))
-const SingleBlogPage = lazy(() => import('@/pages/SingleBlog'))
+const NoticiasPage = lazy(() => import('@/pages/Noticias'))
+const SingleNoticiasPage = lazy(() => import('@/pages/SingleNoticias'))
 const NotFoundPage = lazy(() => import('@/pages/NotFound'))
 
 // Sistema de rutas con sus componentes
@@ -32,12 +32,12 @@ const router = createBrowserRouter([
     element: <FaqPage />,
   },
   {
-    path: '/blog',
-    element: <BlogPage />,
+    path: '/noticias',
+    element: <NoticiasPage />,
   },
   {
-    path: 'blog/:slug',
-    element: <SingleBlogPage />,
+    path: 'noticias/:slug',
+    element: <SingleNoticiasPage />,
   },
   {
     path: '*',
