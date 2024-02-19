@@ -6,14 +6,14 @@ const PrincipalInfo = () => {
   return (
     <div className='flex flex-col lg:flex-row'>
       <BtnScrollDown section='preguntas' />
-      <div className='flex w-full flex-col items-center px-4 py-8 lg:w-1/2 lg:items-end'>
+      <div className='flex w-full flex-col items-center px-10 py-8 lg:w-1/2 lg:items-end lg:px-14'>
         <span className='mt-10 block w-fit bg-[#03773A] px-4 py-2 text-sm font-bold uppercase text-white'>
           Preguntas Frecuentes
         </span>
         <h2 className='my-6 text-center text-4xl font-bold text-black lg:text-balance lg:text-end lg:text-5xl'>
-          Queremos que los vecinos de Putaendo <br />
+          Queremos que los vecinos de Putaendo{' '}
+          <br className='hidden lg:block' />
           <span className='text-[#E8732D]'>
-            {' '}
             se mantengan <br className='hidden lg:block' />
             Informados
           </span>
