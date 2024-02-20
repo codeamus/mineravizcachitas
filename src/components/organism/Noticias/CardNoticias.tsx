@@ -7,7 +7,7 @@ interface CardProps {
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
-const CardNoticias = ({ title, image, slug, content }: CardProps) => {
+const CardBlog = ({ title, image, slug, content }: CardProps) => {
   return (
     <article>
       <picture>
@@ -44,4 +44,4 @@ const CardNoticias = ({ title, image, slug, content }: CardProps) => {
   )
 }
 
-export default CardNoticias
+export default CardBlog
