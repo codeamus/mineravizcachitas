@@ -6,7 +6,7 @@ interface MenuNavProps {
 import FBIcon from '@/assets/icons/icon-fb.svg'
 import InstaIcon from '@/assets/icons/icon-instagram.svg'
 import { MENU } from '@/const/menu'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
   return (
@@ -69,13 +69,17 @@ const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
           <ul className='flex w-full flex-col items-center justify-center gap-10 md:hidden md:flex-row lg:flex'>
             {MENU.map(({ title, path }, index) => (
               <li className='relative' key={index}>
-                <Link
-                  className='menuLink text-xs uppercase text-white after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[""] lg:after:block'
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "menuLink active text-xs uppercase text-white after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[''] lg:after:block"
+                      : "menuLink text-xs uppercase text-white after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:m-auto after:hidden after:h-[1px] after:w-[10px] after:bg-white after:content-[''] lg:after:block"
+                  }
                   to={path}
                   unstable_viewTransition
                 >
                   {title}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

@@ -8,40 +8,6 @@ html {
   background-color: #fff;
 }
 
-/* @keyframes blur {
-  to {
-    box-shadow:
-      0 5px 50px -5px #0000001a,
-      0 0 0 1px #000000dc;
-    background: #000000dc;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
-}
-
-@keyframes removeBorder {
-  0% {
-    border-bottom: 1px solid;
-  }
-  100% {
-    border: none;
-  }
-}
-
-#header-nav {
-  animation: blur linear both;
-  animation-timeline: scroll();
-  animation-range: 0 500px;
-}
-
-@media (min-width: 991px) {
-  #header-nav #headerBox {
-    animation: removeBorder linear both;
-    animation-timeline: scroll();
-    animation-range: 0 10px;
-  }
-} */
-
 @keyframes fullWidth {
   0% {
     width: 10px;
@@ -58,6 +24,15 @@ html {
 
 .menuLink:hover::after {
   animation-name: fullWidth;
+}
+
+.menuLink.active {
+  color: #e8732d;
+  font-weight: bold;
+}
+
+.menuLink.active::after {
+  background-color: #e8732d;
 }
 
 /* ACTIVE CLASS FOR TABS */
