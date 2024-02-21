@@ -41,7 +41,7 @@ const AporteRegional = () => {
       <div className='mt-10 flex w-full items-center justify-center'>
         <hr className='w-full border-[#03773A]' />
         <DefaultButton
-          url='/sostenibilidad'
+          url='/aporte-regional'
           textFirst='Ver todos los'
           textSecond='Aportes regionales'
           backgroundColor='#03773A'

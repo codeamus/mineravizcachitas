@@ -15,7 +15,7 @@ const PreguntasFrecuentes = () => {
           <span className='text-[#03773A]'>comunidad Informada</span>
         </h2>
         <Link
-          to='sostenibilidad'
+          to='preguntas-frecuentes'
           unstable_viewTransition
           className='mt-10 flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
         >
