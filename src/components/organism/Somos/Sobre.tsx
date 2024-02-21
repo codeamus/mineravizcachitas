@@ -100,7 +100,7 @@ const Sobre = () => {
       <div className='mt-10 flex w-full items-center justify-center px-10'>
         <hr className='w-full border-[#E8732C]' />
         <Link
-          to='sostenibilidad'
+          to='/sostenibilidad'
           unstable_viewTransition
           className='z-10 flex w-fit min-w-[265px] flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
         >
