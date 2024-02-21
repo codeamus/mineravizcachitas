@@ -6,6 +6,7 @@ import Navbar from '@/components/organism/MenuNav'
 import PrincipalInfo from '@/components/organism/PreguntasFrecuentes/PrincipalInfo'
 import TodasPreguntas from '@/components/organism/PreguntasFrecuentes/TodasPreguntas'
 import { Helmet } from 'react-helmet-async'
+import ScrollToTop from '../molecules/ScrollTop'
 
 const TemplatePreguntasFrecuentes = () => {
   return (
@@ -19,6 +20,7 @@ const TemplatePreguntasFrecuentes = () => {
           content='Encuentra respuestas a tus preguntas sobre Minera Vizcachitas, desde nuestros procesos mineros hasta nuestras iniciativas de sostenibilidad y más.'
         />
       </Helmet>
+      <ScrollToTop />
       <Navbar />
       <main>
         <VideoBanner

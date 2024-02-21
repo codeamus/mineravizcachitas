@@ -7,6 +7,7 @@ import Beneficios from '@/components/organism/Aporte/Beneficios'
 import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
 import { Helmet } from 'react-helmet-async'
+import ScrollToTop from '../molecules/ScrollTop'
 
 const TemplateAporteRegional = () => {
   return (
@@ -20,6 +21,7 @@ const TemplateAporteRegional = () => {
           content='Descubre el impacto positivo de Minera Vizcachitas en la región, fomentando el desarrollo local a través de empleo, educación y proyectos comunitarios.'
         />
       </Helmet>
+      <ScrollToTop />
       <Navbar />
       <main>
         <VideoBanner

@@ -5,6 +5,7 @@ import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
 import Info from '@/components/organism/Sostenibilidad/Info'
 import { Helmet } from 'react-helmet-async'
+import ScrollToTop from '@/components/molecules/ScrollTop'
 
 const TemplateSostenibilidad = () => {
   return (
@@ -18,6 +19,7 @@ const TemplateSostenibilidad = () => {
           content='Explora cómo Minera Vizcachitas se compromete con la sostenibilidad ambiental, social y económica en cada etapa de nuestra operación minera.'
         />
       </Helmet>
+      <ScrollToTop />
       <Navbar />
       <main>
         <VideoBanner

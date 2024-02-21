@@ -6,7 +6,6 @@ interface MenuNavProps {
 import FBIcon from '@/assets/icons/icon-fb.svg'
 import InstaIcon from '@/assets/icons/icon-instagram.svg'
 import { MENU } from '@/const/menu'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
@@ -46,7 +45,7 @@ const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
           unstable_viewTransition
           aria-label='Logo de Minera Vizcachitas que lleva a la home'
         >
-          <LazyLoadImage
+          <img
             className='size-24 transition-all hover:scale-110'
             src='/assets/logos/logo.svg'
             alt='Logo de Minera Vizcachitas'
@@ -88,7 +87,7 @@ const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
             rel='noopener noreferrer'
             aria-label='Link que te dirige al perfil de Instagram de Minera Vizcachitas'
           >
-            <LazyLoadImage
+            <img
               className='size-8 sepia-0 transition-all hover:scale-125 hover:sepia'
               src={InstaIcon}
               alt='Icono de Instagram'
@@ -100,7 +99,7 @@ const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
             rel='noopener noreferrer'
             aria-label='Link que te dirige al perfil de Facebook de Minera Vizcachitas'
           >
-            <LazyLoadImage
+            <img
               className='size-8 sepia-0 transition-all hover:scale-125 hover:sepia'
               src={FBIcon}
               alt='Icono de Facebook'

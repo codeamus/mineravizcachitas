@@ -4,6 +4,7 @@ import Navbar from '@/components/organism/MenuNav'
 import CardBlog from '@/components/organism/Noticias/CardNoticias'
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
+import ScrollToTop from '../molecules/ScrollTop'
 const TemplateNoticias = () => {
   const [news, setNews] = useState([])
   useEffect(() => {
@@ -25,9 +26,10 @@ const TemplateNoticias = () => {
           content='Sumérgete en nuestro blog para explorar artículos y noticias sobre la minería sostenible, innovaciones en el sector y el impacto positivo de Minera Vizcachitas.'
         />
       </Helmet>
+      <ScrollToTop />
       <Navbar position='relative' bgColor='bg-[#03773A]' />
       <main>
-        <section className='bg-[#F0EFEF] p-20'>
+        <section className='bg-[#F0EFEF] p-10 lg:p-20'>
           <h1 className='mb-10 text-center text-4xl font-bold text-black'>
             Proyecto Vizcachitas{' '}
             <span className='text-[#E8732C]'>Noticias</span>

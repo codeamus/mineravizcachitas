@@ -14,6 +14,7 @@ import Navbar from '@/components/organism/MenuNav'
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import CardBlog from '@/components/organism/Noticias/CardNoticias'
+import ScrollToTop from '../molecules/ScrollTop'
 
 const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
   const [newBySlug, setNewBySlug] = useState<New>()
@@ -51,6 +52,7 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
             content={`Descubre en nuestra última publicación: ${newBySlug?.title.rendered}. Profundizamos en cómo Minera Vizcachitas promueve la sostenibilidad y la innovación en la minería.`}
           />
         </Helmet>
+        <ScrollToTop />
         <Navbar position='relative' bgColor='bg-[#03773A]' />
         <main>
           <section className='bg-[#F0EFEF] px-10 pt-20 lg:px-20'>

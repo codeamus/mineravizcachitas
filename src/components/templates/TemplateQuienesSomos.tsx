@@ -8,6 +8,7 @@ import Documentos from '@/components/organism/Somos/Documentos'
 import Equipo from '@/components/organism/Somos/Equipo'
 import Sobre from '@/components/organism/Somos/Sobre'
 import { Helmet } from 'react-helmet-async'
+import ScrollToTop from '../molecules/ScrollTop'
 
 const TemplateQuienesSomos = () => {
   return (
@@ -19,6 +20,7 @@ const TemplateQuienesSomos = () => {
           content='Aprende más sobre Minera Vizcachitas, una compañía que lidera con el ejemplo en la minería sostenible, comprometida con la innovación y la responsabilidad social.'
         />
       </Helmet>
+      <ScrollToTop />
       <Navbar />
       <main>
         <VideoBanner

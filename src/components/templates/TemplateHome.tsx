@@ -10,6 +10,7 @@ import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
 import Navbar from '@/components/organism/MenuNav'
 import { Helmet } from 'react-helmet-async'
+import ScrollToTop from '@/components/molecules/ScrollTop'
 
 const TemplateHome = () => {
   return (
@@ -23,6 +24,7 @@ const TemplateHome = () => {
           content='Descubre cómo Minera Vizcachitas lidera la innovación en la minería con prácticas responsables y sostenibles para un futuro mejor. Únete a nuestra misión.'
         />
       </Helmet>
+      <ScrollToTop />
       <Navbar />
       <main>
         <VideoBanner
