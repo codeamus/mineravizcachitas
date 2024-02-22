@@ -34,7 +34,7 @@ const TemplateHome = () => {
           poster='/assets/images/posters/poster-video-home-desktop.webp'
           bgMobile='/assets/images/posters/poster-video-home-mobile.webp'
           title={
-            <h1 className='text-center text-5xl font-bold text-white lg:text-balance lg:text-6xl'>
+            <h1 className='w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl'>
               Proyecto
               <span className='text-[#E8732D]'> Vizcachitas</span>
             </h1>

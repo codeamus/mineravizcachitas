@@ -31,7 +31,7 @@ const TemplateNoticias = () => {
       <Navbar position='relative' bgColor='bg-[#03773A]' />
       <main>
         <section className='bg-[#F0EFEF] p-10 lg:p-20'>
-          <h1 className='mb-10 text-center text-4xl font-bold text-black'>
+          <h1 className='text-center text-5xl font-bold text-white lg:text-balance lg:text-end lg:text-6xl'>
             Proyecto Vizcachitas{' '}
             <span className='text-[#E8732C]'>Noticias</span>
           </h1>
