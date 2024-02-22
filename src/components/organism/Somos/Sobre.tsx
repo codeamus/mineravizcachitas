@@ -59,15 +59,15 @@ const Sobre = () => {
           </p>
         </div>
       </div>
-      <section className='mx-10 mt-20 flex flex-col justify-center gap-20 lg:mx-60 lg:flex-row'>
+      <section className='mx-10 mt-10 flex flex-col justify-center gap-10 lg:mx-60 lg:mt-20 lg:flex-row lg:gap-20'>
         <div className='w-full lg:w-1/2'>
           <div className='mb-4 flex flex-row items-center gap-4 border-b border-[#009145] pt-4'>
             <LazyLoadImage
               src={IconAmbiental}
               alt='Icono de responsabilidad ambiental'
-              className='size-16'
+              className='hidden size-16 lg:block'
             />
-            <h2 className='border-l border-[#009145] pl-4 text-2xl  font-bold uppercase leading-10 text-black'>
+            <h2 className='border-[#009145] text-2xl font-bold uppercase  leading-10 text-black lg:border-l lg:pl-4'>
               Responsabilidad <br /> Ambiental
             </h2>
           </div>
@@ -83,9 +83,9 @@ const Sobre = () => {
             <LazyLoadImage
               src={IconSocial}
               alt='Icono de responsabilidad social'
-              className='size-16'
+              className='hidden size-16 lg:block'
             />
-            <h2 className='border-l border-[#009145] pl-4 text-2xl  font-bold uppercase leading-10 text-black'>
+            <h2 className='border-[#009145] text-2xl font-bold uppercase  leading-10 text-black lg:border-l lg:pl-4'>
               Responsabilidad <br /> Social
             </h2>
           </div>

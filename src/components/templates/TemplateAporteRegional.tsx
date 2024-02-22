@@ -50,11 +50,11 @@ const TemplateAporteRegional = () => {
           </h2>
           <div className='mt-8 flex max-w-2xl items-center justify-center border-t border-[#009145]'>
             <img
-              className='size-36 p-6'
+              className='hidden size-36 p-6 lg:block'
               src={IconAporte}
               alt='Icono para aporte regional'
             />
-            <p className='text-md text-pretty border-l border-[#009145] p-6 text-black'>
+            <p className='text-md text-pretty border-[#009145] p-6 text-black lg:border-l'>
               El proyecto Vizcachitas generará un aumento de más del 3% en el
               PIB de la Región de Valparaíso, crecimiento que, además, será
               sostenible y con capacidad de generar prosperidad y oportunidades
