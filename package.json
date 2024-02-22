@@ -11,6 +11,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@fontsource-variable/montserrat": "^5.0.17",
     "@radix-ui/react-tabs": "^1.0.4",
     "localforage": "1.10.0",
     "match-sorter": "6.3.1",

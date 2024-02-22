@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Variable', sans-serif;
   scroll-behavior: smooth;
   background-color: #fff;
 }
