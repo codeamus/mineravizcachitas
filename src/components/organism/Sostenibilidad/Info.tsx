@@ -16,7 +16,7 @@ const Info = () => {
           <span className='w-fit bg-[#03773A] px-12 py-2 text-center text-sm font-bold uppercase text-white'>
             Pilares Sostenibles
           </span>
-          <h2 className='mt-4 whitespace-nowrap text-4xl font-bold uppercase text-black'>
+          <h2 className='mt-4 whitespace-nowrap text-3xl font-bold uppercase text-black lg:text-4xl'>
             ¿Por qué es <br /> un proyecto <br /> sostenible?
           </h2>
         </div>
