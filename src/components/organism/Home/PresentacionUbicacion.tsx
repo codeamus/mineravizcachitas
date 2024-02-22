@@ -2,7 +2,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import Image from '@/assets/images/presentacion-home-poster.webp'
-import Ubicacion from '@/assets/images/ubicacion.webp'
 
 const PresentacionUbicacion = () => {
   return (
