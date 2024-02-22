@@ -3,16 +3,7 @@ import * as Tabs from '@radix-ui/react-tabs'
 
 const Beneficios = () => {
   return (
-    <div
-      className='relative min-h-[770px] bg-cover bg-no-repeat px-4 pb-10 pt-20 lg:min-h-0 lg:bg-fixed xl:px-20'
-      style={{
-        backgroundImage: `${
-          window.innerWidth < 768
-            ? 'url(/assets/images/backgrounds/bg-etapas-mobile.webp)'
-            : 'url(/assets/images/backgrounds/bg-etapas.webp)'
-        }`,
-      }}
-    >
+    <div className='relative min-h-[770px] bg-[url(/assets/images/backgrounds/bg-beneficios-locales.webp)] bg-cover bg-no-repeat px-4 pb-10 pt-20 lg:min-h-0 lg:bg-fixed xl:px-20'>
       <h2 className='text-center text-4xl uppercase text-white'>
         Beneficios Locales
       </h2>

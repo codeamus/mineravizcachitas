@@ -37,8 +37,8 @@ html {
 
 /* ACTIVE CLASS FOR TABS */
 .tab[data-state='active'] span {
-  color: #e8732d;
-  border-color: #e8732d;
+  color: #fff;
+  background-color: #e8732d;
 }
 
 .tab[data-state='active'] img {
