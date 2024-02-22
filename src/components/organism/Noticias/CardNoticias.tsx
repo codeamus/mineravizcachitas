@@ -22,7 +22,7 @@ const CardBlog = ({ title, image, slug, content }: CardProps) => {
           {title}
         </h2>
         <span className='my-2 block w-full text-center text-xs font-bold text-[#E8732C]'>
-          Joan Doe-Smith • Mar 15, 2022 • 10 min read
+          Mar 15, 2022
         </span>
       </div>
       <div className='flex flex-col items-center'>

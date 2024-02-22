@@ -49,7 +49,7 @@ const Noticias = () => {
                     {noticia.title.rendered}
                   </h3>
                   <span className='block w-full text-center text-xs text-[#676767]'>
-                    Lorem ipsum dolor sit - 10 diciembre 2023
+                    10 diciembre 2023
                   </span>
                   <hr className='my-4 border-t-2 border-black' />
                   <p className='text-balance text-center text-sm text-black'>

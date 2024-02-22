@@ -73,7 +73,7 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
                   {newBySlug?.title.rendered}
                 </h1>
                 <span className='my-4 mb-10 block text-xs font-bold text-black'>
-                  Joan Doe-Smith • Mar 15, 2022 • 10 min read
+                  Mar 15, 2022
                 </span>
                 <div className='border-t border-[#E8732C] pt-6'>
                   <p className='text-balance text-sm leading-relaxed text-black'>
