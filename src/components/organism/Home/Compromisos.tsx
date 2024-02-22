@@ -33,7 +33,7 @@ const Compromisos = () => {
                 alt='Icono de responsabilidad ambiental'
                 className='size-16'
               />
-              <h2 className='border-l border-white pl-4 text-2xl  font-bold uppercase leading-10 text-white'>
+              <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
                 Responsabilidad <br /> Ambiental
               </h2>
             </div>
@@ -60,7 +60,7 @@ const Compromisos = () => {
                 alt='Icono de responsabilidad social'
                 className='size-16'
               />
-              <h2 className='border-l border-white pl-4 text-2xl  font-bold uppercase leading-10 text-white'>
+              <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
                 Responsabilidad <br /> Social
               </h2>
             </div>

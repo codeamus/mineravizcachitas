@@ -10,7 +10,7 @@ const AporteRegional = () => {
     <section className='mt-20 bg-white p-4 md:p-8'>
       <div className='flex flex-row items-center justify-center'>
         <hr className='w-full border-[#8B8B8B]' />
-        <h2 className='w-fit whitespace-nowrap px-4 text-center text-4xl font-bold uppercase text-[#8B8B8B]'>
+        <h2 className='w-fit whitespace-nowrap px-4 text-center text-3xl font-bold uppercase text-[#8B8B8B] lg:text-4xl'>
           Aporte Regional
         </h2>
         <hr className='w-full border-[#8B8B8B]' />

@@ -13,7 +13,7 @@ const PresentacionUbicacion = () => {
             Presentación y ubicación
           </span>
           <div className='ml-0 mr-0 mt-6 flex max-w-full flex-col items-center border-none px-4 pb-4 pt-4 lg:ml-auto lg:mr-6 lg:items-end lg:border-r lg:border-solid lg:border-[#009145] lg:px-0'>
-            <h2 className='pr-4 text-center text-4xl font-bold text-black lg:text-end'>
+            <h2 className='text-center text-3xl font-bold text-black lg:pr-4 lg:text-end lg:text-4xl'>
               ¿Qué es proyecto <br />
               Vizcachitas?
             </h2>
@@ -47,7 +47,7 @@ const PresentacionUbicacion = () => {
         ></iframe>
         <div className='flex w-full flex-col justify-center lg:w-1/2'>
           <div className='ml-6 mr-0 mt-6 max-w-full border-none pb-4 pr-4 lg:max-w-xl lg:border-l lg:border-solid lg:border-[#009145]'>
-            <h2 className='pl-4 text-center text-4xl font-bold text-black lg:text-start'>
+            <h2 className='text-center text-3xl font-bold text-black lg:pl-4 lg:text-start lg:text-4xl'>
               ¿Dónde estamos?
             </h2>
             <hr className='my-4 w-full border-[#009145]' />

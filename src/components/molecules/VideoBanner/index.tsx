@@ -45,7 +45,7 @@ const VideoBanner = ({
           }`,
         }}
       >
-        <div className='mb-20 flex flex-col items-center gap-10 lg:mb-0 lg:flex-row lg:gap-20'>
+        <div className='mb-0 flex flex-col items-center gap-10 lg:mb-0 lg:flex-row lg:gap-20'>
           {title}
           <div className='w-full lg:w-1/2'>
             <p className=' my-4 text-pretty border-b border-t border-[#E8732D] py-4 text-center text-sm leading-normal text-white lg:my-0 lg:text-start lg:text-lg lg:leading-10'>
@@ -54,7 +54,7 @@ const VideoBanner = ({
           </div>
         </div>
         {list && (
-          <ul className='grid grid-cols-2 place-content-between gap-0 pt-20 md:grid-cols-4 md:gap-20'>
+          <ul className='grid grid-cols-2 place-content-between gap-0 pt-6 md:grid-cols-4 md:gap-20 lg:pt-20'>
             <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
               <img
                 className='size-16'
