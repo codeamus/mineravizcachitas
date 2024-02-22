@@ -11,6 +11,7 @@ import IconEmpleo from '@/assets/icons/icon-empleo.svg'
 import IconVida from '@/assets/icons/icon-vida.svg'
 import IconConectividad from '@/assets/icons/icon-conectividad.svg'
 import IconAmbiente from '@/assets/icons/icon-ambiente-etapas.svg'
+import IconSalud from '@/assets/icons/icon-salud.svg'
 import IconEducacion from '@/assets/icons/icon-educacion.svg'
 
 const BENEFICIOS_LOCALES: BENEFICIO[] = [
@@ -62,7 +63,7 @@ const BENEFICIOS_LOCALES: BENEFICIO[] = [
     titleContent: 'Lorem ipsum',
     titleContentStrong: 'lorem',
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur amet deserunt quia molestiae voluptates inventore tempora nulla sunt mollitia aut ad fugit vel accusantium fugiat earum ullam, iure nesciunt.`,
-    icon: IconEducacion,
+    icon: IconSalud,
   },
   {
     titleTab: 'Educación',
