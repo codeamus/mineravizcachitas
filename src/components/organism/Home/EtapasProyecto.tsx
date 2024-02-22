@@ -7,7 +7,7 @@ const EtapasProyecto = () => {
   return (
     <section
       id='etapas'
-      className='relative min-h-[770px] bg-cover bg-no-repeat px-4 pb-10 pt-20 lg:min-h-0 lg:bg-fixed xl:px-20'
+      className='relative min-h-[800px] bg-cover bg-no-repeat px-4 py-10 lg:min-h-0 lg:bg-fixed lg:py-20 xl:px-20'
       style={{
         backgroundImage: `${
           window.innerWidth < 768
@@ -20,9 +20,9 @@ const EtapasProyecto = () => {
       <h2 className='text-center text-4xl font-bold text-white'>
         Etapas del proyecto
       </h2>
-      <div className='mt-14 flex items-center justify-center'>
+      <div className='mt-8 flex items-center justify-center lg:mt-14'>
         <Tabs.Root defaultValue='tab0'>
-          <div className='mb-10'>
+          <div className='lg:mb-10'>
             <Tabs.List
               className='flex justify-center gap-2 pb-2 '
               aria-label='Etapas del proyecto'
