@@ -78,7 +78,7 @@ const Compromisos = () => {
         reverse={false}
         ambiental={true}
         title={
-          <h3 className='mb-4 max-w-sm text-center text-5xl font-bold lg:text-end'>
+          <h3 className='mb-4 max-w-sm text-center text-4xl font-bold lg:text-end lg:text-5xl'>
             Nuestros{' '}
             <span className='text-[#E8732C]'>compromisos ambientales</span>
           </h3>
@@ -88,7 +88,7 @@ const Compromisos = () => {
         reverse={true}
         ambiental={false}
         title={
-          <h3 className='mb-4 max-w-sm text-start text-5xl font-bold'>
+          <h3 className='mb-4 max-w-sm text-center text-4xl font-bold lg:text-start lg:text-5xl'>
             Nuestros{' '}
             <span className='text-[#E8732C]'>compromisos sociales</span>
           </h3>
