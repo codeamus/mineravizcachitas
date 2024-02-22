@@ -11,6 +11,7 @@ import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicac
 import Navbar from '@/components/organism/MenuNav'
 import { Helmet } from 'react-helmet-async'
 import ScrollToTop from '@/components/molecules/ScrollTop'
+import BackToTop from '../molecules/BackToTop'
 
 const TemplateHome = () => {
   return (
@@ -50,6 +51,7 @@ const TemplateHome = () => {
         <PreguntasFrecuentes />
         <EtapasProyecto />
         <Noticias />
+        <BackToTop />
       </main>
       <Footer />
     </>
