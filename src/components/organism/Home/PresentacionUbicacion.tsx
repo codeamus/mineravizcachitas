@@ -40,7 +40,7 @@ const PresentacionUbicacion = () => {
       <div className='flex flex-col-reverse bg-white lg:flex-row'>
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6737.0249707555295!2d-70.4233315!3d-32.4054278!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDI0JzE4LjkiUyA3MMKwMjUnMTguNyJX!5e0!3m2!1ses!2scl!4v1708611227774!5m2!1ses!2scl'
-          className='h-[560px] w-1/2'
+          className='h-[300px] w-full lg:h-[560px] lg:w-1/2'
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
         ></iframe>
