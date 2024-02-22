@@ -43,6 +43,7 @@ const PresentacionUbicacion = () => {
           className='h-[300px] w-full lg:h-[560px] lg:w-1/2'
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
+          title='Iframe de Google Maps de la ubicación de Vizcachitas'
         ></iframe>
         <div className='flex w-full flex-col justify-center lg:w-1/2'>
           <div className='ml-6 mr-0 mt-6 max-w-full border-none pb-4 pr-4 lg:max-w-xl lg:border-l lg:border-solid lg:border-[#009145]'>
