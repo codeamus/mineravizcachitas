@@ -38,7 +38,7 @@ const EtapasProyecto = () => {
                     className='size-12 transition-all duration-500 lg:size-16'
                     alt={`Icono relacionado a la etapa ${titleTab}`}
                   />
-                  <span className='mt-3 hidden border-b border-t border-white py-2 text-white transition-all duration-500 ease-in-out lg:block'>
+                  <span className='mt-3 hidden border-b border-t border-white p-2 text-white transition-all duration-500 ease-in-out lg:block'>
                     {titleTab}
                   </span>
                 </Tabs.Trigger>

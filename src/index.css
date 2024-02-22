@@ -39,6 +39,7 @@ html {
 .tab[data-state='active'] span {
   color: #fff;
   background-color: #e8732d;
+  border-block: 1px solid #e8732d;
 }
 
 .tab[data-state='active'] img {
