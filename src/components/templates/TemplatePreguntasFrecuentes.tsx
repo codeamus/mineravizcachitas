@@ -1,12 +1,13 @@
 import VideoMP4 from '@/assets/videos/preguntas.mp4'
 import VideoWebm from '@/assets/videos/preguntas.webm'
+import BackToTop from '@/components/molecules/BackToTop'
+import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'
 import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
 import PrincipalInfo from '@/components/organism/PreguntasFrecuentes/PrincipalInfo'
 import TodasPreguntas from '@/components/organism/PreguntasFrecuentes/TodasPreguntas'
 import { Helmet } from 'react-helmet-async'
-import ScrollToTop from '../molecules/ScrollTop'
 
 const TemplatePreguntasFrecuentes = () => {
   return (
@@ -45,6 +46,7 @@ permanentes con la comunidad.'
           <PrincipalInfo />
           <TodasPreguntas />
         </section>
+        <BackToTop />
       </main>
       <Footer />
     </>

@@ -1,5 +1,7 @@
 import VideoMP4 from '@/assets/videos/home.mp4'
 import VideoWebm from '@/assets/videos/home.webm'
+import BackToTop from '@/components/molecules/BackToTop'
+import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'
 import Footer from '@/components/organism/Footer'
 import AporteRegional from '@/components/organism/Home/AporteRegional'
@@ -10,8 +12,6 @@ import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
 import Navbar from '@/components/organism/MenuNav'
 import { Helmet } from 'react-helmet-async'
-import ScrollToTop from '@/components/molecules/ScrollTop'
-import BackToTop from '../molecules/BackToTop'
 
 const TemplateHome = () => {
   return (

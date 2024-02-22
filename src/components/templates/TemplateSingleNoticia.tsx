@@ -14,7 +14,8 @@ import Navbar from '@/components/organism/MenuNav'
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import CardBlog from '@/components/organism/Noticias/CardNoticias'
-import ScrollToTop from '../molecules/ScrollTop'
+import ScrollToTop from '@/components/molecules/ScrollTop'
+import BackToTop from '@/components/molecules/BackToTop'
 
 const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
   const [newBySlug, setNewBySlug] = useState<New>()
@@ -121,6 +122,7 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
                 )}
             </div>
           </section>
+          <BackToTop />
         </main>
         <Footer />
       </>

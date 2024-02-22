@@ -4,7 +4,8 @@ import Navbar from '@/components/organism/MenuNav'
 import CardBlog from '@/components/organism/Noticias/CardNoticias'
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
-import ScrollToTop from '../molecules/ScrollTop'
+import ScrollToTop from '@/components/molecules/ScrollTop'
+import BackToTop from '@/components/molecules/BackToTop'
 const TemplateNoticias = () => {
   const [news, setNews] = useState([])
   useEffect(() => {
@@ -54,6 +55,7 @@ const TemplateNoticias = () => {
               )}
           </div>
         </section>
+        <BackToTop />
       </main>
       <Footer />
     </>

@@ -8,7 +8,8 @@ import Documentos from '@/components/organism/Somos/Documentos'
 import Equipo from '@/components/organism/Somos/Equipo'
 import Sobre from '@/components/organism/Somos/Sobre'
 import { Helmet } from 'react-helmet-async'
-import ScrollToTop from '../molecules/ScrollTop'
+import ScrollToTop from '@/components/molecules/ScrollTop'
+import BackToTop from '@/components/molecules/BackToTop'
 
 const TemplateQuienesSomos = () => {
   return (
@@ -42,6 +43,7 @@ const TemplateQuienesSomos = () => {
         <Equipo />
         <Documentos />
         <Contacto />
+        <BackToTop />
       </main>
       <Footer />
     </>

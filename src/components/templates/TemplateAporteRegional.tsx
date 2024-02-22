@@ -1,13 +1,14 @@
 import IconAporte from '@/assets/icons/icon-aporte.svg'
 import VideoMP4 from '@/assets/videos/aporte.mp4'
 import VideoWebm from '@/assets/videos/aporte.webm'
+import BackToTop from '@/components/molecules/BackToTop'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
+import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'
 import Beneficios from '@/components/organism/Aporte/Beneficios'
 import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
 import { Helmet } from 'react-helmet-async'
-import ScrollToTop from '../molecules/ScrollTop'
 
 const TemplateAporteRegional = () => {
   return (
@@ -64,6 +65,7 @@ const TemplateAporteRegional = () => {
         <section>
           <Beneficios />
         </section>
+        <BackToTop />
       </main>
       <Footer />
     </>
