@@ -5,7 +5,7 @@ interface TemplateSingleBlogProps {
 type New = {
   title: { rendered: string }
   content: { rendered: string }
-  acf: { image: string }
+  acf: { image: string; video: string }
 }
 
 import { getAllNews, getNewBySlug } from '@/api'
@@ -58,13 +58,23 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
         <main>
           <section className='bg-[#F0EFEF] px-10 pt-20 lg:px-20'>
             <div className='flex flex-col-reverse gap-10 border-b border-[#03773A] pb-20 lg:flex-row'>
-              <picture className=' w-full lg:w-1/2'>
-                <img
-                  className='aspect-square w-full object-cover object-center'
-                  src={newBySlug?.acf.image}
-                  alt={`Imagen referencial para la noticia ${newBySlug?.title.rendered}`}
-                />
-              </picture>
+              {newBySlug?.acf.video ? (
+                <iframe
+                  className='h-[300px] w-full lg:h-[560px] lg:w-1/2'
+                  src={newBySlug?.acf.video}
+                  title='YouTube video noticia'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <picture className=' w-full lg:w-1/2'>
+                  <img
+                    className='aspect-square w-full object-cover object-center'
+                    src={newBySlug?.acf.image}
+                    alt={`Imagen referencial para la noticia ${newBySlug?.title.rendered}`}
+                  />
+                </picture>
+              )}
               <div className='h-fit w-full lg:w-1/2'>
                 <span className='mb-6 block w-fit bg-[#E8732C] px-4 py-2 text-sm font-bold uppercase text-white'>
                   Destacada
