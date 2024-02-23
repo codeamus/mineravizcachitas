@@ -33,12 +33,12 @@ const PreguntasFrecuentes = () => {
         </Link>
       </div>
       <div className='flex w-full flex-col'>
-        <h3 className='text-lg font-bold uppercase text-[#03773A]'>
+        <h3 className='mb-4 text-lg font-bold uppercase text-[#03773A]'>
           Preguntas Frecuentes
         </h3>
         <div>
           {FAQS_HOME.map(({ title, content }, index) => (
-            <details className='group mt-4' key={index}>
+            <details className='group mb-4' key={index}>
               <summary className='flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3'>
                 <span className='text-sm font-bold text-black'>{title}</span>
                 <span className='transition group-open:rotate-180'>
