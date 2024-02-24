@@ -16,13 +16,13 @@ const Beneficios = () => {
             >
               {BENEFICIOS_LOCALES.map(({ titleTab, icon }, index) => (
                 <Tabs.Trigger
-                  className='tab h-full w-full flex-col text-white focus:outline-[0px] focus:outline-offset-0 lg:flex lg:leading-[15px]'
+                  className='tab w-full max-w-2xl flex h-full items-center justify-between flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0'
                   value={`tab${index}`}
                   key={index}
                 >
                   <img
                     src={icon}
-                    className='scale-[1.8] transition-all duration-500 lg:size-16 lg:scale-100'
+                    className='size-8 transition-all duration-500 lg:size-16'
                     alt={`Icono relacionado a la etapa ${titleTab}`}
                   />
                   <span className='mt-3 hidden border-b border-t border-white p-2 text-white transition-all duration-500 ease-in-out lg:block'>
