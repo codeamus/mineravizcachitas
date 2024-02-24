@@ -39,13 +39,14 @@ const PresentacionUbicacion = () => {
         </picture>
       </div>
       <div className='flex flex-col-reverse bg-white lg:flex-row'>
-        <picture className='w-full lg:w-1/2'>
-          <LazyLoadImage
-          className='aspect-[4/3] object-cover'
-            src={Image}
-            alt='Imagen de presentación proyecto Vizcachitas'
-          />
-        </picture>
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d8526.547228612466!2d-70.4233315!3d-32.4054278!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDI0JzE4LjkiUyA3MMKwMjUnMTguNyJX!5e1!3m2!1ses!2scl!4v1708614173019!5m2!1ses!2scl'
+          className='h-[300px] w-full lg:h-[560px] lg:w-1/2 aspect-[4/3] object-cover'
+          loading='lazy'
+          referrerPolicy='no-referrer-when-downgrade'
+          title='Iframe de Google Maps de la ubicación de Vizcachitas'
+          rel="dns-prefetch"
+        ></iframe>
         <div className='flex w-full flex-col justify-center lg:w-1/2'>
           <div className='ml-6 mr-0 mt-6 max-w-full border-none pb-4 pr-4 lg:max-w-xl lg:border-l lg:border-solid lg:border-[#009145]'>
             <h2 className='text-center text-3xl font-bold text-black lg:pl-4 lg:text-start lg:text-4xl'>
