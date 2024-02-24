@@ -11,7 +11,7 @@ const RegionalCard = ({ title, description, image }: Props) => {
       <picture>
         <LazyLoadImage
           src={image}
-          className='duration-400 aspect-[3/4] brightness-[0.30] transition-all lg:brightness-100'
+          className='duration-400 aspect-[140/187] brightness-[0.30] transition-all lg:brightness-100'
           alt={`Imagen representativa de ${title}`}
         />
       </picture>

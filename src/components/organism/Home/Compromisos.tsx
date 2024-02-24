@@ -23,7 +23,7 @@ const Compromisos = () => {
             <LazyLoadImage
               src={ImageAmbiental}
               alt='Imagen representativa de Responsabilidad Ambiental'
-              className='aspect-[3/2]'
+              className='aspect-[4/3] object-cover'
             />
           </picture>
           <div>
@@ -50,7 +50,7 @@ const Compromisos = () => {
             <LazyLoadImage
               src={ImageResponsabilidad}
               alt='Imagen que representa la Responsabilidad Social'
-              className='aspect-[3/2]'
+              className='aspect-[4/3] object-cover'
             />
           </picture>
           <div>

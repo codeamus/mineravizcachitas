@@ -64,7 +64,7 @@ const EtapasProyecto = () => {
                     </p>
                   </div>
                   <img
-                    className='hidden size-[550px] xl:block'
+                    className='hidden size-[550px] xl:block aspect-[661/606] object-cover'
                     src={ImageEtapas}
                     alt='Imagen de la sección etapas'
                   />
