@@ -92,7 +92,7 @@ const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
             aria-label='Link que te dirige al perfil de Instagram de Minera Vizcachitas'
           >
             <img
-              className='size-8 h-[24px] sepia-0 transition-all hover:scale-125 hover:sepia'
+              className='w-8 sepia-0 transition-all hover:scale-125 hover:sepia'
               src={InstaIcon}
               alt='Icono de Instagram'
             />
@@ -104,7 +104,7 @@ const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
             aria-label='Link que te dirige al perfil de Facebook de Minera Vizcachitas'
           >
             <img
-              className='size-8 h-[24px] sepia-0 transition-all hover:scale-125 hover:sepia'
+              className='w-8 sepia-0 transition-all hover:scale-125 hover:sepia'
               src={FBIcon}
               alt='Icono de Facebook'
             />
