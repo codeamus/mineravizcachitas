@@ -6,10 +6,7 @@ export default {
     extend: {},
   },
   darkMode: 'class',
-  // eslint-disable-next-line no-undef
   plugins: [
-    // eslint-disable-next-line no-undef
-    require('daisyui'),
     ({ addComponents }) => {
       addComponents({
         '.cp-v': {
@@ -18,7 +15,4 @@ export default {
       })
     },
   ],
-  daisyui: {
-    base: false,
-  },
 }
