@@ -7,7 +7,7 @@ const EtapasProyecto = () => {
   return (
     <section
       id='etapas'
-      className='relative min-h-[800px] bg-cover bg-no-repeat px-4 py-10 lg:min-h-0 lg:bg-fixed lg:py-20 xl:px-20'
+      className='relative min-h-[820px] bg-cover bg-no-repeat px-4 py-10 lg:min-h-0 lg:bg-fixed lg:py-20 xl:px-20'
       style={{
         backgroundImage: `${
           window.innerWidth < 768
@@ -45,32 +45,33 @@ const EtapasProyecto = () => {
               ))}
             </Tabs.List>
           </div>
-          <div className='w-fit'>
+          <div className='w-full flex gap-10'>
             {ETAPAS.map(({ titleContent, content }, index) => (
               <Tabs.Content
                 className='grow rounded-b-md p-5 outline-none'
                 value={`tab${index}`}
                 key={index}
               >
-                <div className='flex w-fit flex-col items-center gap-8 xl:flex-row'>
+                <div className='flex w-fit flex-col items-center gap-8 xl:flex-row mt-8'>
                   <div className='text-center xl:text-start'>
                     {titleContent && (
-                      <h3 className='mb-4 text-2xl font-bold text-white'>
+                      <h3 className='mb-4 text-2xl lg:text-3xl font-bold text-white lg:text-end'>
                         {titleContent}
                       </h3>
                     )}
-                    <p className='text-balance text-sm leading-loose text-white'>
+                    <p className='text-pretty text-sm lg:text-end lg:text-lg leading-loose text-white'>
                       {content}
                     </p>
                   </div>
-                  <img
-                    className='hidden size-[550px] xl:block aspect-[661/606] object-cover'
-                    src={ImageEtapas}
-                    alt='Imagen de la sección etapas'
-                  />
+                  
                 </div>
               </Tabs.Content>
             ))}
+            <img
+              className='hidden  xl:block aspect-[661/606] object-cover'
+              src={ImageEtapas}
+              alt='Imagen de la sección etapas'
+            />
           </div>
         </Tabs.Root>
       </div>
