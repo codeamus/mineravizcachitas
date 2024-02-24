@@ -29,7 +29,7 @@ const EtapasProyecto = () => {
             >
               {ETAPAS.map(({ titleTab, icon }, index) => (
                 <Tabs.Trigger
-                  className='tab w-full max-w-2xl flex h-full items-center justify-between flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0'
+                  className='tab w-fit max-w-2xl flex h-full items-center mx-3 lg:mx-10 flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0'
                   value={`tab${index}`}
                   key={index}
                 >
