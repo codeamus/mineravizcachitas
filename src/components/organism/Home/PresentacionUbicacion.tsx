@@ -14,7 +14,7 @@ const PresentacionUbicacion = () => {
           </span>
           <div className='ml-0 mr-0 mt-6 flex max-w-full flex-col items-center border-none px-4 pb-4 pt-4 lg:ml-auto lg:mr-6 lg:items-end lg:border-r lg:border-solid lg:border-[#009145] lg:px-0'>
             <h2 className='text-center text-3xl font-bold text-black lg:pr-4 lg:text-end lg:text-4xl'>
-              ¿Qué es proyecto <br />
+              ¿Qué es proyecto <br aria-hidden />
               Vizcachitas?
             </h2>
             <hr className='my-4 w-full border-[#009145]' />

@@ -34,7 +34,7 @@ const Compromisos = () => {
                 className='size-16'
               />
               <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
-                Responsabilidad <br /> Ambiental
+                Responsabilidad <br aria-hidden /> Ambiental
               </h2>
             </div>
             <p className='text-balance text-white'>
@@ -61,7 +61,7 @@ const Compromisos = () => {
                 className='size-16'
               />
               <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
-                Responsabilidad <br /> Social
+                Responsabilidad <br aria-hidden /> Social
               </h2>
             </div>
             <p className='text-balance text-white'>
@@ -79,7 +79,7 @@ const Compromisos = () => {
           className='flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
         >
           <span>
-            Ver todos los compromisos <br />
+            Ver todos los compromisos <br aria-hidden />
             sostenibles
           </span>
           <hr className='mx-4 h-[50px] w-[1px] bg-white' />

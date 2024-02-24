@@ -21,7 +21,7 @@ const PreguntasFrecuentes = () => {
         >
           <span>
             Ver todas las
-            <br />
+            <br aria-hidden />
             preguntas frecuentes
           </span>
           <hr className='mx-4 h-[50px] w-[1px] bg-white' />

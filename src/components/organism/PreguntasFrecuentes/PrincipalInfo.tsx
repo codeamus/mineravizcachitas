@@ -12,9 +12,9 @@ const PrincipalInfo = () => {
         </span>
         <h2 className='my-6 text-center text-4xl font-bold text-black lg:text-balance lg:text-end lg:text-5xl'>
           Queremos que los vecinos de Putaendo{' '}
-          <br className='hidden lg:block' />
+          <br aria-hidden className='hidden lg:block' />
           <span className='text-[#E8732D]'>
-            se mantengan <br className='hidden lg:block' />
+            se mantengan <br aria-hidden className='hidden lg:block' />
             Informados
           </span>
         </h2>

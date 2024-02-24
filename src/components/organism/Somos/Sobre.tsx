@@ -13,9 +13,9 @@ const Sobre = () => {
       <div className='flex flex-col px-10 lg:flex-row lg:px-0'>
         <div className='w-full border-r border-none border-[#009145] lg:w-1/2 lg:border-solid lg:pr-10'>
           <h2 className='text-balance text-center text-4xl font-bold text-black lg:text-end'>
-            Sobre el <br className='hidden lg:block' />
+            Sobre el <br aria-hidden className='hidden lg:block' />
             <span className='text-[#E8732C]'>
-              proyecto <br className='hidden lg:block' /> Vizcachitas
+              proyecto <br aria-hidden className='hidden lg:block' /> Vizcachitas
             </span>
           </h2>
         </div>
@@ -44,7 +44,7 @@ const Sobre = () => {
         </picture>
         <div className='w-full px-10 lg:w-1/2 lg:pl-10'>
           <h2 className='mb-8 text-balance text-center text-4xl font-bold text-black lg:text-start'>
-            Una visión <br className='hidden lg:block' />
+            Una visión <br aria-hidden className='hidden lg:block' />
             <span className='text-[#E8732C]'>sostenible</span>
           </h2>
           <p className='mb-10 max-w-full text-sm leading-relaxed text-black lg:mb-0 lg:max-w-lg'>
@@ -68,7 +68,7 @@ const Sobre = () => {
               className='hidden size-16 lg:block'
             />
             <h2 className='border-[#009145] text-2xl font-bold uppercase  leading-10 text-black lg:border-l lg:pl-4'>
-              Responsabilidad <br /> Ambiental
+              Responsabilidad <br aria-hidden /> Ambiental
             </h2>
           </div>
           <p className='text-balance text-black'>
@@ -86,7 +86,7 @@ const Sobre = () => {
               className='hidden size-16 lg:block'
             />
             <h2 className='border-[#009145] text-2xl font-bold uppercase  leading-10 text-black lg:border-l lg:pl-4'>
-              Responsabilidad <br /> Social
+              Responsabilidad <br aria-hidden /> Social
             </h2>
           </div>
           <p className='text-balance text-black'>
@@ -105,7 +105,7 @@ const Sobre = () => {
           className='z-10 flex w-fit min-w-[265px] flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
         >
           <span>
-            Ver todos los compromisos <br />
+            Ver todos los compromisos <br aria-hidden />
             sostenibles
           </span>
           <hr className='mx-4 h-[50px] w-[1px] bg-white' />

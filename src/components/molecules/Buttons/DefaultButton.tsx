@@ -28,7 +28,7 @@ const DefaultButton = ({
     >
       <span className='border-r border-white px-4 py-2 text-sm font-normal'>
         {textFirst}
-        {textSecond && <br />}
+        {textSecond && <br aria-hidden />}
         {textSecond}
       </span>
       <LazyLoadImage

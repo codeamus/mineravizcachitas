@@ -52,7 +52,7 @@ const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
           />
           <hr className='mx-4 hidden h-[60px] w-[1px] bg-white text-lg xl:block' />
           <span className='hidden text-lg font-medium text-white xl:block'>
-            Proyecto <br />
+            Proyecto <br aria-hidden />
             Vizcachitas
           </span>
         </Link>

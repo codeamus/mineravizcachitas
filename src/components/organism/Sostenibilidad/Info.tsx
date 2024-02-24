@@ -17,7 +17,7 @@ const Info = () => {
             Pilares Sostenibles
           </span>
           <h2 className='mt-4 whitespace-nowrap text-3xl font-bold uppercase text-black lg:text-4xl'>
-            ¿Por qué es <br /> un proyecto <br /> sostenible?
+            ¿Por qué es <br aria-hidden /> un proyecto <br aria-hidden /> sostenible?
           </h2>
         </div>
         <div className='mt-14 flex w-full flex-col px-8 lg:mt-0 lg:w-[56.4%] lg:px-0'>
@@ -30,7 +30,7 @@ const Info = () => {
             <div className='flex max-w-lg flex-col border-l border-[#03773A]'>
               <div className=''>
                 <h3 className='pl-4 text-xl font-bold uppercase text-[#E8732C]'>
-                  Responsabilidad <br />
+                  Responsabilidad <br aria-hidden />
                   Ambiental
                 </h3>
               </div>
@@ -53,7 +53,7 @@ const Info = () => {
             <div className='flex max-w-lg flex-col border-l border-[#03773A]'>
               <div className=''>
                 <h3 className='pl-4 text-xl font-bold uppercase text-[#E8732C]'>
-                  Responsabilidad <br />
+                  Responsabilidad <br aria-hidden />
                   Social
                 </h3>
               </div>

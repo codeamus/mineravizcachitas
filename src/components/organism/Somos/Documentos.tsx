@@ -65,7 +65,7 @@ const Documentos = () => {
             </a>
             <div>
               <h3 className='mb-2 text-lg uppercase text-black'>
-                Comunicado Alcaldía <br /> de putaendo
+                Comunicado Alcaldía <br aria-hidden /> de putaendo
               </h3>
               <p className='text-sm text-black'>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -90,7 +90,7 @@ const Documentos = () => {
             </a>
             <div>
               <h3 className='mb-2 text-lg uppercase text-black'>
-                COMUNICADO ETAPA <br /> DE SONDAJE
+                COMUNICADO ETAPA <br aria-hidden/> DE SONDAJE
               </h3>
               <p className='text-sm text-black'>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.

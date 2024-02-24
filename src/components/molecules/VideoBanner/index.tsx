@@ -62,7 +62,7 @@ const VideoBanner = ({
                 alt='Icono referencial a Desarrollo Económico'
               />
               <p className='pt-4 text-center text-lg text-white'>
-                Desarrollo <br /> económico
+                Desarrollo <br aria-hidden /> económico
               </p>
             </li>
             <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>
@@ -82,7 +82,7 @@ const VideoBanner = ({
                 alt='Icono referencial a Desarrollo Económico'
               />
               <p className='pt-4 text-center text-lg text-white'>
-                Medio <br /> Ambiente
+                Medio <br aria-hidden /> Ambiente
               </p>
             </li>
             <li className='mb-8 flex flex-col items-center justify-center md:mb-0'>

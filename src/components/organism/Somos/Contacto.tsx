@@ -9,7 +9,7 @@ const Contacto = () => {
       <div className='w-full lg:w-1/2 lg:max-w-sm'>
         <h3 className='mb-3 text-lg text-white'>Formulario de contacto</h3>
         <h2 className='mb-3 text-2xl font-bold uppercase text-white'>
-          ¿NECESITAS <br className='hidden lg:block' /> CONTACTARNOS?
+          ¿NECESITAS <br aria-hidden className='hidden lg:block' /> CONTACTARNOS?
         </h2>
         <p className='text-sm text-white'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est enim quo

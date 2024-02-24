@@ -45,7 +45,7 @@ const TemplateAporteRegional = () => {
         >
           <BtnScrollDown section='aporte' />
           <h2 className='text-center text-4xl lg:text-5xl font-bold text-black'>
-            ¿Por qué el proyecto es <br />
+            ¿Por qué el proyecto es <br aria-hidden />
             <span className='text-[#E8732C]'>un aporte a la región?</span>
           </h2>
           <div className='mt-8 flex max-w-2xl items-center justify-center border-t border-[#009145]'>

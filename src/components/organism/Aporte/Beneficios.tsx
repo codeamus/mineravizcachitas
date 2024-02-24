@@ -44,7 +44,7 @@ const Beneficios = () => {
                     <div className='flex w-full justify-center text-center lg:w-1/2 lg:justify-end'>
                       {titleContent && (
                         <h3 className='mb-4 max-w-sm text-center text-4xl font-bold text-white lg:text-end'>
-                          {titleContent} <br className='hidden md:block' />
+                          {titleContent} <br aria-hidden className='hidden md:block' />
                           <span className='text-[#E8732C]'>
                             {titleContentStrong}
                           </span>

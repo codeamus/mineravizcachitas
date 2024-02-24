@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className='grid grid-cols-1 gap-10 bg-[#626262] px-16 pb-10 pt-14 md:grid-cols-2 lg:grid-cols-4 lg:justify-items-center lg:pt-28'>
       <div className='flex flex-col gap-6'>
         <h2 className='text-xl font-bold text-white'>
-          ¿Necesitas <br /> contactarnos?
+          ¿Necesitas <br aria-hidden /> contactarnos?
         </h2>
         <a
           href='/'
