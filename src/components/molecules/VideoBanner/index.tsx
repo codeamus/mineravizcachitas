@@ -38,14 +38,14 @@ const VideoBanner = ({
         </video>
       </div>
       <div
-        className={`lg:mt-130 bg-[url(${bgMobile})] z-10 bg-cover px-6 pt-40 md:bg-none lg:px-40`}
+        className={`lg:pt-130 bg-[url(${bgMobile})] z-10 bg-cover px-6 pt-24 md:bg-none lg:px-30 xl:px-40`}
         style={{
           backgroundImage: `${
             window.innerWidth < 768 ? `url(${bgMobile})` : ''
           }`,
         }}
       >
-        <div className='mb-0 flex flex-col items-center gap-10 lg:mb-0 lg:flex-row lg:gap-20'>
+        <div className='mb-10 flex flex-col items-center gap-10 lg:mb-0 lg:flex-row lg:gap-20'>
           {title}
           <div className='w-full lg:w-1/2'>
             <p className=' my-4 text-pretty border-b border-t border-[#E8732D] py-4 text-center text-sm leading-normal text-white lg:my-0 lg:text-start lg:text-lg lg:leading-10'>
