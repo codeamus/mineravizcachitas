@@ -44,7 +44,7 @@ const TemplateAporteRegional = () => {
           className='relative flex flex-col items-center bg-[#F0EFEF] px-10 pb-10 pt-20 lg:px-20'
         >
           <BtnScrollDown section='aporte' />
-          <h2 className='text-center text-5xl font-bold text-black'>
+          <h2 className='text-center text-4xl lg:text-5xl font-bold text-black'>
             ¿Por qué el proyecto es <br />
             <span className='text-[#E8732C]'>un aporte a la región?</span>
           </h2>
