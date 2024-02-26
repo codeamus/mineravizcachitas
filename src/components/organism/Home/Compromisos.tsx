@@ -31,7 +31,7 @@ const Compromisos = () => {
               <LazyLoadImage
                 src={IconAmbiental}
                 alt='Icono de responsabilidad ambiental'
-                className='size-16'
+                className='w-[70px] object-[1/1]'
               />
               <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
                 Responsabilidad <br aria-hidden /> Ambiental

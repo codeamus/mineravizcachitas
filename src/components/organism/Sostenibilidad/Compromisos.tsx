@@ -32,7 +32,7 @@ const ComponentCompromisos = ({
         }`}
       >
         <LazyLoadImage
-          className='brightness-[0.3]'
+          className='brightness-[0.5]'
           src={ambiental ? ImageAmbiental : ImageSocial}
           alt={`Imagen respcto al compromiso ${
             ambiental ? 'Ambiental' : 'Social'

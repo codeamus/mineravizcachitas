@@ -65,7 +65,7 @@ const Sobre = () => {
             <LazyLoadImage
               src={IconAmbiental}
               alt='Icono de responsabilidad ambiental'
-              className='hidden size-16 lg:block'
+              className='hidden w-[70px] object-[1/1] lg:block'
             />
             <h2 className='border-[#009145] text-2xl font-bold uppercase  leading-10 text-black lg:border-l lg:pl-4'>
               Responsabilidad <br aria-hidden /> Ambiental

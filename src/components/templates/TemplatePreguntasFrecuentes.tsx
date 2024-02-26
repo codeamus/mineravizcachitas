@@ -41,7 +41,7 @@ permanentes con la comunidad.'
         />
         <section
           id='preguntas'
-          className='relative bg-[url(/assets/images/backgrounds/bg-sostenibilidad.webp)] bg-cover lg:bg-contain'
+          className='relative bg-[url(/assets/images/backgrounds/bg-sostenibilidad.webp)] bg-contain bg-fixed lg:bg-cover'
         >
           <PrincipalInfo />
           <TodasPreguntas />

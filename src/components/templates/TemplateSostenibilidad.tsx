@@ -30,10 +30,9 @@ const TemplateSostenibilidad = () => {
           bgMobile='/assets/images/posters/poster-video-sostenibilidad-mobile.webp'
           title={
             <h1 className='w-full text-center text-4xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl'>
-              Proyecto
+              Proyecto Vizcachitas
               <span className='text-[#E8732D]'>
-                {' '}
-                Vizcachitas Sostenibilidad
+                {' '}Sostenibilidad
               </span>
             </h1>
           }

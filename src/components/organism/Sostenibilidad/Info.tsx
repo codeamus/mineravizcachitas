@@ -24,7 +24,7 @@ const Info = () => {
           <div className='flex items-center justify-start pb-10'>
             <LazyLoadImage
               src={IconAmbiental}
-              className='mr-4 hidden size-20 lg:block'
+              className='mr-4 hidden w-[75px] object-[1/1] lg:block'
               alt='Icono de compromisos para Responsabilidad Ambiental'
             />
             <div className='flex max-w-lg flex-col border-l border-[#03773A]'>
