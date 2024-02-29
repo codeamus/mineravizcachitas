@@ -71,33 +71,16 @@ const Footer = () => {
               to='/noticias'
               unstable_viewTransition
             >
-              Noticias
+              Novedades
             </Link>
           </li>
         </ul>
-      </div>
-      <div className='flex flex-col gap-2'>
-        <h3 className='text-xs font-bold uppercase text-white'>
-          Oficina central
-        </h3>
-        <p className='text-xs text-white'>Augusto Leguia Norte 100</p>
-        <p className='text-xs text-white'>Oficina 812, Las Condes,</p>
-        <p className='text-xs text-white'>Santiago, Chile</p>
-        <div className='flex flex-row gap-1'>
-          <span className='text-xs font-bold text-white'>Tel:</span>
-          <a
-            className='text-xs text-white transition-colors duration-300 hover:text-[#E8732C]'
-            href='tel:+56229540450'
-          >
-            +56 2 2954-0450
-          </a>
-        </div>
-      </div>
-      <div className='flex flex-col gap-2'>
+      </div><div className='flex flex-col gap-2'>
         <h3 className='text-xs font-bold uppercase text-white'>
           Oficina putaendo
         </h3>
-        <p className='text-xs text-white'>Camus 290, Putaendo, Chile</p>
+        <p className='text-xs text-white'>Camus 290</p>
+        <p className='text-xs text-white'>Putaendo</p>
         <div className='flex flex-row gap-1'>
           <span className='text-xs font-bold text-white'>Tel:</span>
           <a
@@ -107,6 +90,7 @@ const Footer = () => {
             +56 9 5057-0978
           </a>
         </div>
+        <p className='text-xs text-white'>Región de Valparaíso, Chile</p>
         <div className='flex flex-row gap-2'>
           <a
             href='https://www.instagram.com/minera_vizcachitas/'
@@ -134,6 +118,24 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <div className='flex flex-col gap-2'>
+        <h3 className='text-xs font-bold uppercase text-white'>
+          Oficina central
+        </h3>
+        <p className='text-xs text-white'>Augusto Leguia Norte 100, Oficina 812</p>
+        <p className='text-xs text-white'>Las Condes</p>
+        <div className='flex flex-row gap-1'>
+          <span className='text-xs font-bold text-white'>Tel:</span>
+          <a
+            className='text-xs text-white transition-colors duration-300 hover:text-[#E8732C]'
+            href='tel:+56229540450'
+          >
+            +56 2 2954-0450
+          </a>
+        </div>
+        <p className='text-xs text-white'>Santiago, Chile</p>
+      </div>
+      
     </footer>
   )
 }

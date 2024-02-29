@@ -19,4 +19,8 @@ export const MENU = [
     title: 'Preguntas frecuentes',
     path: '/preguntas-frecuentes',
   },
+  {
+    title: 'Novedades',
+    path: '/noticias',
+  },
 ]
