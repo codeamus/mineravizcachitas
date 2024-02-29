@@ -74,6 +74,12 @@ const Footer = () => {
               Novedades
             </Link>
           </li>
+          <li>
+            <a className='text-xs uppercase text-white transition-colors duration-300 hover:text-[#E8732C]' href="https://losandescopper.com/" target="_blank" rel="noopener noreferrer">
+              Andes Cooper
+            </a>
+            
+          </li>
         </ul>
       </div><div className='flex flex-col gap-2'>
         <h3 className='text-xs font-bold uppercase text-white'>

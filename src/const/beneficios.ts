@@ -11,7 +11,6 @@ import IconEmpleo from '@/assets/icons/icon-empleo.svg'
 import IconVida from '@/assets/icons/icon-vida.svg'
 import IconConectividad from '@/assets/icons/icon-conectividad.svg'
 import IconAmbiente from '@/assets/icons/icon-ambiente-etapas.svg'
-import IconSalud from '@/assets/icons/icon-salud.svg'
 import IconEducacion from '@/assets/icons/icon-educacion.svg'
 
 const BENEFICIOS_LOCALES: BENEFICIO[] = [
@@ -57,13 +56,6 @@ const BENEFICIOS_LOCALES: BENEFICIO[] = [
     Es una nueva forma de hacer minería, más verde, de futuro, comprometida con una producción que reduce impactos ambientales y genera externalidades positivas sostenidas en el tiempo en su entorno.
     De esta manera, y escuchando a la comunidad, se utilizará agua desalinizada en su operación, no habrá tranque de relave (sólo depósitos de relave) y se protegerá la flora y fauna del sector.`,
     icon: IconAmbiente,
-  },
-  {
-    titleTab: 'Salud',
-    titleContent: 'Lorem ipsum',
-    titleContentStrong: 'lorem',
-    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur amet deserunt quia molestiae voluptates inventore tempora nulla sunt mollitia aut ad fugit vel accusantium fugiat earum ullam, iure nesciunt.`,
-    icon: IconSalud,
   },
   {
     titleTab: 'Educación',
