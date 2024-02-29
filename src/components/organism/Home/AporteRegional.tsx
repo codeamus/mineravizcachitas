@@ -23,7 +23,7 @@ const AporteRegional = () => {
         />
         <RegionalCard
           title='Empleabilidad'
-          description='Más de 5.500 puestos de trabajo en fase de construcción y 1.200 en operación, sin considerar la importante cantidad de empleos indirectos y oportunidades de negocios que se crearán con motivo de los servicios asociados a la faena.'
+          description='Más de 5.500 puestos de trabajo en fase de construcción y 1.200 en operación, sin considerar los cientos de empleos indirectos que se crearán con motivo de los servicios asociados a la faena.'
           image={ImageEmpleabilidad}
         />
         <RegionalCard

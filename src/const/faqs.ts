@@ -7,22 +7,45 @@ const FAQS_HOME: FAQ[] = [
   {
     title:
       'El proyecto contempla un rajo abierto de un kilómetro de profundidad, justo al centro del río Rocín. ¿Esto afectará el abastecimiento de agua para la comuna de Putaendo?',
-    content: `Reconocemos la importancia del tema y nuestra constante interacción con la comunidad de Putaendo. Garantizamos que el suministro de agua para consumo humano y regadío no se verá afectado, ya que utilizaremos agua de mar desalinizada. El caudal ecológico del río Rocín se mantendrá, y el túnel de desvío no alterará su cantidad ni calidad. Además, la infraestructura para Vizcachitas ofrecerá acceso a agua desalinizada a tarifas preferenciales para los APRs de Putaendo y Cabildo, afectados por la sequía`,
+    content: `Reconocemos la importancia central de este tema, lo que comprobamos en nuestro
+relacionamiento constante con miembros de la comunidad de Putaendo.. Somos enfáticos en señalar que no se afectará de modo alguno el suministro para consumo humano ni el regadío, ya
+que emplearemos agua de mar desalinizada. Se mantendrá el caudal ecológico del Río Rocín, ya
+que no se afectará la cantidad y calidad de sus aguas. El túnel de desvío del Río Rocín de
+aproximadamente 15 kms de largo tampoco afectará ni la cantidad ni la calidad de sus aguas.
+Además, el suministro de agua de mar desalinizada para la futura operación, es una oportunidad
+para que los APRs de la zona de Putaendo y Cabildo, que se han visto afectados por la grave sequía
+que afecta a la zona central del país, puedan tener acceso a la infraestructura que se construirá
+para Vizcachitas, para acceder al suministro a tarifas preferenciales.`,
   },
   {
     title:
       '¿Los glaciares que hay en la zona se verán afectados con el proyecto?',
-    content: `Vizcachitas será una faena minera ubicada a baja altura (1.950 msnm) y su área de influencia no afectará a ningún glaciar.`,
+    content: `Vizcachitas será una faena minera ubicada a baja altura (1.950 msnm) y su área de influencia no
+afectará a ningún glaciar.`,
   },
   {
     title:
       '¿Se contempla un relave minero y cuál sería el impacto para las personas y el medio ambiente?',
-    content: `Vizcachitas no utilizará un tranque de relaves, gracias a la baja presencia de arcillas que permite filtrar los relaves. Esto reduce el consumo de agua hasta en un 50% y mejora la estabilidad del depósito, evitando la acumulación e infiltración de agua. Además, minimiza el espacio ocupado por los relaves. Será el segundo proyecto de cobre a nivel mundial en adoptar esta innovación, después de uno en Arizona, EE. UU.`,
+    content: `Vizcachitas tendrá un depósito de relaves, pero no tendrá un tranque de relave. La baja presencia
+de arcillas permite filtrar los relaves y reducir el consumo de agua del proyecto en hasta un 50%,
+contribuyendo a la sustentabilidad ambiental del proyecto en múltiples dimensiones: mejora la
+estabilidad física del depósito de relaves, evitando la acumulación e infiltración del agua contenida
+en los relaves; y minimiza el espacio utilizado por los relaves, al reducir el volumen de agua
+contenido en los relaves.
+De este modo, se convertirá en el segundo proyecto de cobre a gran escala a nivel mundial en
+adoptar esta innovación tecnológica, tras uno desarrollado en Arizona, Estados Unidos.`,
   },
   {
     title:
       '¿Se dañarán las aguas superficiales y subterráneas del río Rocín, afectando a los regantes?',
-    content: `El proyecto usará exclusivamente agua de mar desalada, sin emplear agua continental. Se prevé una reducción del consumo de hasta un 50% gracias al filtrado y recuperación del agua de los relaves. Además, se implementarán canales de contorno para recuperar las aguas lluvia y escurrimientos naturales, devolviéndolas al río Rocín sin impacto. Las aguas de contacto serán tratadas para cumplir con la normativa nacional antes de ser devueltas al río.`,
+    content: `El proyecto sólo utilizará agua de mar desalada. Es decir, no utiliza agua continental, ni superficial
+ni subterránea. Además, se considera una reducción del consumo de hasta 50% gracias al filtrado y
+recuperación del agua de los relaves.
+El proyecto contempla canales de contorno que recuperan todas las aguas lluvia y escurrimientos
+naturales, para devolverlas sin impacto alguno al Río Rocín. Todas las aguas que sí tomen contacto
+con la mina o las distintas instalaciones mineras –las denominadas aguas de contacto–, serán
+objeto de un completo proceso de tratamiento que asegurará que sean devueltas al Río Rocín
+limpias y en pleno cumplimiento de la normativa nacional.`,
   },
 ]
 

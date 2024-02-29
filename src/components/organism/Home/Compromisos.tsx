@@ -38,10 +38,11 @@ const Compromisos = () => {
               </h2>
             </div>
             <p className='text-balance text-white'>
-              El diseño de Vizcachitas integra tecnología innovadora para
-              garantizar un desarrollo sostenible en armonía con el medio
-              ambiente. Nos seguiremos perfeccionando para convertirnos en un
-              modelo a nivel nacional e internacional.
+              El diseño de Vizcachitas de prefactibilidad ha recurrido a las mejores herramientas de innovación y
+              tecnología disponibles, que permiten un desarrollo armónico con la sostenibilidad ambiental de la
+              zona. El perfeccionamiento del proyecto durante la siguiente fase de factibilidad continuará
+              buscando oportunidades de mejora para construir un proyecto de excelencia que sea un ejemplo
+              para Chile y el mundo.
             </p>
           </div>
         </article>
@@ -65,9 +66,9 @@ const Compromisos = () => {
               </h2>
             </div>
             <p className='text-balance text-white'>
-              Buscamos que los beneficios del desarrollo lleguen a los vecinos
-              de Putaendo, San Felipe y la Región de Valparaíso, que sean social
-              y ambientalmente sostenibles, además de sostenidos en el tiempo.
+              Se busca que los beneficios del desarrollo lleguen a los vecinos de Putaendo, San Felipe y de la
+              Región de Valparaíso, y que sean social y ambientalmente sostenibles, además de sostenidos en el
+              tiempo.
             </p>
           </div>
         </article>

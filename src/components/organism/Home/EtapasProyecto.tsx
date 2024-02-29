@@ -52,14 +52,14 @@ const EtapasProyecto = () => {
                 value={`tab${index}`}
                 key={index}
               >
-                <div className='flex w-fit flex-col items-center gap-8 xl:flex-row mt-8'>
+                <div className='flex w-fit flex-col items-center gap-8 xl:flex-row'>
                   <div className='text-center xl:text-start'>
                     {titleContent && (
                       <h3 className='mb-4 text-2xl lg:text-3xl font-bold text-white lg:text-end'>
                         {titleContent}
                       </h3>
                     )}
-                    <p className='text-pretty text-sm lg:text-end lg:text-lg leading-loose text-white'>
+                    <p className='text-pretty text-sm lg:text-end leading-loose text-white'>
                       {content}
                     </p>
                   </div>

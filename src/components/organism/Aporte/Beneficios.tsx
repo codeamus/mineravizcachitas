@@ -52,7 +52,7 @@ const Beneficios = () => {
                       )}
                     </div>
                     <div className='w-full border-white lg:w-1/2 lg:border-l lg:pl-10'>
-                      <p className='text-pretty text-sm leading-loose text-white'>
+                      <p className='text-pretty text-sm leading-loose text-white lg:min-h-[400px]'>
                         {content}
                       </p>
                     </div>
