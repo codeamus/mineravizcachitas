@@ -6,6 +6,7 @@ import VideoBanner from '@/components/molecules/VideoBanner'
 import Footer from '@/components/organism/Footer'
 import AporteRegional from '@/components/organism/Home/AporteRegional'
 import Compromisos from '@/components/organism/Home/Compromisos'
+import DescubreProyecto from '@/components/organism/Home/DescubreProyecto'
 import EtapasProyecto from '@/components/organism/Home/EtapasProyecto'
 import Noticias from '@/components/organism/Home/Noticias'
 import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
@@ -46,6 +47,7 @@ const TemplateHome = () => {
           list={true}
         />
         <PresentacionUbicacion />
+        <DescubreProyecto />
         <Compromisos />
         <AporteRegional />
         <PreguntasFrecuentes />
