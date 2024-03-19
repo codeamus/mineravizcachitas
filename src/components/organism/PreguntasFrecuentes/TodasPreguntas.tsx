@@ -9,8 +9,8 @@ const TodasPreguntas = () => {
       <div className='my-10 flex flex-col items-center justify-center px-4'>
         {FAQS_PAGE.map(({ title, content }, index) => (
           <details className='group mb-4 w-full max-w-3xl' key={index}>
-            <summary className='flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3'>
-              <span className='text-sm font-bold text-black'>{title}</span>
+            <summary className='flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white'>
+              <span className='text-sm font-bold text-black title duration-300'>{title}</span>
               <span className='transition group-open:rotate-180'>
                 <svg
                   fill='none'
