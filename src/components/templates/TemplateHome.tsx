@@ -40,10 +40,7 @@ const TemplateHome = () => {
               <span className='text-[#E8732D]'> Vizcachitas</span>
             </h1>
           }
-          description='Minería sostenible y responsable comprometida con el desarrollo
-              social y económico de Putaendo, San Felipe y la Región de
-              Valparaíso. Desarrollo con las comunidades y cuidado del medio
-              ambiente para un futuro mejor.'
+          description='Minería sostenible y responsable comprometida con el desarrollo social y económico de Putaendo, San Felipe y la Región de Valparaíso. Desarrollo con las comunidades y cuidando el medio ambiente para un futuro mejor.'
           list={true}
         />
         <PresentacionUbicacion />

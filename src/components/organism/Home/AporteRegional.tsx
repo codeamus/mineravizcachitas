@@ -18,7 +18,7 @@ const AporteRegional = () => {
       <div className='mt-10 grid grid-cols-1 justify-items-center gap-1 md:grid-cols-2 lg:grid-cols-4'>
         <RegionalCard
           title={`Desarrollo ${'\n'} Económico`}
-          description='Se proyecta que Vizcachitas genere un aumento del 3% del PIB de la Región de Valparaíso, con oportunidades de crecimiento sostenido en el largo plazo para toda la zona.'
+          description='Se proyecta que Vizcachitas genere un aumento mayor al 3% del PIB de la Región de Valparaíso, con oportunidades de crecimiento sostenido en el largo plazo para toda la zona.'
           image={ImageDesarrollo}
         />
         <RegionalCard

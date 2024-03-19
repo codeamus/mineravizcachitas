@@ -35,8 +35,7 @@ const TemplatePreguntasFrecuentes = () => {
               <span className='text-[#E8732D]'> Frecuentes</span>
             </h1>
           }
-          description='Respondemos algunas de las principales consultas surgidas de nuestros diálogos
-permanentes con la comunidad.'
+          description='Respondemos algunas de las principales consultas surgidas de nuestros diálogos permanentes con la comunidad.'
           list={false}
         />
         <section

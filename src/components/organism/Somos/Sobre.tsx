@@ -21,14 +21,9 @@ const Sobre = () => {
         </div>
         <div className='mt-10 w-full lg:mt-0 lg:w-1/2 lg:pl-10'>
           <p className='max-w-full text-sm leading-relaxed text-black lg:max-w-lg'>
-            Se trata de una iniciativa de clase mundial, tanto por tamaño como por el diseño del proyecto, en
-el cual se han incorporado estándares tecnológicos y ambientales de última generación, que dan
-cuenta de una nueva forma de hacer minería, comprometida con una producción que reduzca
-impactos ambientales y genere externalidades positivas sostenidas en el tiempo en materia de
-empleo, desarrollo de proveedores y servicios.
-El proyecto pertenece a Los Andes Copper, una empresa canadiense, listada en la Bolsa de Valores
-de Toronto (TSX-V) que se rige por los más altos estándares de gestión y compromiso con la
-sustentabilidad social y ambiental.
+            Se trata de una iniciativa de clase mundial, tanto por tamaño como por el diseño del proyecto, en el cual se han incorporado estándares tecnológicos y ambientales de última generación, que dan cuenta de una nueva forma de hacer minería, comprometida con una producción que reduzca impactos ambientales y genere externalidades positivas sostenidas en el tiempo en materia de empleo, desarrollo de proveedores y servicios. 
+            El proyecto pertenece a Los Andes Copper, una empresa canadiense, listada en la Bolsa de Valores de Toronto (TSX-V) que se rige por los más altos estándares de gestión y compromiso con la sustentabilidad social y ambiental.
+
           </p>
         </div>
       </div>
@@ -46,12 +41,8 @@ sustentabilidad social y ambiental.
             <span className='text-[#E8732C]'>sostenible</span>
           </h2>
           <p className='mb-10 max-w-full text-sm leading-relaxed text-black lg:mb-0 lg:max-w-lg'>
-           Buscamos hacer la diferencia, una minería moderna para el futuro de Putaendo. Una minería más
-verde, responsable y comprometida con la comunidad, sus necesidades y anhelos.
-Por eso incorporamos las innovaciones tecnológicas de la industria para desarrollar un proyecto
-que reduzca al máximo sus impactos, pero que además esté presente en el territorio, disponible
-para avanzar con todos aquellos que desean una mejor calidad de vida para la comuna, la
-provincia y la región.
+           Buscamos hacer la diferencia, una minería moderna para el futuro de Putaendo, San Felipe y la Región de Valparaíso. Una minería más verde, responsable y comprometida con la comunidad, sus necesidades y anhelos. 
+          Por eso incorporamos las innovaciones tecnológicas de la industria para desarrollar un proyecto que reduzca al máximo sus impactos, pero que además esté presente en el territorio, disponible para avanzar con todos aquellos que desean una mejor calidad de vida para la comuna, la provincia y la región.
           </p>
         </div>
       </div>

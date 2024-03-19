@@ -36,7 +36,7 @@ const TemplateSostenibilidad = () => {
               </span>
             </h1>
           }
-          description='Una nueva forma de hacer minería, comprometida con una producción que reduce impactos ambientales y genera externalidades positivas sostenidas en el tiempo, tanto en lo ambiental como lo comunitario.'
+          description='Una nueva forma de hacer minería, comprometida con una producción que reduce impactos ambientales y genera efectos positivos sostenidos en el tiempo, tanto desde un punto de vista ambiental como comunitario.'
         />
         <Info />
         <BackToTop />

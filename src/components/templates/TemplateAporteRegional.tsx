@@ -36,7 +36,7 @@ const TemplateAporteRegional = () => {
               <span className='text-[#E8732D]'> Aporte regional</span>
             </h1>
           }
-          description='Un potente impulso económico para la Región Valparaíso, a través del encadenamiento productivo.'
+          description='Un potente impulso económico para la Región Valparaíso, a través de la generación de empleos, oportunidades para proveedores y encadenamientos productivos, y desarrollo de proyectos de responsabilidad social empresarial.'
           list={false}
         />
         <section
@@ -55,9 +55,7 @@ const TemplateAporteRegional = () => {
               alt='Icono para aporte regional'
             />
             <p className='text-md text-pretty border-[#009145] p-6 text-black lg:border-l'>
-              El proyecto Vizcachitas generará un aumento de más del 3% en el PIB de la Región de Valparaíso,
-crecimiento que, además, será sostenible y con capacidad de generar prosperidad y
-oportunidades en el corto, mediano y largo plazo.
+              El proyecto Vizcachitas generará un aumento de más del 3% en el PIB de la Región de Valparaíso, crecimiento que, además, será sostenible y con capacidad de generar prosperidad y oportunidades en el corto, mediano y largo plazo.
             </p>
           </div>
         </section>

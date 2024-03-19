@@ -18,20 +18,11 @@ const PresentacionUbicacion = () => {
               Vizcachitas?
             </h2>
             <hr className='my-4 w-full border-[#009145]' />
-            <p className='lg:max-w-xl text-pretty pr-0 text-center text-sm leading-relaxed text-black lg:pr-4 lg:text-end'>
-              Nuestro proyecto minero tiene por objeto explotar un gran cuerpo mineralizado ubicado en el
-              valle del Río Rocín, con recursos medidos e indicados ya demostrados por 13.021 millones de
-              libras de cobre, 526 millones de libras de molibdeno y 54 millones de onzas de plata.
-              De acuerdo a nuestro estudio de prefactibilidad, el proyecto considera una inversión de US$ 2.800
-              millones y una vida útil inicial de 26 años. Más sondajes y estudios adicionales nos permitirán
-              ampliar las reservas mineras y extender la vida útil en muchos años más. . Una vez en operación,
-              se estima que producirá cerca de 180.000 toneladas de cobre fino al año durante los primeros 8
-              años, y 150.000 al año durante la vida útil. y .
-              Se trata de una iniciativa de clase mundial, en la cual se incorporan estándares tecnológicos y
-              ambientales de última generación, que dan cuenta de una nueva forma de hacer minería, más
-              verde, comprometida con una producción que reduce impactos ambientales y genera
-              externalidades positivas sostenidas en el tiempo en materia de empleo local, desarrollo de
-              proveedores y servicios locales.
+            <p className='lg:max-w-2xl text-pretty pr-0 text-center text-sm leading-relaxed text-black lg:pr-4 lg:text-end'>
+              Nuestro proyecto minero tiene por objeto explotar un yacimiento mineral ubicado en el valle del Río Rocín que cuenta ya con recursos medidos e indicados por 13.021 millones de libras de cobre, 526 millones de libras de molibdeno y 54 millones de onzas de plata, y recursos inferidos por 13.747 millones de libras de cobre, 495 millones de libras de molibdeno y 55 millones de libras de plata. 
+              De acuerdo a nuestro estudio de prefactibilidad, el proyecto considera una inversión de US$ 2.800 millones y una vida útil inicial de 26 años. Más sondajes y estudios adicionales nos permitirán ampliar las reservas y recursos mineros y extender la vida útil en muchos años más. Una vez en operación, se estima que producirá cerca de 183.000 toneladas de cobre fino al año durante los primeros 8 años, y 152.000 al año durante su vida útil. 
+              Se trata de una iniciativa de clase mundial, en la cual se incorporan estándares tecnológicos y ambientales de última generación, que dan cuenta de una nueva forma de hacer minería, más verde, comprometida con una producción que reduce impactos ambientales y genera externalidades positivas sostenidas en el tiempo en materia de empleo local, desarrollo de proveedores y servicios locales.
+
             </p>
           </div>
         </div>
@@ -59,11 +50,10 @@ const PresentacionUbicacion = () => {
             </h2>
             <hr className='my-4 w-full border-[#009145]' />
             <p className='pl-4 text-sm leading-relaxed text-black'>
-              El proyecto Vizcachitas está ubicado a 46 kilómetros del centro de Putaendo, provincia de San
-              Felipe, en la Región de Valparaíso.
-              Distante a 150 kilómetros al norte de Santiago, se encuentra en una zona dotada con buena
-              conectividad a carreteras, puertos y líneas eléctricas. Dada su baja altitud –solo 1.950 metros
-              sobre el nivel del mar– permitirá operar durante todo el año.
+              El proyecto Vizcachitas está ubicado a 46 kilómetros del centro de Putaendo, provincia de San Felipe, en la Región de Valparaíso.Distante a 150 kilómetros de Santiago, se encuentra en una zona dotada con buena conectividad a carreteras, puertos y líneas eléctricas. Dada su baja altitud –solo 1.950 metros sobre el nivel del mar– podrá operar durante todo el año.
+            </p>
+            <p className='pl-4 text-sm leading-relaxed text-black'>
+              Putaendo es una comuna en la cual tradicionalmente se ha desarrollado actividad minera a lo largo de su historia, entre otras actividades económicas. Todas estas actividades se han desarrollado en armonía, con pleno respeto de las tradiciones locales y del patrimonio histórico cultural de la comuna.
             </p>
           </div>
         </div>

@@ -35,7 +35,7 @@ const TemplateQuienesSomos = () => {
               <span className='text-[#E8732D]'> Quiénes somos</span>
             </h1>
           }
-          description='Somos un proyecto que mira al futuro, desarrollando una minería sostenible y responsable con el entorno y de la mano con el progreso de la comunidad de Putaendo, San Felipe y la región.'
+          description='Somos un proyecto que mira al futuro, desarrollando una minería sostenible y responsable con el entorno y de la mano con el progreso de los vecinos de Putaendo, San Felipe y la región de Valparaíso.'
           list={false}
         />
 

@@ -19,13 +19,10 @@ const PrincipalInfo = () => {
           </span>
         </h2>
         <p className='max-w-lg text-center text-lg text-black lg:text-end'>
-          Una relación basada en la confianza y transparencia es la base de un
-          compromiso de largo plazo hacia un futuro con mejor calidad de vida.
+          Una relación basada en la confianza y transparencia es la base de un compromiso de largo plazo hacia un futuro con mejor calidad de vida.
         </p>
         <p className='max-w-lg text-center text-lg text-black lg:text-end'>
-          Queremos que los vecinos de Putaendo formen parte de este camino,
-          aclarando sus dudas e inquietudes, como también escuchando sus sueños
-          y anhelos.
+          Queremos que los vecinos de Putaendo formen parte de este camino, aclarando sus dudas e inquietudes, como también escuchando sus sueños y anhelos.
         </p>
       </div>
       <div className='w-full lg:w-1/2'>
