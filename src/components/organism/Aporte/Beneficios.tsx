@@ -16,7 +16,7 @@ const Beneficios = () => {
             >
               {BENEFICIOS_LOCALES.map(({ titleTab, icon }, index) => (
                 <Tabs.Trigger
-                  className='tab w-full max-w-2xl flex h-full items-center justify-between flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0'
+                  className='tab w-full max-w-2xl flex h-full items-center justify-between flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0 duration-300 [&_img]:hover:scale-110 [&_span]:hover:bg-[#e8732d] [&_span]:hover:border-[#e8732d]'
                   value={`tab${index}`}
                   key={index}
                 >
