@@ -1,3 +1,4 @@
+import { getDataPage } from '@/api/page'
 import VideoMP4 from '@/assets/videos/home.mp4'
 import VideoWebm from '@/assets/videos/home.webm'
 import BackToTop from '@/components/molecules/BackToTop'
@@ -12,9 +13,21 @@ import Noticias from '@/components/organism/Home/Noticias'
 import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
 import Navbar from '@/components/organism/MenuNav'
+import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const TemplateHome = () => {
+
+  const [dataHome, setDataHome] = useState(null)
+
+  useEffect(() => {
+    const fetchDataHome = async () => {
+      const result = await getDataPage('inicio')
+      setDataHome(result[0].acf)
+    }
+    fetchDataHome()
+  }, [])
+
   return (
     <>
       <Helmet>
@@ -43,12 +56,18 @@ const TemplateHome = () => {
           description='Minería sostenible y responsable comprometida con el desarrollo social y económico de Putaendo, San Felipe y la Región de Valparaíso. Desarrollo con las comunidades y cuidando el medio ambiente para un futuro mejor.'
           list={true}
         />
-        <PresentacionUbicacion />
-        <DescubreProyecto />
-        <Compromisos />
-        <AporteRegional />
-        <PreguntasFrecuentes />
-        <EtapasProyecto />
+        {
+          dataHome && (
+            <>
+              <PresentacionUbicacion dataPresentacion={dataHome} />
+              <DescubreProyecto />
+              <Compromisos />
+              <AporteRegional />
+              <PreguntasFrecuentes />
+              <EtapasProyecto />
+            </>
+          )
+        }
         <Noticias />
         <BackToTop />
       </main>
