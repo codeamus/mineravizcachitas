@@ -17,7 +17,6 @@ import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const TemplateHome = () => {
-
   const [dataHome, setDataHome] = useState(null)
 
   useEffect(() => {
@@ -57,7 +56,7 @@ const TemplateHome = () => {
           list={true}
         />
         <PresentacionUbicacion dataPresentacion={dataHome} />
-        <DescubreProyecto />
+        <DescubreProyecto dataPresentacion={dataHome} />
         <Compromisos />
         <AporteRegional />
         <PreguntasFrecuentes />
