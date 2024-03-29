@@ -1,4 +1,6 @@
-import BtnScrollDown from "@/components/molecules/BtnScrollDown"
+import BtnScrollDown from "@/components/molecules/BtnScrollDown";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 
 const DescubreProyecto = () => {
@@ -9,21 +11,30 @@ const DescubreProyecto = () => {
      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10">
           <article>
                <h3 className="font-bold text-[#009145] text-center text-balance border-b border-[#009145]    mb-4 py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-               <iframe className="w-full h-[300px]" src="https://www.youtube.com/embed/aa73LUEtyDA?si=jb_kHe9mZf0F-Kfb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+               <LiteYouTubeEmbed 
+                    id="aa73LUEtyDA"
+                    title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
+               />
                <p className="text-black text-center mt-4 text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita, sunt quia laudantium repellendus ut eaque. Voluptatibus, sed nemo rerum suscipit pariatur porro, beatae perferendis, ducimus reiciendis officiis nesciunt nobis?
                </p>
           </article>
           <article>
                <h3 className="font-bold text-[#009145] text-center text-balance border-b border-[#009145]    mb-4 py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-               <iframe className="w-full h-[300px]" src="https://www.youtube.com/embed/aa73LUEtyDA?si=jb_kHe9mZf0F-Kfb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+               <LiteYouTubeEmbed 
+                    id="aa73LUEtyDA"
+                    title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
+               />
                <p className="text-black text-center mt-4 text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita, sunt quia laudantium repellendus ut eaque. Voluptatibus, sed nemo rerum suscipit pariatur porro, beatae perferendis, ducimus reiciendis officiis nesciunt nobis?
                </p>
           </article>
           <article>
                <h3 className="font-bold text-[#009145] text-center text-balance border-b border-[#009145]    mb-4 py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-               <iframe className="w-full h-[300px]" src="https://www.youtube.com/embed/aa73LUEtyDA?si=jb_kHe9mZf0F-Kfb" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+               <LiteYouTubeEmbed 
+                    id="aa73LUEtyDA"
+                    title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
+               />
                <p className="text-black text-center mt-4 text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita, sunt quia laudantium repellendus ut eaque. Voluptatibus, sed nemo rerum suscipit pariatur porro, beatae perferendis, ducimus reiciendis officiis nesciunt nobis?
                </p>
