@@ -1,3 +1,4 @@
+import { getDataPage } from '@/api/page'
 import VideoMP4 from '@/assets/videos/sostenibilidad.mp4'
 import VideoWebm from '@/assets/videos/sostenibilidad.webm'
 import BackToTop from '@/components/molecules/BackToTop'
@@ -6,9 +7,19 @@ import VideoBanner from '@/components/molecules/VideoBanner'
 import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
 import Info from '@/components/organism/Sostenibilidad/Info'
+import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const TemplateSostenibilidad = () => {
+  const [dataSostenibilidad, setDataSostenibilidad] = useState(null)
+
+  useEffect(() => {
+    const fetchDataHome = async () => {
+      const result = await getDataPage('sostenibilidad')
+      setDataSostenibilidad(result[0].acf)
+    }
+    fetchDataHome()
+  }, [])
   return (
     <>
       <Helmet>
@@ -31,14 +42,12 @@ const TemplateSostenibilidad = () => {
           title={
             <h1 className='w-full text-center text-4xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl'>
               Proyecto Vizcachitas
-              <span className='text-[#E8732D]'>
-                {' '}Sostenibilidad
-              </span>
+              <span className='text-[#E8732D]'> Sostenibilidad</span>
             </h1>
           }
           description='Una nueva forma de hacer minería, comprometida con una producción que reduce impactos ambientales y genera efectos positivos sostenidos en el tiempo, tanto desde un punto de vista ambiental como comunitario.'
         />
-        <Info />
+        <Info dataSostenibilidad={dataSostenibilidad} />
         <BackToTop />
       </main>
       <Footer />
