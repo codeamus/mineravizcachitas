@@ -57,7 +57,7 @@ const TemplateHome = () => {
         />
         <PresentacionUbicacion dataPresentacion={dataHome} />
         <DescubreProyecto dataPresentacion={dataHome} />
-        <Compromisos />
+        <Compromisos dataPresentacion={dataHome} />
         <AporteRegional />
         <PreguntasFrecuentes />
         <EtapasProyecto />

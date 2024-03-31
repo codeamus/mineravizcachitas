@@ -1,3 +1,7 @@
+interface CompromisosProps {
+  dataPresentacion?: any
+}
+
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
 import IconAmbiental from '@/assets/icons/icon-ambiental-white.svg'
 import IconSocial from '@/assets/icons/icon-social-white.svg'
@@ -7,7 +11,7 @@ import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 
-const Compromisos = () => {
+const Compromisos = ({ dataPresentacion }: CompromisosProps) => {
   return (
     <section
       id='compromisos'
@@ -21,7 +25,7 @@ const Compromisos = () => {
         <article className='max-w-xl'>
           <picture>
             <LazyLoadImage
-              src={ImageAmbiental}
+              src={dataPresentacion?.compromisos_sostenibles.primera_imagen}
               alt='Imagen representativa de Responsabilidad Ambiental'
               className='aspect-[4/3] object-cover'
             />
@@ -34,18 +38,18 @@ const Compromisos = () => {
                 className='w-[70px] object-[1/1]'
               />
               <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
-                Responsabilidad <br aria-hidden /> Ambiental
+                {dataPresentacion?.compromisos_sostenibles.primer_titulo}
               </h2>
             </div>
             <p className='text-balance text-white'>
-              El diseño de Vizcachitas de prefactibilidad da cuenta de las mejores herramientas de innovación y tecnología disponibles, que permiten un desarrollo armónico y sostenible, que se toma en serio la protección ambiental de la V Región. El perfeccionamiento del proyecto durante la siguiente fase de factibilidad continuará buscando oportunidades de mejora para construir un proyecto de excelencia que sea un ejemplo para Chile y el mundo.
+              {dataPresentacion?.compromisos_sostenibles.primera_descripcion}
             </p>
           </div>
         </article>
         <article className='max-w-xl'>
           <picture>
             <LazyLoadImage
-              src={ImageResponsabilidad}
+              src={dataPresentacion?.compromisos_sostenibles.segunda_imagen}
               alt='Imagen que representa la Responsabilidad Social'
               className='aspect-[4/3] object-cover'
             />
@@ -58,11 +62,11 @@ const Compromisos = () => {
                 className='size-16'
               />
               <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
-                Responsabilidad <br aria-hidden /> Social
+                {dataPresentacion?.compromisos_sostenibles.segundo_titulo}
               </h2>
             </div>
             <p className='text-balance text-white'>
-              Se busca que los beneficios del desarrollo lleguen a los vecinos de Putaendo, San Felipe y de la Región de Valparaíso, y que sean social y ambientalmente sostenibles, además de sostenidos en el tiempo.
+              {dataPresentacion?.compromisos_sostenibles.segunda_descripcion}
             </p>
           </div>
         </article>
