@@ -1,14 +1,10 @@
 const formatDate = (dateCurrent: string) => {
-  const opciones = {
+  const formateDate = new Date(dateCurrent).toLocaleDateString('es-CL', {
     weekday: 'long',
     year: 'numeric',
-    month: 'long',
+    month: 'short',
     day: 'numeric',
-  }
-  const formateDate = new Date(dateCurrent).toLocaleDateString(
-    'es-CL',
-    opciones
-  )
+  })
 
   return formateDate
 }

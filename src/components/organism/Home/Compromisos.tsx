@@ -5,8 +5,6 @@ interface CompromisosProps {
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
 import IconAmbiental from '@/assets/icons/icon-ambiental-white.svg'
 import IconSocial from '@/assets/icons/icon-social-white.svg'
-import ImageAmbiental from '@/assets/images/compromiso-ambiental.webp'
-import ImageResponsabilidad from '@/assets/images/compromiso-responsabilidad.webp'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
