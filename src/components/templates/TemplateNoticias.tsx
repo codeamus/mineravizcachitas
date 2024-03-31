@@ -10,7 +10,7 @@ const TemplateNoticias = () => {
   const [news, setNews] = useState([])
   useEffect(() => {
     const fetchNews = async () => {
-      const result = await getAllNews()
+      const result = await getAllNews(100)
       setNews(result)
     }
     fetchNews()
@@ -31,7 +31,7 @@ const TemplateNoticias = () => {
       <Navbar position='relative' bgColor='bg-[#03773A]' />
       <main>
         <section className='bg-[#F0EFEF] p-10 lg:p-20'>
-          <h1 className='text-center text-5xl font-bold text-white lg:text-balance lg:text-end lg:text-6xl'>
+          <h1 className='text-center text-5xl font-bold text-black lg:text-balance lg:text-6xl mb-10'>
             Proyecto Vizcachitas{' '}
             <span className='text-[#E8732C]'>Noticias</span>
           </h1>

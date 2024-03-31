@@ -18,7 +18,7 @@ const CardBlog = ({ title, image, slug, content }: CardProps) => {
         />
       </picture>
       <div className='border-b border-[#E8732C]'>
-        <h2 className='mt-4 text-center text-2xl font-bold text-black'>
+        <h2 className='mt-4 text-center text-2xl font-bold text-black min-h-[65px]'>
           {title}
         </h2>
         <span className='my-2 block w-full text-center text-xs font-bold text-[#E8732C]'>
@@ -26,7 +26,7 @@ const CardBlog = ({ title, image, slug, content }: CardProps) => {
         </span>
       </div>
       <div className='flex flex-col items-center'>
-        <p className='mt-4 text-center text-sm text-black'>{`${content.substring(
+        <p className='mt-4 text-center text-sm text-black min-h-[60px]'>{`${content.substring(
           0,
           150
         )} ...`}</p>
