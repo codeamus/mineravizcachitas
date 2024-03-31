@@ -19,11 +19,11 @@ import BackToTop from '@/components/molecules/BackToTop'
 
 const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
   const [newBySlug, setNewBySlug] = useState<New>()
-
   const [news, setNews] = useState([])
+
   useEffect(() => {
     const fetchNews = async () => {
-      const result = await getAllNews()
+      const result = await getAllNews(100)
       setNews(result)
     }
     fetchNews()
