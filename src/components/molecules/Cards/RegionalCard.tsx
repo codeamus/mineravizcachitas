@@ -16,7 +16,7 @@ const RegionalCard = ({ title, description, image }: Props) => {
         />
       </picture>
       <div className='absolute top-0 flex h-full w-full flex-col justify-between transition-opacity duration-500'>
-        <h3 className='min-h-[90px] whitespace-pre border-white p-4 pb-2 text-center text-2xl font-bold uppercase text-white lg:border-b lg:bg-[#00000066]'>
+        <h3 className='min-h-[90px] whitespace-pre border-white p-4 pb-2 text-center text-2xl font-bold uppercase text-white lg:border-b lg:bg-[#00000066] text-wrap'>
           {title}
         </h3>
         <p className='text-balance p-4 text-start align-bottom text-sm text-white lg:text-center lg:opacity-0'>

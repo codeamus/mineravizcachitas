@@ -1,11 +1,10 @@
-import ImageAmbiente from '@/assets/images/img-ambiente.webp'
-import ImageCalidad from '@/assets/images/img-calida.webp'
-import ImageDesarrollo from '@/assets/images/img-desarrollo.webp'
-import ImageEmpleabilidad from '@/assets/images/img-empleabilidad.webp'
+interface AporteRegionalProps {
+  dataPresentacion?: any
+}
 import DefaultButton from '@/components/molecules/Buttons/DefaultButton'
 import RegionalCard from '@/components/molecules/Cards/RegionalCard'
 
-const AporteRegional = () => {
+const AporteRegional = ({ dataPresentacion }: AporteRegionalProps) => {
   return (
     <section className='mt-20 bg-white p-4 md:p-8'>
       <div className='flex flex-row items-center justify-center'>
@@ -17,25 +16,24 @@ const AporteRegional = () => {
       </div>
       <div className='mt-10 grid grid-cols-1 justify-items-center gap-1 md:grid-cols-2 lg:grid-cols-4'>
         <RegionalCard
-          title={`Desarrollo ${'\n'} Económico`}
-          description='Se proyecta que Vizcachitas genere un aumento mayor al 3% del PIB de la Región de Valparaíso, con oportunidades de crecimiento sostenido en el largo plazo para toda la zona.'
-          image={ImageDesarrollo}
+          title={dataPresentacion?.aporte_regional.primer_titulo}
+          description={dataPresentacion?.aporte_regional.primera_descripcion}
+          image={dataPresentacion?.aporte_regional.primera_imagen}
         />
         <RegionalCard
-          title='Empleabilidad'
-          description='Más de 5.500 puestos de trabajo en fase de construcción y 1.200 en operación, sin considerar los cientos de empleos indirectos que se crearán con motivo de los servicios asociados a la faena.'
-          image={ImageEmpleabilidad}
+          title={dataPresentacion?.aporte_regional.segundo_titulo}
+          description={dataPresentacion?.aporte_regional.segunda_descripcion}
+          image={dataPresentacion?.aporte_regional.segunda_imagen}
         />
         <RegionalCard
-          title={`Medio ${'\n'} Ambiente`}
-          description={`Vizcachitas se compromete a usar agua de mar desalinizada, evitando así el uso de agua continental en sus operaciones. Además, emplea depósitos de relaves espesados combinados con material sin mineral, reduciendo el consumo de agua hasta en un 50%. Esto mejora la estabilidad del depósito, previene la acumulación de agua y minimiza el espacio utilizado por los relaves.. 
-`}
-          image={ImageAmbiente}
+          title={dataPresentacion?.aporte_regional.tercer_titulo}
+          description={dataPresentacion?.aporte_regional.tercera_descripcion}
+          image={dataPresentacion?.aporte_regional.tercera_imagen}
         />
         <RegionalCard
-          title={`Calidad ${'\n'} de vida`}
-          description='Más de 5.500 puestos de trabajo en fase de construcción y 1.200 en operación, sin considerar la importante cantidad de empleos indirectos y oportunidades de negocios que se crearán con motivo de los servicios asociados a la faena.'
-          image={ImageCalidad}
+          title={dataPresentacion?.aporte_regional.cuarto_titulo}
+          description={dataPresentacion?.aporte_regional.cuarta_descripcion}
+          image={dataPresentacion?.aporte_regional.cuarta_imagen}
         />
       </div>
       <div className='mt-10 flex w-full items-center justify-center'>
