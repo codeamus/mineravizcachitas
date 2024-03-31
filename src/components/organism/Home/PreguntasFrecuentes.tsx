@@ -1,9 +1,15 @@
+interface PreguntasFrecuentesProps {
+  dataPresentacion?: any
+}
+
 import { Link } from 'react-router-dom'
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
 import { FAQS_HOME } from '@/const/faqs'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-const PreguntasFrecuentes = () => {
+const PreguntasFrecuentes = ({
+  dataPresentacion,
+}: PreguntasFrecuentesProps) => {
   return (
     <section
       id='preguntas'
@@ -36,33 +42,106 @@ const PreguntasFrecuentes = () => {
         <h3 className='mb-4 text-lg font-bold uppercase text-[#03773A]'>
           Preguntas Frecuentes
         </h3>
-        <div>
-          {FAQS_HOME.map(({ title, content }, index) => (
-            <details className='group mb-4' key={index}>
-              <summary className='flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white'>
-                <span className='text-sm font-bold text-black title duration-300'>{title}</span>
-                <span className='transition group-open:rotate-180'>
-                  <svg
-                    fill='none'
-                    height='24'
-                    shapeRendering='geometricPrecision'
-                    stroke='#000'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='1.5'
-                    viewBox='0 0 24 24'
-                    width='24'
-                  >
-                    <path d='M6 9l6 6 6-6'></path>
-                  </svg>
-                </span>
-              </summary>
-              <p className='group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black'>
-                {content}
-              </p>
-            </details>
-          ))}
-        </div>
+        <details className='group mb-4'>
+          <summary className='flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white'>
+            <span className='text-sm font-bold text-black title duration-300'>
+              {dataPresentacion?.preguntas_frecuentes.primera_pregunta}
+            </span>
+            <span className='transition group-open:rotate-180'>
+              <svg
+                fill='none'
+                height='24'
+                shapeRendering='geometricPrecision'
+                stroke='#000'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='1.5'
+                viewBox='0 0 24 24'
+                width='24'
+              >
+                <path d='M6 9l6 6 6-6'></path>
+              </svg>
+            </span>
+          </summary>
+          <p className='group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black'>
+            {dataPresentacion?.preguntas_frecuentes.contenido_primera_pregunta}
+          </p>
+        </details>
+        <details className='group mb-4'>
+          <summary className='flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white'>
+            <span className='text-sm font-bold text-black title duration-300'>
+              {dataPresentacion?.preguntas_frecuentes.segunda_pregunta}
+            </span>
+            <span className='transition group-open:rotate-180'>
+              <svg
+                fill='none'
+                height='24'
+                shapeRendering='geometricPrecision'
+                stroke='#000'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='1.5'
+                viewBox='0 0 24 24'
+                width='24'
+              >
+                <path d='M6 9l6 6 6-6'></path>
+              </svg>
+            </span>
+          </summary>
+          <p className='group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black'>
+            {dataPresentacion?.preguntas_frecuentes.contenido_segunda_pregunta}
+          </p>
+        </details>
+        <details className='group mb-4'>
+          <summary className='flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white'>
+            <span className='text-sm font-bold text-black title duration-300'>
+              {dataPresentacion?.preguntas_frecuentes.tercera_pregunta}
+            </span>
+            <span className='transition group-open:rotate-180'>
+              <svg
+                fill='none'
+                height='24'
+                shapeRendering='geometricPrecision'
+                stroke='#000'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='1.5'
+                viewBox='0 0 24 24'
+                width='24'
+              >
+                <path d='M6 9l6 6 6-6'></path>
+              </svg>
+            </span>
+          </summary>
+          <p className='group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black'>
+            {dataPresentacion?.preguntas_frecuentes.contenido_tercera_pregunta}
+          </p>
+        </details>
+        <details className='group mb-4'>
+          <summary className='flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white'>
+            <span className='text-sm font-bold text-black title duration-300'>
+              {dataPresentacion?.preguntas_frecuentes.cuarta_pregunta}
+            </span>
+            <span className='transition group-open:rotate-180'>
+              <svg
+                fill='none'
+                height='24'
+                shapeRendering='geometricPrecision'
+                stroke='#000'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='1.5'
+                viewBox='0 0 24 24'
+                width='24'
+              >
+                <path d='M6 9l6 6 6-6'></path>
+              </svg>
+            </span>
+          </summary>
+          <p className='group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black'>
+            {dataPresentacion?.preguntas_frecuentes.contenido_cuarta_pregunta}
+          </p>
+        </details>
       </div>
     </section>
   )
