@@ -24,6 +24,7 @@ const ContactForm = () => {
           type='text'
           name='nombre'
           id='nombre'
+          required
         />
       </div>
       <div className='mb-4 flex flex-col'>
@@ -32,9 +33,10 @@ const ContactForm = () => {
         </label>
         <input
           className='h-[30px] bg-[#ffffffcc] p-1 text-sm text-black'
-          type='text'
+          type='email'
           name='email'
           id='email'
+          required
         />
       </div>
       <div className='mb-4 flex flex-col'>
@@ -45,6 +47,7 @@ const ContactForm = () => {
           className='h-[150px] bg-[#ffffffcc] p-1 text-sm text-black'
           name='mensaje'
           id='mensaje'
+          required
         />
       </div>
       <input type='submit' value='Enviar' />
