@@ -4,7 +4,6 @@ interface PreguntasFrecuentesProps {
 
 import { Link } from 'react-router-dom'
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
-import { FAQS_HOME } from '@/const/faqs'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const PreguntasFrecuentes = ({
