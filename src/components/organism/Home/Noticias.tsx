@@ -1,14 +1,15 @@
-import DefaultButton from '@/components/molecules/Buttons/DefaultButton'
-import { Link } from 'react-router-dom'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { useEffect, useState } from 'react'
 import { getAllNews } from '@/api'
+import DefaultButton from '@/components/molecules/Buttons/DefaultButton'
+import { formatDate } from '@/utils/format'
+import { useEffect, useState } from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { Link } from 'react-router-dom'
 
 const Noticias = () => {
   const [news, setNews] = useState([])
   useEffect(() => {
     const fetchNews = async () => {
-      const result = await getAllNews()
+      const result = await getAllNews(3)
       setNews(result)
     }
     fetchNews()
@@ -27,10 +28,11 @@ const Noticias = () => {
                 title: { rendered: string }
                 slug: string
                 acf: { image: string; content: string }
+                date: string
               },
               index
             ) => (
-              <article className='flex flex-col justify-center' key={index}>
+              <article className='flex flex-col justify-start' key={index}>
                 <picture>
                   <Link
                     to={`/noticias/${noticia.slug}`}
@@ -49,7 +51,7 @@ const Noticias = () => {
                     {noticia.title.rendered}
                   </h3>
                   <span className='block w-full text-center text-xs text-[#676767]'>
-                    10 diciembre 2023
+                    {formatDate(noticia.date)}
                   </span>
                   <hr className='my-4 border-t-2 border-black' />
                   <p className='text-balance text-center text-sm text-black'>
