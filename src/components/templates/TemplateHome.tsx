@@ -55,13 +55,16 @@ const TemplateHome = () => {
           description='Minería sostenible y responsable comprometida con el desarrollo social y económico de Putaendo, San Felipe y la Región de Valparaíso. Desarrollo con las comunidades y cuidando el medio ambiente para un futuro mejor.'
           list={true}
         />
-        <PresentacionUbicacion dataPresentacion={dataHome} />
-        <DescubreProyecto dataPresentacion={dataHome} />
+        <PresentacionUbicacion
+          dataPresentacion={dataHome?.presentacion_y_ubicacion}
+        />
+        <DescubreProyecto dataDescubre={dataHome?.section_navega} />
+        {/* <DescubreProyecto dataPresentacion={dataHome} />
         <Compromisos dataPresentacion={dataHome} />
         <AporteRegional dataPresentacion={dataHome} />
         <PreguntasFrecuentes dataPresentacion={dataHome} />
         <EtapasProyecto />
-        <Noticias />
+        <Noticias /> */}
         <BackToTop />
       </main>
       <Footer />
