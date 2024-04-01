@@ -9,7 +9,6 @@ const ContactForm = () => {
 
   const onClickSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log(e)
     if (name && email && message) {
       const data: ContactFormType = {
         name,
