@@ -1,3 +1,5 @@
+import { ContactFormType } from '@/types/Form'
+
 const getAllNews = async (limit: number) => {
   const response = await fetch(
     `${
@@ -18,4 +20,16 @@ const getNewBySlug = async (slug: string | undefined) => {
   return newBySlug
 }
 
-export { getAllNews, getNewBySlug }
+const sendFormContact = async (data: ContactFormType) => {
+  const response = await fetch(`${import.meta.env.VITE_BASE_CONTACT_URL}`, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+    },
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  })
+  console.log(response)
+}
+
+export { getAllNews, getNewBySlug, sendFormContact }

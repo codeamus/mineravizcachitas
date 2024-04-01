@@ -1,13 +1,23 @@
-interface ContactForm {
-  name: string
-  email: string
-  message: string
-}
+import { sendFormContact } from '@/api'
+import { ContactFormType } from '@/types/Form'
+import { useState } from 'react'
 
 const ContactForm = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
   const onClickSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log(e)
+    if (name && email && message) {
+      const data: ContactFormType = {
+        name,
+        email,
+        message,
+      }
+      sendFormContact(data)
+    }
   }
 
   return (
@@ -25,6 +35,8 @@ const ContactForm = () => {
           name='nombre'
           id='nombre'
           required
+          onChange={e => setName(e.target.value)}
+          value={name}
         />
       </div>
       <div className='mb-4 flex flex-col'>
@@ -37,6 +49,8 @@ const ContactForm = () => {
           name='email'
           id='email'
           required
+          onChange={e => setEmail(e.target.value)}
+          value={email}
         />
       </div>
       <div className='mb-4 flex flex-col'>
@@ -48,9 +62,15 @@ const ContactForm = () => {
           name='mensaje'
           id='mensaje'
           required
+          onChange={e => setMessage(e.target.value)}
+          value={message}
         />
       </div>
-      <input type='submit' value='Enviar' />
+      <input
+        type='submit'
+        value='Enviar'
+        className='bg-[#E8732D] p-3 cursor-pointer text-center text-sm text-white transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400'
+      />
     </form>
   )
 }
