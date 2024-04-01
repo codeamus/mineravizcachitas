@@ -13,11 +13,12 @@ import DescubreProyecto from '@/components/organism/Home/DescubreProyecto'
 // import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
 import Navbar from '@/components/organism/MenuNav'
+import { TemplateHomeType } from '@/types/HomeData'
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const TemplateHome = () => {
-  const [dataHome, setDataHome] = useState(null)
+  const [dataHome, setDataHome] = useState(null as TemplateHomeType | null)
 
   useEffect(() => {
     const fetchDataHome = async () => {

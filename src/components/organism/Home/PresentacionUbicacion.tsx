@@ -24,7 +24,7 @@ const PresentacionUbicacion = ({ dataPresentacion }: HomeData) => {
         <picture className='w-full lg:w-1/2'>
           <LazyLoadImage
             className='aspect-[4/3] object-cover'
-            src={dataPresentacion?.image.url}
+            src={dataPresentacion?.image}
             alt='Imagen de presentación proyecto Vizcachitas'
           />
         </picture>
