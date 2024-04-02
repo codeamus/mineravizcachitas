@@ -4,6 +4,7 @@ export interface TemplateHomeType {
   compromisos: any
   aporte_regional: any
   preguntas_frecuentes_home: any
+  etapas: any
 }
 
 export interface HomeData {
@@ -21,6 +22,7 @@ export interface HomeData {
   dataCompromisos?: CompromisosType[]
   dataAporte?: AporteRegionalFields[]
   dataFaq?: Faq[]
+  dataEtapas?: EtapasProyecto[]
 }
 
 export interface VideosDescubre {
@@ -46,5 +48,12 @@ interface AporteRegionalFields {
 
 interface Faq {
   title: string
+  content: string
+}
+
+interface EtapasProyecto {
+  icon: { url: string }
+  title_nav: string
+  title_content: string
   content: string
 }

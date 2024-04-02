@@ -1,9 +1,9 @@
 import ImageEtapas from '@/assets/images/img-etapas.webp'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
-import { ETAPAS } from '@/const/etapas'
+import { HomeData } from '@/types/HomeData'
 import * as Tabs from '@radix-ui/react-tabs'
 
-const EtapasProyecto = () => {
+const EtapasProyecto = ({ dataEtapas }: HomeData) => {
   return (
     <section
       id='etapas'
@@ -27,26 +27,26 @@ const EtapasProyecto = () => {
               className='flex justify-center gap-2 pb-2 '
               aria-label='Etapas del proyecto'
             >
-              {ETAPAS.map(({ titleTab, icon }, index) => (
+              {dataEtapas?.map((etapa, index) => (
                 <Tabs.Trigger
                   className='tab w-fit max-w-2xl flex h-full items-center mx-3 lg:mx-10 flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0 transition-all duration-300 [&_img]:hover:scale-110 [&_span]:hover:bg-[#e8732d] [&_span]:hover:border-[#e8732d]'
                   value={`tab${index}`}
                   key={index}
                 >
                   <img
-                    src={icon}
+                    src={etapa.icon.url}
                     className='size-12 transition-all duration-500 lg:size-16'
-                    alt={`Icono relacionado a la etapa ${titleTab}`}
+                    alt={`Icono relacionado a la etapa ${etapa.title_nav}`}
                   />
-                  <span className='mt-3 hidden border-b border-t border-white p-2 text-white transition-all duration-500 ease-in-out lg:block'>
-                    {titleTab}
+                  <span className='mt-3 hidden border-b border-t border-white p-2 text-white transition-all duration-500 ease-in-out lg:block lg:max-w-[180px]'>
+                    {etapa.title_nav}
                   </span>
                 </Tabs.Trigger>
               ))}
             </Tabs.List>
           </div>
           <div className='w-full flex gap-10'>
-            {ETAPAS.map(({ titleContent, content }, index) => (
+            {dataEtapas?.map((etapa, index) => (
               <Tabs.Content
                 className='grow rounded-b-md p-5 outline-none'
                 value={`tab${index}`}
@@ -54,16 +54,15 @@ const EtapasProyecto = () => {
               >
                 <div className='flex w-fit flex-col items-center gap-8 xl:flex-row'>
                   <div className='text-center xl:text-start'>
-                    {titleContent && (
+                    {etapa.title_content && (
                       <h3 className='mb-4 text-2xl lg:text-3xl font-bold text-white lg:text-end'>
-                        {titleContent}
+                        {etapa.title_content}
                       </h3>
                     )}
                     <p className='text-pretty text-sm lg:text-end leading-loose text-white'>
-                      {content}
+                      {etapa.content}
                     </p>
                   </div>
-                  
                 </div>
               </Tabs.Content>
             ))}

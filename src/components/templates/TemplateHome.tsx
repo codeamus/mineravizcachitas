@@ -8,7 +8,7 @@ import Footer from '@/components/organism/Footer'
 import AporteRegional from '@/components/organism/Home/AporteRegional'
 import Compromisos from '@/components/organism/Home/Compromisos'
 import DescubreProyecto from '@/components/organism/Home/DescubreProyecto'
-// import EtapasProyecto from '@/components/organism/Home/EtapasProyecto'
+import EtapasProyecto from '@/components/organism/Home/EtapasProyecto'
 // import Noticias from '@/components/organism/Home/Noticias'
 import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
@@ -63,12 +63,8 @@ const TemplateHome = () => {
         <Compromisos dataCompromisos={dataHome?.compromisos} />
         <AporteRegional dataAporte={dataHome?.aporte_regional} />
         <PreguntasFrecuentes dataFaq={dataHome?.preguntas_frecuentes_home} />
-        {/*
-        
-        
-        
-        <EtapasProyecto />
-        <Noticias /> */}
+        <EtapasProyecto dataEtapas={dataHome?.etapas} />
+        {/* <Noticias /> */}
         <BackToTop />
       </main>
       <Footer />
