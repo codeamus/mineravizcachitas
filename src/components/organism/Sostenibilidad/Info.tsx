@@ -3,8 +3,6 @@ interface SostenibilidadProps {
 }
 
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
-import IconAmbiental from '@/assets/icons/icon-ambiental-green.svg'
-import IconSocial from '@/assets/icons/icon-social-green.svg'
 import Compromisos from '@/components/organism/Sostenibilidad/Compromisos'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
@@ -26,42 +24,29 @@ const Info = ({ dataSostenibilidad }: SostenibilidadProps) => {
           </h2>
         </div>
         <div className='mt-14 flex w-full flex-col px-8 lg:mt-0 lg:w-[56.4%] lg:px-0'>
-          <div className='flex items-center justify-start pb-10'>
-            <LazyLoadImage
-              src={IconAmbiental}
-              className='mr-4 hidden w-[75px] object-[1/1] lg:block'
-              alt='Icono de compromisos para Responsabilidad Ambiental'
-            />
-            <div className='flex max-w-lg flex-col border-l border-[#03773A]'>
-              <div className=''>
-                <h3 className='pl-4 text-xl font-bold uppercase text-[#E8732C]'>
-                  {dataSostenibilidad?.inicio.primer_titulo}
-                </h3>
+          {dataSostenibilidad?.sostenibilidad.informacion.map(
+            (item: any, index: number) => (
+              <div
+                className='flex items-center justify-start pb-10'
+                key={index}
+              >
+                <LazyLoadImage
+                  src={item.icon.url}
+                  className='mr-4 hidden w-[75px] object-[1/1] lg:block'
+                  alt={`Icono de compromisos para ${item.title}`}
+                />
+                <div className='flex max-w-lg flex-col border-l border-[#03773A]'>
+                  <div className=''>
+                    <h3 className='pl-4 text-xl font-bold uppercase text-[#E8732C]'>
+                      {item.title}
+                    </h3>
+                  </div>
+                  <hr className='my-3 border-[#03773A]' />
+                  <p className='pl-4 text-sm text-black'>{item.content}</p>
+                </div>
               </div>
-              <hr className='my-3 border-[#03773A]' />
-              <p className='pl-4 text-sm text-black'>
-                {dataSostenibilidad?.inicio.primera_descripcion}
-              </p>
-            </div>
-          </div>
-          <div className='flex items-center justify-start pb-10'>
-            <LazyLoadImage
-              src={IconSocial}
-              className='mr-4 hidden size-20 lg:block'
-              alt='Icono de compromisos para Responsabilidad Social'
-            />
-            <div className='flex max-w-lg flex-col border-l border-[#03773A]'>
-              <div className=''>
-                <h3 className='pl-4 text-xl font-bold uppercase text-[#E8732C]'>
-                  {dataSostenibilidad?.inicio.segundo_titulo}
-                </h3>
-              </div>
-              <hr className='my-3 border-[#03773A]' />
-              <p className='pl-4 text-sm text-black'>
-                {dataSostenibilidad?.inicio.segunda_descripcion}
-              </p>
-            </div>
-          </div>
+            )
+          )}
         </div>
       </div>
       <Compromisos dataSostenibilidad={dataSostenibilidad} />

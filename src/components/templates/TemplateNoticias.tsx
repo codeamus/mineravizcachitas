@@ -43,8 +43,9 @@ const TemplateNoticias = () => {
                   key={noticia.id}
                   title={noticia.title.rendered}
                   slug={noticia.slug}
-                  image={noticia.acf.image}
-                  content={noticia.acf.content}
+                  image={noticia.acf.image.url}
+                  content={noticia.acf.content_noticia}
+                  date={noticia.date}
                 />
               ))}
           </div>
