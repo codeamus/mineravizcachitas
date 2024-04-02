@@ -27,7 +27,7 @@ const Noticias = () => {
                 id: number
                 title: { rendered: string }
                 slug: string
-                acf: { image: string; content: string }
+                acf: { image: { url: string }; content_noticia: string }
                 date: string
               },
               index
@@ -40,7 +40,7 @@ const Noticias = () => {
                     aria-label={`Ir a la noticia ${noticia.title.rendered}`}
                   >
                     <LazyLoadImage
-                      src={noticia.acf.image}
+                      src={`${noticia.acf.image.url}`}
                       alt={`Imagen de la noticia ${noticia.title.rendered}`}
                       className='m-auto block aspect-[4/3] w-full object-cover brightness-[0.80] transition-all duration-300 hover:brightness-100'
                     />
@@ -55,7 +55,7 @@ const Noticias = () => {
                   </span>
                   <hr className='my-4 border-t-2 border-black' />
                   <p className='text-balance text-center text-sm text-black'>
-                    {`${noticia.acf.content.substring(0, 150)} ...`}
+                    {`${noticia.acf.content_noticia.substring(0, 150)} ...`}
                   </p>
                 </div>
                 <div className='mt-4 flex justify-center'>

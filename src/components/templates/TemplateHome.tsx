@@ -9,7 +9,7 @@ import AporteRegional from '@/components/organism/Home/AporteRegional'
 import Compromisos from '@/components/organism/Home/Compromisos'
 import DescubreProyecto from '@/components/organism/Home/DescubreProyecto'
 import EtapasProyecto from '@/components/organism/Home/EtapasProyecto'
-// import Noticias from '@/components/organism/Home/Noticias'
+import Noticias from '@/components/organism/Home/Noticias'
 import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
 import Navbar from '@/components/organism/MenuNav'
@@ -64,7 +64,7 @@ const TemplateHome = () => {
         <AporteRegional dataAporte={dataHome?.aporte_regional} />
         <PreguntasFrecuentes dataFaq={dataHome?.preguntas_frecuentes_home} />
         <EtapasProyecto dataEtapas={dataHome?.etapas} />
-        {/* <Noticias /> */}
+        <Noticias />
         <BackToTop />
       </main>
       <Footer />
