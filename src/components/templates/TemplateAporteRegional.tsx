@@ -1,3 +1,4 @@
+import { getDataPage } from '@/api/page'
 import IconAporte from '@/assets/icons/icon-aporte.svg'
 import VideoMP4 from '@/assets/videos/aporte.mp4'
 import VideoWebm from '@/assets/videos/aporte.webm'
@@ -8,9 +9,20 @@ import VideoBanner from '@/components/molecules/VideoBanner'
 import Beneficios from '@/components/organism/Aporte/Beneficios'
 import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
+import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const TemplateAporteRegional = () => {
+  const [dataAporte, setDataAporte] = useState(null)
+
+  useEffect(() => {
+    const fetchAporteRegional = async () => {
+      const result = await getDataPage('aporte-regional')
+      setDataAporte(result[0].acf)
+    }
+    fetchAporteRegional()
+  }, [])
+
   return (
     <>
       <Helmet>
@@ -55,12 +67,15 @@ const TemplateAporteRegional = () => {
               alt='Icono para aporte regional'
             />
             <p className='text-md text-pretty border-[#009145] p-6 text-black lg:border-l'>
-              El proyecto Vizcachitas generará un aumento de más del 3% en el PIB de la Región de Valparaíso, crecimiento que, además, será sostenible y con capacidad de generar prosperidad y oportunidades en el corto, mediano y largo plazo.
+              El proyecto Vizcachitas generará un aumento de más del 3% en el
+              PIB de la Región de Valparaíso, crecimiento que, además, será
+              sostenible y con capacidad de generar prosperidad y oportunidades
+              en el corto, mediano y largo plazo.
             </p>
           </div>
         </section>
         <section>
-          <Beneficios />
+          <Beneficios dataAporte={dataAporte} />
         </section>
         <BackToTop />
       </main>
