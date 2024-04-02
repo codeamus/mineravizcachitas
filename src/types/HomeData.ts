@@ -3,6 +3,7 @@ export interface TemplateHomeType {
   section_navega: any
   compromisos: any
   aporte_regional: any
+  preguntas_frecuentes_home: any
 }
 
 export interface HomeData {
@@ -19,6 +20,7 @@ export interface HomeData {
   }
   dataCompromisos?: CompromisosType[]
   dataAporte?: AporteRegionalFields[]
+  dataFaq?: Faq[]
 }
 
 export interface VideosDescubre {
@@ -28,16 +30,21 @@ export interface VideosDescubre {
   description: string
 }
 
-export interface CompromisosType {
+interface CompromisosType {
   title: string
   description: string
   icon: { url: string }
   image: { url: string }
 }
 
-export interface AporteRegionalFields {
+interface AporteRegionalFields {
   title: string
   description: string
   icon: { url: string }
   image: { url: string }
+}
+
+interface Faq {
+  title: string
+  content: string
 }

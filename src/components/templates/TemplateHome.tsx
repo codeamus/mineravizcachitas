@@ -10,7 +10,7 @@ import Compromisos from '@/components/organism/Home/Compromisos'
 import DescubreProyecto from '@/components/organism/Home/DescubreProyecto'
 // import EtapasProyecto from '@/components/organism/Home/EtapasProyecto'
 // import Noticias from '@/components/organism/Home/Noticias'
-// import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
+import PreguntasFrecuentes from '@/components/organism/Home/PreguntasFrecuentes'
 import PresentacionUbicacion from '@/components/organism/Home/PresentacionUbicacion'
 import Navbar from '@/components/organism/MenuNav'
 import { TemplateHomeType } from '@/types/HomeData'
@@ -62,10 +62,11 @@ const TemplateHome = () => {
         <DescubreProyecto dataDescubre={dataHome?.section_navega} />
         <Compromisos dataCompromisos={dataHome?.compromisos} />
         <AporteRegional dataAporte={dataHome?.aporte_regional} />
+        <PreguntasFrecuentes dataFaq={dataHome?.preguntas_frecuentes_home} />
         {/*
         
         
-        <PreguntasFrecuentes dataPresentacion={dataHome} />
+        
         <EtapasProyecto />
         <Noticias /> */}
         <BackToTop />
