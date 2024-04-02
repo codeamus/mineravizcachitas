@@ -16,7 +16,7 @@ export interface HomeData {
   dataDescubre?: {
     videos: VideosDescubre[]
   }
-  dataCompromisos?: Compromisos[]
+  dataCompromisos?: CompromisosType[]
 }
 
 export interface VideosDescubre {
