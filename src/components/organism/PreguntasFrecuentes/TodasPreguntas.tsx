@@ -1,16 +1,18 @@
-import { FAQS_PAGE } from '@/const/faqs'
+import { Faq, PreguntasFrecuentesType } from '@/types/Faq'
 
-const TodasPreguntas = () => {
+const TodasPreguntas = ({ dataFaq }: PreguntasFrecuentesType) => {
   return (
     <div className='relative'>
       <h2 className='after:content[] w-full bg-[#009145] py-4 text-center text-2xl font-bold uppercase text-white after:cp-v after:absolute after:left-0 after:right-0 after:top-[60px] after:m-auto after:h-[80px] after:w-[80px] after:bg-[#009145] lg:text-4xl lg:after:top-[70px]'>
         Preguntas Frecuentes
       </h2>
       <div className='my-10 flex flex-col items-center justify-center px-4'>
-        {FAQS_PAGE.map(({ title, content }, index) => (
+        {dataFaq?.faq.map(({ titulo, content }: Faq, index: number) => (
           <details className='group mb-4 w-full max-w-3xl' key={index}>
             <summary className='flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white'>
-              <span className='text-sm font-bold text-black title duration-300'>{title}</span>
+              <span className='text-sm font-bold text-black title duration-300'>
+                {titulo}
+              </span>
               <span className='transition group-open:rotate-180'>
                 <svg
                   fill='none'

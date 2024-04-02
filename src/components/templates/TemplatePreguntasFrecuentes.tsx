@@ -1,3 +1,4 @@
+import { getDataPage } from '@/api/page'
 import VideoMP4 from '@/assets/videos/preguntas.mp4'
 import VideoWebm from '@/assets/videos/preguntas.webm'
 import BackToTop from '@/components/molecules/BackToTop'
@@ -7,9 +8,20 @@ import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
 import PrincipalInfo from '@/components/organism/PreguntasFrecuentes/PrincipalInfo'
 import TodasPreguntas from '@/components/organism/PreguntasFrecuentes/TodasPreguntas'
+import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const TemplatePreguntasFrecuentes = () => {
+  const [dataFaq, setDataFaq] = useState(null)
+
+  useEffect(() => {
+    const fetchPreguntasFrecuentes = async () => {
+      const result = await getDataPage('preguntas-frecuentes')
+      setDataFaq(result[0].acf)
+    }
+    fetchPreguntasFrecuentes()
+  }, [])
+
   return (
     <>
       <Helmet>
@@ -43,7 +55,7 @@ const TemplatePreguntasFrecuentes = () => {
           className='relative bg-[url(/assets/images/backgrounds/bg-sostenibilidad.webp)] bg-contain bg-fixed lg:bg-cover'
         >
           <PrincipalInfo />
-          <TodasPreguntas />
+          <TodasPreguntas dataFaq={dataFaq} />
         </section>
         <BackToTop />
       </main>

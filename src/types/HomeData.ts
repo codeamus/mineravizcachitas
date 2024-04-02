@@ -1,3 +1,5 @@
+import { Faq } from './Faq'
+
 export interface TemplateHomeType {
   presentacion_y_ubicacion: any
   section_navega: any
@@ -44,11 +46,6 @@ interface AporteRegionalFields {
   description: string
   icon: { url: string }
   image: { url: string }
-}
-
-interface Faq {
-  title: string
-  content: string
 }
 
 interface EtapasProyecto {
