@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import ScrollToTop from '@/components/molecules/ScrollTop'
 import BackToTop from '@/components/molecules/BackToTop'
+import { NoticiaType } from '@/types/Noticias'
 const TemplateNoticias = () => {
   const [news, setNews] = useState([])
   useEffect(() => {
@@ -37,22 +38,15 @@ const TemplateNoticias = () => {
           </h1>
           <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
             {news.length > 0 &&
-              news.map(
-                (noticia: {
-                  id: number
-                  title: { rendered: string }
-                  slug: string
-                  acf: { image: string; content: string }
-                }) => (
-                  <CardBlog
-                    key={noticia.id}
-                    title={noticia.title.rendered}
-                    slug={noticia.slug}
-                    image={noticia.acf.image}
-                    content={noticia.acf.content}
-                  />
-                )
-              )}
+              news.map((noticia: NoticiaType) => (
+                <CardBlog
+                  key={noticia.id}
+                  title={noticia.title.rendered}
+                  slug={noticia.slug}
+                  image={noticia.acf.image}
+                  content={noticia.acf.content}
+                />
+              ))}
           </div>
         </section>
         <BackToTop />

@@ -14,7 +14,7 @@ const getNewBySlug = async (slug: string | undefined) => {
   const response = await fetch(
     `${
       import.meta.env.VITE_BASE_API_URL
-    }/noticia/?slug=${slug}&acf_format=standard`
+    }noticia/?slug=${slug}&acf_format=standard`
   )
   const newBySlug = await response.json()
   return newBySlug

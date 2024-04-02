@@ -3,11 +3,13 @@ interface CardProps {
   image: string
   slug: string
   content: string
+  date: string
 }
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
-const CardBlog = ({ title, image, slug, content }: CardProps) => {
+import { formatDate } from '@/utils/format'
+const CardBlog = ({ title, image, slug, content, date }: CardProps) => {
   return (
     <article>
       <picture>
@@ -22,7 +24,7 @@ const CardBlog = ({ title, image, slug, content }: CardProps) => {
           {title}
         </h2>
         <span className='my-2 block w-full text-center text-xs font-bold text-[#E8732C]'>
-          Mar 15, 2022
+          {formatDate(date)}
         </span>
       </div>
       <div className='flex flex-col items-center'>

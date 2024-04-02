@@ -1,6 +1,7 @@
 export interface NoticiaType {
-  icon: { url: string }
-  title_nav: string
-  title_content: string
-  content: string
+  id: number
+  title: { rendered: string }
+  slug: string
+  acf: { image: { url: string }; content_noticia: string; id_video: string }
+  date: string
 }

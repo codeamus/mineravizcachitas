@@ -1,5 +1,6 @@
 import { getAllNews } from '@/api'
 import DefaultButton from '@/components/molecules/Buttons/DefaultButton'
+import { NoticiaType } from '@/types/Noticias'
 import { formatDate } from '@/utils/format'
 import { useEffect, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
@@ -21,55 +22,44 @@ const Noticias = () => {
       </h2>
       <div className='mt-20 grid grid-cols-1 gap-10 px-10 py-4 lg:grid-cols-3 lg:px-20'>
         {news.length > 0 &&
-          news.map(
-            (
-              noticia: {
-                id: number
-                title: { rendered: string }
-                slug: string
-                acf: { image: { url: string }; content_noticia: string }
-                date: string
-              },
-              index
-            ) => (
-              <article className='flex flex-col justify-start' key={index}>
-                <picture>
-                  <Link
-                    to={`/noticias/${noticia.slug}`}
-                    unstable_viewTransition
-                    aria-label={`Ir a la noticia ${noticia.title.rendered}`}
-                  >
-                    <LazyLoadImage
-                      src={`${noticia.acf.image.url}`}
-                      alt={`Imagen de la noticia ${noticia.title.rendered}`}
-                      className='m-auto block aspect-[4/3] w-full object-cover brightness-[0.80] transition-all duration-300 hover:brightness-100'
-                    />
-                  </Link>
-                </picture>
-                <div className='mt-4'>
-                  <h3 className='min-h-[56px] text-balance text-center text-lg font-bold text-[#E8732D]'>
-                    {noticia.title.rendered}
-                  </h3>
-                  <span className='block w-full text-center text-xs text-[#676767]'>
-                    {formatDate(noticia.date)}
-                  </span>
-                  <hr className='my-4 border-t-2 border-black' />
-                  <p className='text-balance text-center text-sm text-black'>
-                    {`${noticia.acf.content_noticia.substring(0, 150)} ...`}
-                  </p>
-                </div>
-                <div className='mt-4 flex justify-center'>
-                  <Link
-                    to={`/noticias/${noticia.slug}`}
-                    unstable_viewTransition
-                    className='border border-[#009145] bg-[#00914519] px-8 py-3 text-sm font-medium uppercase text-[#009145] transition-all duration-300 hover:border-[#E8732D] hover:text-[#E8732D]'
-                  >
-                    Leer noticia
-                  </Link>
-                </div>
-              </article>
-            )
-          )}
+          news.map((noticia: NoticiaType, index) => (
+            <article className='flex flex-col justify-start' key={index}>
+              <picture>
+                <Link
+                  to={`/noticias/${noticia.slug}`}
+                  unstable_viewTransition
+                  aria-label={`Ir a la noticia ${noticia.title.rendered}`}
+                >
+                  <LazyLoadImage
+                    src={`${noticia.acf.image.url}`}
+                    alt={`Imagen de la noticia ${noticia.title.rendered}`}
+                    className='m-auto block aspect-[4/3] w-full object-cover brightness-[0.80] transition-all duration-300 hover:brightness-100'
+                  />
+                </Link>
+              </picture>
+              <div className='mt-4'>
+                <h3 className='min-h-[56px] text-balance text-center text-lg font-bold text-[#E8732D]'>
+                  {noticia.title.rendered}
+                </h3>
+                <span className='block w-full text-center text-xs text-[#676767]'>
+                  {formatDate(noticia.date)}
+                </span>
+                <hr className='my-4 border-t-2 border-black' />
+                <p className='text-balance text-center text-sm text-black'>
+                  {`${noticia.acf.content_noticia.substring(0, 150)} ...`}
+                </p>
+              </div>
+              <div className='mt-4 flex justify-center'>
+                <Link
+                  to={`/noticias/${noticia.slug}`}
+                  unstable_viewTransition
+                  className='border border-[#009145] bg-[#00914519] px-8 py-3 text-sm font-medium uppercase text-[#009145] transition-all duration-300 hover:border-[#E8732D] hover:text-[#E8732D]'
+                >
+                  Leer noticia
+                </Link>
+              </div>
+            </article>
+          ))}
       </div>
       <div className='relative -bottom-6 flex justify-center'>
         <DefaultButton
