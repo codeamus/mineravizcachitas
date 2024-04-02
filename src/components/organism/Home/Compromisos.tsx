@@ -1,15 +1,10 @@
-interface CompromisosProps {
-  dataPresentacion?: any
-}
-
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
-import IconAmbiental from '@/assets/icons/icon-ambiental-white.svg'
-import IconSocial from '@/assets/icons/icon-social-white.svg'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
+import { HomeData } from '@/types/HomeData'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 
-const Compromisos = ({ dataPresentacion }: CompromisosProps) => {
+const Compromisos = ({ dataCompromisos }: HomeData) => {
   return (
     <section
       id='compromisos'
@@ -20,54 +15,32 @@ const Compromisos = ({ dataPresentacion }: CompromisosProps) => {
         Compromisos Sostenibles
       </span>
       <div className='flex flex-col justify-center gap-10 p-10 lg:flex-row lg:gap-40'>
-        <article className='max-w-xl'>
-          <picture>
-            <LazyLoadImage
-              src={dataPresentacion?.compromisos_sostenibles.primera_imagen}
-              alt='Imagen representativa de Responsabilidad Ambiental'
-              className='aspect-[4/3] object-cover'
-            />
-          </picture>
-          <div>
-            <div className='mb-4 flex flex-row items-center gap-4 border-b border-white pt-4'>
+        {dataCompromisos?.map((compromiso, index) => (
+          <article key={index} className='max-w-xl'>
+            <picture>
               <LazyLoadImage
-                src={IconAmbiental}
-                alt='Icono de responsabilidad ambiental'
-                className='w-[70px] object-[1/1]'
+                src={compromiso.image.url}
+                alt={`Imagen que representa el ${compromiso.title}`}
+                className='aspect-[4/3] object-cover'
               />
-              <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
-                {dataPresentacion?.compromisos_sostenibles.primer_titulo}
-              </h2>
+            </picture>
+            <div>
+              <div className='mb-4 flex flex-row items-center gap-4 border-b border-white pt-4'>
+                <LazyLoadImage
+                  src={compromiso.icon.url}
+                  alt={`Icono de compromiso ${compromiso.title}`}
+                  className='w-auto h-16 pb-2'
+                />
+                <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
+                  {compromiso.title}
+                </h2>
+              </div>
+              <p className='text-balance text-white'>
+                {compromiso.description}
+              </p>
             </div>
-            <p className='text-balance text-white'>
-              {dataPresentacion?.compromisos_sostenibles.primera_descripcion}
-            </p>
-          </div>
-        </article>
-        <article className='max-w-xl'>
-          <picture>
-            <LazyLoadImage
-              src={dataPresentacion?.compromisos_sostenibles.segunda_imagen}
-              alt='Imagen que representa la Responsabilidad Social'
-              className='aspect-[4/3] object-cover'
-            />
-          </picture>
-          <div>
-            <div className='mb-4 flex flex-row items-center gap-4 border-b border-white pt-4'>
-              <LazyLoadImage
-                src={IconSocial}
-                alt='Icono de responsabilidad social'
-                className='size-16'
-              />
-              <h2 className='border-l border-white pl-4 text-xl font-bold  uppercase text-white lg:text-2xl lg:leading-10'>
-                {dataPresentacion?.compromisos_sostenibles.segundo_titulo}
-              </h2>
-            </div>
-            <p className='text-balance text-white'>
-              {dataPresentacion?.compromisos_sostenibles.segunda_descripcion}
-            </p>
-          </div>
-        </article>
+          </article>
+        ))}
       </div>
       <div className='relative -bottom-5 flex justify-center'>
         <Link

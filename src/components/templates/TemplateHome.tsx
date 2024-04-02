@@ -6,7 +6,7 @@ import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'
 import Footer from '@/components/organism/Footer'
 // import AporteRegional from '@/components/organism/Home/AporteRegional'
-// import Compromisos from '@/components/organism/Home/Compromisos'
+import Compromisos from '@/components/organism/Home/Compromisos'
 import DescubreProyecto from '@/components/organism/Home/DescubreProyecto'
 // import EtapasProyecto from '@/components/organism/Home/EtapasProyecto'
 // import Noticias from '@/components/organism/Home/Noticias'
@@ -60,8 +60,9 @@ const TemplateHome = () => {
           dataPresentacion={dataHome?.presentacion_y_ubicacion}
         />
         <DescubreProyecto dataDescubre={dataHome?.section_navega} />
-        {/* <DescubreProyecto dataPresentacion={dataHome} />
-        <Compromisos dataPresentacion={dataHome} />
+        <Compromisos dataCompromisos={dataHome?.compromisos} />
+        {/*
+        
         <AporteRegional dataPresentacion={dataHome} />
         <PreguntasFrecuentes dataPresentacion={dataHome} />
         <EtapasProyecto />

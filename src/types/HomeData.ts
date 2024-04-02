@@ -1,6 +1,7 @@
 export interface TemplateHomeType {
   presentacion_y_ubicacion: any
   section_navega: any
+  compromisos: any
 }
 
 export interface HomeData {
@@ -15,6 +16,7 @@ export interface HomeData {
   dataDescubre?: {
     videos: VideosDescubre[]
   }
+  dataCompromisos?: Compromisos[]
 }
 
 export interface VideosDescubre {
@@ -22,4 +24,10 @@ export interface VideosDescubre {
   id_video_youtube: string
   title: string
   description: string
+}
+
+export interface CompromisosType {
+  title: string
+  description: string
+  image: { url: string }
 }
