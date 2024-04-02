@@ -2,6 +2,7 @@ export interface TemplateHomeType {
   presentacion_y_ubicacion: any
   section_navega: any
   compromisos: any
+  aporte_regional: any
 }
 
 export interface HomeData {
@@ -17,6 +18,7 @@ export interface HomeData {
     videos: VideosDescubre[]
   }
   dataCompromisos?: CompromisosType[]
+  dataAporte?: AporteRegionalFields[]
 }
 
 export interface VideosDescubre {
@@ -29,5 +31,13 @@ export interface VideosDescubre {
 export interface CompromisosType {
   title: string
   description: string
+  icon: { url: string }
+  image: { url: string }
+}
+
+export interface AporteRegionalFields {
+  title: string
+  description: string
+  icon: { url: string }
   image: { url: string }
 }
