@@ -1,8 +1,9 @@
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import IconDownload from '@/assets/icons/icon-download.svg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { ArchivoType, QuienesSomosType } from '@/types/QuienesSomos'
 
-const Documentos = () => {
+const Documentos = ({ dataDocumentos }: QuienesSomosType) => {
   return (
     <section
       id='documentos'
@@ -15,91 +16,38 @@ const Documentos = () => {
             Transparencia
           </span>
           <h2 className='my-6 text-3xl font-bold uppercase text-black lg:text-end'>
-            Documentación legal
+            {dataDocumentos?.title}
           </h2>
           <p className='text-black lg:text-end'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-            magni harum perferendis sunt facilis architecto, laboriosam veniam
-            voluptatem! Quod exercitationem voluptas itaque tenetur maiores
-            iusto officia quaerat reiciendis beatae hic.
+            {dataDocumentos?.description}
           </p>
         </div>
         <div className='mt-10 w-full lg:mt-0 lg:w-1/2 lg:pl-10'>
-          <div className='mb-4 flex flex-row items-start justify-start gap-6'>
-            <a
-              href='#'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='mt-2 size-40 lg:size-36'
+          {dataDocumentos?.files.map((file: ArchivoType, index: number) => (
+            <div
+              className='mb-4 flex flex-row items-start justify-start gap-6'
+              key={index}
             >
-              <LazyLoadImage
-                src={IconDownload}
-                alt='Icono de descarga'
-                className='transition-all duration-300 hover:scale-110'
-              />
-            </a>
-            <div>
-              <h3 className='mb-2 text-lg uppercase text-black'>
-                Rca las tejas
-              </h3>
-              <p className='text-sm text-black'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatibus recusandae ab, maiores esse rem laboriosam! Cumque
-                excepturi in exercitationem, reprehenderit maiores velit ullam
-                dolores, necessitatibus deleniti provident est unde explicabo.
-              </p>
+              <a
+                href={file.file_pdf.url}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='mt-2 size-40 lg:size-36'
+              >
+                <LazyLoadImage
+                  src={IconDownload}
+                  alt={`Icono de descarga para el archivo ${file.name}`}
+                  className='transition-all duration-300 hover:scale-110'
+                />
+              </a>
+              <div className='w-full'>
+                <h3 className='mb-2 text-lg uppercase text-black'>
+                  {file.name}
+                </h3>
+                <p className='text-sm text-black'>{file.content}</p>
+              </div>
             </div>
-          </div>
-          <div className='mb-4 flex flex-row items-start justify-start gap-6'>
-            <a
-              href='#'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='mt-2 size-40 lg:size-36'
-            >
-              <LazyLoadImage
-                src={IconDownload}
-                alt='Icono de descarga'
-                className='transition-all duration-300 hover:scale-110'
-              />
-            </a>
-            <div>
-              <h3 className='mb-2 text-lg uppercase text-black'>
-                Comunicado Alcaldía <br aria-hidden /> de putaendo
-              </h3>
-              <p className='text-sm text-black'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatibus recusandae ab, maiores esse rem laboriosam! Cumque
-                excepturi in exercitationem, reprehenderit maiores velit ullam
-                dolores, necessitatibus deleniti provident est unde explicabo.
-              </p>
-            </div>
-          </div>
-          <div className='mb-4 flex flex-row items-start justify-start gap-6'>
-            <a
-              href='#'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='mt-2 size-40 lg:size-36'
-            >
-              <LazyLoadImage
-                src={IconDownload}
-                alt='Icono de descarga'
-                className='transition-all duration-300 hover:scale-110'
-              />
-            </a>
-            <div>
-              <h3 className='mb-2 text-lg uppercase text-black'>
-                COMUNICADO ETAPA <br aria-hidden/> DE SONDAJE
-              </h3>
-              <p className='text-sm text-black'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatibus recusandae ab, maiores esse rem laboriosam! Cumque
-                excepturi in exercitationem, reprehenderit maiores velit ullam
-                dolores, necessitatibus deleniti provident est unde explicabo.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

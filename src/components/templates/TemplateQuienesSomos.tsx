@@ -10,8 +10,23 @@ import Sobre from '@/components/organism/Somos/Sobre'
 import { Helmet } from 'react-helmet-async'
 import ScrollToTop from '@/components/molecules/ScrollTop'
 import BackToTop from '@/components/molecules/BackToTop'
+import { useEffect, useState } from 'react'
+import { getDataPage } from '@/api/page'
+import { TemplateQuienesSomosType } from '@/types/QuienesSomos'
 
 const TemplateQuienesSomos = () => {
+  const [dataQuienesSomos, setDataQuienesSomos] = useState(
+    null as TemplateQuienesSomosType | null
+  )
+
+  useEffect(() => {
+    const fetchQuienesSomos = async () => {
+      const result = await getDataPage('quienes-somos')
+      setDataQuienesSomos(result[0].acf)
+    }
+    fetchQuienesSomos()
+  }, [])
+
   return (
     <>
       <Helmet>
@@ -40,9 +55,9 @@ const TemplateQuienesSomos = () => {
         />
 
         <Sobre />
-        <Equipo />
-        <Documentos />
-        <Contacto />
+        <Equipo dataTeam={dataQuienesSomos?.team} />
+        <Documentos dataDocumentos={dataQuienesSomos?.documentation} />
+        <Contacto dataFormulario={dataQuienesSomos?.form} />
         <BackToTop />
       </main>
       <Footer />
