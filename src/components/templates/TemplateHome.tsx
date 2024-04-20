@@ -35,8 +35,8 @@ const TemplateHome = () => {
           Minera Vizcachitas: Líder en Minería Responsable y Sostenible
         </title>
         <meta
-          name='description'
-          content='Descubre cómo Minera Vizcachitas lidera la innovación en la minería con prácticas responsables y sostenibles para un futuro mejor. Únete a nuestra misión.'
+          name="description"
+          content="Descubre cómo Minera Vizcachitas lidera la innovación en la minería con prácticas responsables y sostenibles para un futuro mejor. Únete a nuestra misión."
         />
       </Helmet>
       <ScrollToTop />
@@ -45,15 +45,15 @@ const TemplateHome = () => {
         <VideoBanner
           videoMP4={VideoMP4}
           videoWEBM={VideoWebm}
-          poster='/assets/images/posters/poster-video-home-desktop.webp'
-          bgMobile='/assets/images/posters/poster-video-home-mobile.webp'
+          poster="/assets/images/posters/poster-video-home-desktop.webp"
+          bgMobile="/assets/images/posters/poster-video-home-mobile.webp"
           title={
-            <h1 className='w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl'>
+            <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
               Proyecto
-              <span className='text-[#E8732D]'> Vizcachitas</span>
+              <span className="text-[#E8732D]"> Vizcachitas</span>
             </h1>
           }
-          description='Minería sostenible y responsable comprometida con el desarrollo social y económico de Putaendo, San Felipe y la Región de Valparaíso. Desarrollo con las comunidades y cuidando el medio ambiente para un futuro mejor.'
+          description="Minería sostenible y responsable comprometida con el desarrollo social y económico de Putaendo, San Felipe y la Región de Valparaíso. Desarrollo con las comunidades y cuidando el medio ambiente para un futuro mejor."
           list={true}
         />
         <PresentacionUbicacion
@@ -61,7 +61,7 @@ const TemplateHome = () => {
         />
         <DescubreProyecto dataDescubre={dataHome?.section_navega} />
         <Compromisos dataCompromisos={dataHome?.compromisos} />
-        <AporteRegional dataAporte={dataHome?.aporte_regional} />
+        <AporteRegional dataAporte={dataHome?.aporte_regional_info} />
         <PreguntasFrecuentes dataFaq={dataHome?.preguntas_frecuentes_home} />
         <EtapasProyecto dataEtapas={dataHome?.etapas} />
         <Noticias />

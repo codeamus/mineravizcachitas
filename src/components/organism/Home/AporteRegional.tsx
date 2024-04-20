@@ -4,16 +4,16 @@ import { HomeData } from '@/types/HomeData'
 
 const AporteRegional = ({ dataAporte }: HomeData) => {
   return (
-    <section className='mt-20 bg-white p-4 md:p-8'>
-      <div className='flex flex-row items-center justify-center'>
-        <hr className='w-full border-[#8B8B8B]' />
-        <h2 className='w-fit whitespace-nowrap px-4 text-center text-3xl font-bold uppercase text-[#8B8B8B] lg:text-4xl'>
+    <section className="mt-20 bg-white p-4 md:p-8">
+      <div className="flex flex-row items-center justify-center">
+        <hr className="w-full border-[#8B8B8B]" />
+        <h2 className="w-fit whitespace-nowrap px-4 text-center text-3xl font-bold uppercase text-[#8B8B8B] lg:text-4xl">
           Aporte Regional
         </h2>
-        <hr className='w-full border-[#8B8B8B]' />
+        <hr className="w-full border-[#8B8B8B]" />
       </div>
-      <div className='mt-10 grid grid-cols-1 justify-items-center gap-1 md:grid-cols-2 lg:grid-cols-4'>
-        {dataAporte?.map((aporte, index) => (
+      <div className="mt-10 grid grid-cols-1 justify-items-center gap-1 md:grid-cols-2 lg:grid-cols-4">
+        {dataAporte?.aporte_regional.map((aporte, index) => (
           <RegionalCard
             key={index}
             title={aporte.title}
@@ -22,19 +22,19 @@ const AporteRegional = ({ dataAporte }: HomeData) => {
           />
         ))}
       </div>
-      <div className='mt-10 flex w-full items-center justify-center'>
-        <hr className='w-full border-[#03773A]' />
+      <div className="mt-10 flex w-full items-center justify-center">
+        <hr className="w-full border-[#03773A]" />
         <DefaultButton
-          url='/aporte-regional'
-          textFirst='Ver todos los'
-          textSecond='Aportes regionales'
-          backgroundColor='#03773A'
-          hoverBackgroundColor='#E8732D'
+          url={`${dataAporte?.link_button}`}
+          textFirst="Ver todos los"
+          textSecond="Aportes regionales"
+          backgroundColor="#03773A"
+          hoverBackgroundColor="#E8732D"
           customStyle={{
             minWidth: 215,
           }}
         />
-        <hr className='w-full border-[#03773A]' />
+        <hr className="w-full border-[#03773A]" />
       </div>
     </section>
   )

@@ -4,7 +4,7 @@ export interface TemplateHomeType {
   presentacion_y_ubicacion: any
   section_navega: any
   compromisos: any
-  aporte_regional: any
+  aporte_regional_info: any
   preguntas_frecuentes_home: any
   etapas: any
 }
@@ -21,8 +21,14 @@ export interface HomeData {
   dataDescubre?: {
     videos: VideosDescubre[]
   }
-  dataCompromisos?: CompromisosType[]
-  dataAporte?: AporteRegionalFields[]
+  dataCompromisos?: {
+    compromisos_info: CompromisosType[]
+    link_button: string
+  }
+  dataAporte?: {
+    aporte_regional: AporteRegionalFields[]
+    link_button: string
+  }
   dataFaq?: Faq[]
   dataEtapas?: EtapasProyecto[]
 }
