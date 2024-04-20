@@ -29,7 +29,10 @@ export interface HomeData {
     aporte_regional: AporteRegionalFields[]
     link_button: string
   }
-  dataFaq?: Faq[]
+  dataFaq?: {
+    preguntas_frecuentes_info: Faq[]
+    link_button: string
+  }
   dataEtapas?: EtapasProyecto[]
 }
 
