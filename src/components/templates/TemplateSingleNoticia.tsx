@@ -62,7 +62,7 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
               {newBySlug?.acf.id_video ? (
                 <iframe
                   className="h-[300px] w-full lg:h-[560px] lg:w-1/2"
-                  src={newBySlug?.acf.id_video}
+                  src={`https://www.youtube.com/embed/${newBySlug?.acf.id_video}`}
                   title="YouTube video noticia"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
