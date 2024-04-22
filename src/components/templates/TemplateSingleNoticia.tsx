@@ -77,14 +77,17 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
                 </picture>
               )}
               <div className="h-fit w-full lg:w-1/2">
-                <span className="mb-6 block w-fit bg-[#E8732C] px-4 py-2 text-sm font-bold uppercase text-white">
-                  Destacada
-                </span>
+                {newBySlug?.acf.destacado === true && (
+                  <span className="mb-6 block w-fit bg-[#E8732C] px-4 py-2 text-sm font-bold uppercase text-white">
+                    Destacada
+                  </span>
+                )}
+
                 <h1 className="text-4xl font-bold text-black">
                   {newBySlug?.title.rendered}
                 </h1>
                 <span className="my-4 mb-10 block text-xs font-bold text-black">
-                  {formatDate(newBySlug?.date)}
+                  {newBySlug?.acf.date}
                 </span>
                 <div className="border-t border-[#E8732C] pt-6">
                   <p className="text-balance text-sm leading-relaxed text-black">
@@ -107,7 +110,7 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
                     slug={noticia.slug}
                     image={noticia.acf.image.url}
                     content={noticia.acf.content_noticia}
-                    date={noticia.date}
+                    date={noticia.acf.date}
                   />
                 ))}
             </div>
