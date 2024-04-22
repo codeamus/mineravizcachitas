@@ -24,19 +24,19 @@ const TemplateNoticias = () => {
           Sostenible
         </title>
         <meta
-          name='description'
-          content='Sumérgete en nuestro blog para explorar artículos y noticias sobre la minería sostenible, innovaciones en el sector y el impacto positivo de Minera Vizcachitas.'
+          name="description"
+          content="Sumérgete en nuestro blog para explorar artículos y noticias sobre la minería sostenible, innovaciones en el sector y el impacto positivo de Minera Vizcachitas."
         />
       </Helmet>
       <ScrollToTop />
-      <Navbar position='relative' bgColor='bg-[#03773A]' />
+      <Navbar position="relative" bgColor="bg-[#03773A]" />
       <main>
-        <section className='bg-[#F0EFEF] p-10 lg:p-20'>
-          <h1 className='text-center text-5xl font-bold text-black lg:text-balance lg:text-6xl mb-10'>
+        <section className="bg-[#F0EFEF] p-10 lg:p-20">
+          <h1 className="text-center text-5xl font-bold text-black lg:text-balance lg:text-6xl mb-10">
             Proyecto Vizcachitas{' '}
-            <span className='text-[#E8732C]'>Noticias</span>
+            <span className="text-[#E8732C]">Novedades</span>
           </h1>
-          <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {news.length > 0 &&
               news.map((noticia: NoticiaType) => (
                 <CardBlog
@@ -45,7 +45,7 @@ const TemplateNoticias = () => {
                   slug={noticia.slug}
                   image={noticia.acf.image.url}
                   content={noticia.acf.content_noticia}
-                  date={noticia.date}
+                  date={noticia.acf.date}
                 />
               ))}
           </div>
