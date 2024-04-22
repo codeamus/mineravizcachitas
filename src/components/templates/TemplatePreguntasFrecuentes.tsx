@@ -29,8 +29,8 @@ const TemplatePreguntasFrecuentes = () => {
           Preguntas Frecuentes sobre Minera Vizcachitas: Respuestas Claras
         </title>
         <meta
-          name='description'
-          content='Encuentra respuestas a tus preguntas sobre Minera Vizcachitas, desde nuestros procesos mineros hasta nuestras iniciativas de sostenibilidad y más.'
+          name="description"
+          content="Encuentra respuestas a tus preguntas sobre Minera Vizcachitas, desde nuestros procesos mineros hasta nuestras iniciativas de sostenibilidad y más."
         />
       </Helmet>
       <ScrollToTop />
@@ -39,20 +39,24 @@ const TemplatePreguntasFrecuentes = () => {
         <VideoBanner
           videoMP4={VideoMP4}
           videoWEBM={VideoWebm}
-          bgMobile='/assets/images/posters/poster-video-preguntas-mobile.webp'
-          poster='/assets/images/posters/poster-video-preguntas-desktop.webp'
+          poster={`${
+            import.meta.env.BASE_URL
+          }/assets/images/posters/poster-video-preguntas-desktop.webp`}
+          bgMobile={`${
+            import.meta.env.BASE_URL
+          }/assets/images/posters/poster-video-preguntas-mobile.webp`}
           title={
-            <h1 className='w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl'>
+            <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
               Preguntas
-              <span className='text-[#E8732D]'> Frecuentes</span>
+              <span className="text-[#E8732D]"> Frecuentes</span>
             </h1>
           }
-          description='Respondemos algunas de las principales consultas surgidas de nuestros diálogos permanentes con la comunidad.'
+          description="Respondemos algunas de las principales consultas surgidas de nuestros diálogos permanentes con la comunidad."
           list={false}
         />
         <section
-          id='preguntas'
-          className='relative bg-[url(/assets/images/backgrounds/bg-sostenibilidad.webp)] bg-contain bg-fixed lg:bg-cover'
+          id="preguntas"
+          className="relative bg-[url(/assets/images/backgrounds/bg-sostenibilidad.webp)] bg-contain bg-fixed lg:bg-cover"
         >
           <PrincipalInfo />
           <TodasPreguntas dataFaq={dataFaq} />

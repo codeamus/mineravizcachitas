@@ -27,8 +27,8 @@ const TemplateSostenibilidad = () => {
           Sostenibilidad en Minera Vizcachitas: Nuestro Compromiso Eterno
         </title>
         <meta
-          name='description'
-          content='Explora cómo Minera Vizcachitas se compromete con la sostenibilidad ambiental, social y económica en cada etapa de nuestra operación minera.'
+          name="description"
+          content="Explora cómo Minera Vizcachitas se compromete con la sostenibilidad ambiental, social y económica en cada etapa de nuestra operación minera."
         />
       </Helmet>
       <ScrollToTop />
@@ -37,15 +37,19 @@ const TemplateSostenibilidad = () => {
         <VideoBanner
           videoMP4={VideoMP4}
           videoWEBM={VideoWebm}
-          poster='/assets/images/posters/poster-video-sostenibilidad-desktop.webp'
-          bgMobile='/assets/images/posters/poster-video-sostenibilidad-mobile.webp'
+          poster={`${
+            import.meta.env.BASE_URL
+          }/assets/images/posters/poster-video-sostenibilidad-desktop.webp`}
+          bgMobile={`${
+            import.meta.env.BASE_URL
+          }/assets/images/posters/poster-video-sostenibilidad-mobile.webp`}
           title={
-            <h1 className='w-full text-center text-4xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl'>
+            <h1 className="w-full text-center text-4xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
               Proyecto Vizcachitas
-              <span className='text-[#E8732D]'> Sostenibilidad</span>
+              <span className="text-[#E8732D]"> Sostenibilidad</span>
             </h1>
           }
-          description='Una nueva forma de hacer minería, comprometida con una producción que reduce impactos ambientales y genera efectos positivos sostenidos en el tiempo, tanto desde un punto de vista ambiental como comunitario.'
+          description="Una nueva forma de hacer minería, comprometida con una producción que reduce impactos ambientales y genera efectos positivos sostenidos en el tiempo, tanto desde un punto de vista ambiental como comunitario."
         />
         <Info dataSostenibilidad={dataSostenibilidad} />
         <BackToTop />

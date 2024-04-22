@@ -44,8 +44,12 @@ const TemplateAporteRegional = () => {
         <VideoBanner
           videoMP4={VideoMP4}
           videoWEBM={VideoWebm}
-          poster="/assets/images/posters/poster-video-aporte-desktop.webp"
-          bgMobile="/assets/images/posters/poster-video-aporte-mobile.webp"
+          poster={`${
+            import.meta.env.BASE_URL
+          }/assets/images/posters/poster-video-aporte-desktop.webp`}
+          bgMobile={`${
+            import.meta.env.BASE_URL
+          }/assets/images/posters/poster-video-aporte-mobile.webp`}
           title={
             <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
               Proyecto Vizcachitas
