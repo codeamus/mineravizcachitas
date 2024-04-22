@@ -37,7 +37,7 @@ const Noticias = () => {
                 </Link>
               </picture>
               <div className="mt-4">
-                <h3 className="min-h-[56px] text-balance text-center text-lg font-bold text-[#E8732D]">
+                <h3 className="min-h-[56px] text-balance text-center text-lg font-bold text-[#E8732D] mb-4">
                   {noticia.title.rendered}
                 </h3>
                 <span className="block w-full text-center text-xs text-[#676767]">
