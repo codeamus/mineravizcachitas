@@ -1,15 +1,22 @@
+import NukaCarousel from 'nuka-carousel'
+
 import { QuienesSomosType, TeamType } from '@/types/QuienesSomos'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Equipo = ({ dataTeam }: QuienesSomosType) => {
+  const isMobile = Boolean(window.innerWidth <= 800)
   return (
-    <section className="md:px-26 relative -top-[25px] flex flex-col items-center justify-center bg-[#F0EFEF] px-10 py-20 lg:px-36">
+    <section className="md:px-26 relative -top-[25px] flex flex-col items-center justify-center bg-[#F0EFEF] px-10 py-24 lg:px-36">
       <h2 className="mb-10 w-fit border-b-2 border-[#707070] text-center text-3xl font-bold uppercase text-[#8B8B8B] lg:text-4xl">
         Equipo corporativo
       </h2>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <NukaCarousel
+        autoplay={true}
+        autoplayInterval={2000}
+        slidesToShow={isMobile ? 1 : 4}
+      >
         {dataTeam?.map((person: TeamType, index: number) => (
-          <article key={index}>
+          <article key={index} className="m-4">
             <picture>
               <LazyLoadImage
                 src={person.image_profile.url}
@@ -39,7 +46,7 @@ const Equipo = ({ dataTeam }: QuienesSomosType) => {
             </a>
           </article>
         ))}
-      </div>
+      </NukaCarousel>
     </section>
   )
 }

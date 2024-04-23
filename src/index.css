@@ -54,3 +54,26 @@ details > summary::-webkit-details-marker {
     scale: 1.2;
   }
 }
+
+.slider-control-bottomcenter {
+  margin-bottom: -40px;
+}
+
+.slider-control-bottomcenter ul li button svg {
+  width: 14px !important;
+  height: 14px !important;
+  margin-inline: 5px;
+  fill: #cb906e;
+}
+
+.slider-control-centerleft {
+  display: none;
+}
+
+.slider-control-centerright {
+  display: none;
+}
+
+.slider-control-bottomcenter ul .active button svg {
+  fill: #e8732d;
+}
