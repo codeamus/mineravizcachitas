@@ -63,7 +63,10 @@ const TemplateHome = () => {
         <PresentacionUbicacion
           dataPresentacion={dataHome?.presentacion_y_ubicacion}
         />
-        <DescubreProyecto dataDescubre={dataHome?.section_navega} />
+        {dataHome?.section_navega && (
+          <DescubreProyecto dataDescubre={dataHome?.section_navega} />
+        )}
+
         <Compromisos dataCompromisos={dataHome?.compromisos} />
         <AporteRegional dataAporte={dataHome?.aporte_regional_info} />
         <PreguntasFrecuentes dataFaq={dataHome?.preguntas_frecuentes_home} />

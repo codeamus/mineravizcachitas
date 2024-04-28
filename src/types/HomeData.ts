@@ -19,7 +19,9 @@ export interface HomeData {
     link_google_maps: string
   }
   dataDescubre?: {
-    videos: VideosDescubre[]
+    title: string
+    description: string
+    id_video: string
   }
   dataCompromisos?: {
     compromisos_info: CompromisosType[]
@@ -34,13 +36,6 @@ export interface HomeData {
     link_button: string
   }
   dataEtapas?: EtapasProyecto[]
-}
-
-export interface VideosDescubre {
-  videos: any
-  id_video_youtube: string
-  title: string
-  description: string
 }
 
 interface CompromisosType {
