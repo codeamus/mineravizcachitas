@@ -164,6 +164,26 @@ const TemplateAporteRegional = () => {
             </div>
           </div>
         </section>
+        <section className="relative px-10 lg:px-40 bg-[#E8E8E8] py-20">
+          <div className="flex flex-col items-center">
+            <h2 className="text-3xl lg:text-5xl text-black font-bold text-center pb-10">
+              Descubre los detalle del proyecto
+            </h2>
+            <p className="font-bold text-[#009145]">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <hr className="bg-[#009145] h-[2px] block w-full max-w-xs my-2" />
+          </div>
+          <div className="flex justify-center items-center mt-4">
+            <iframe
+              className="h-[300px] w-full lg:h-[560px] max-w-[1000px]"
+              src="https://www.youtube.com/embed/1l1J1k1J1l1"
+              title="Test"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </section>
         <section>
           <Beneficios dataAporte={dataAporte} />
         </section>
