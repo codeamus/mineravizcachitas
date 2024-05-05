@@ -53,7 +53,7 @@ const TemplateAporteRegional = () => {
           title={
             <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
               Proyecto Vizcachitas
-              <span className="text-[#E8732D]"> Aporte regional</span>
+              <span className="text-[#E8732C]"> Aporte regional</span>
             </h1>
           }
           description="Un potente impulso económico para la Región Valparaíso, a través de la generación de empleos, oportunidades para proveedores y encadenamientos productivos, y desarrollo de proyectos de responsabilidad social empresarial."
@@ -92,7 +92,7 @@ const TemplateAporteRegional = () => {
                 <p className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
                   La rentabilidad social que generará el proyecto en la región
                   es{' '}
-                  <strong className="text-[#E8732D]">
+                  <strong className="text-[#E8732C]">
                     2,31 veces superior a la inversión privada (cerca de US$
                     6.400 millones).
                   </strong>
@@ -111,7 +111,7 @@ const TemplateAporteRegional = () => {
               <div>
                 <p className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
                   Vizcachitas{' '}
-                  <strong className="text-[#E8732D]">
+                  <strong className="text-[#E8732C]">
                     aumentaría en 15,6% el número de trabajadores en Putaendo,
                   </strong>{' '}
                   reduciendo en 0,2% la tasa de desocupación de la Región de
@@ -131,7 +131,7 @@ const TemplateAporteRegional = () => {
               <div>
                 <p className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
                   El Proyecto{' '}
-                  <strong className="text-[#E8732D]">
+                  <strong className="text-[#E8732C]">
                     permitiría disminuir la pobreza por ingresos de 9,3% en
                     Putaendo
                   </strong>{' '}
@@ -152,7 +152,7 @@ const TemplateAporteRegional = () => {
               <div>
                 <p className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
                   Se generará un{' '}
-                  <strong className="text-[#E8732D]">
+                  <strong className="text-[#E8732C]">
                     mayor desarrollo en una de las comunas más vulnerables de la
                     región.
                   </strong>

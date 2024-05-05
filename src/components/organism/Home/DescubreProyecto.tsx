@@ -5,7 +5,7 @@ import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 const DescubreProyecto = ({ dataDescubre }: HomeData) => {
   return (
     <section id="descubre" className="relative px-10 bg-[#E8E8E8] py-20">
-      <BtnScrollDown section="descubre" bgColor="bg-[#E8732D]" />
+      <BtnScrollDown section="descubre" bgColor="bg-[#E8732C]" />
       <div className="flex flex-col items-center">
         <h2 className="text-3xl lg:text-5xl text-black font-bold text-center pb-10">
           {dataDescubre?.title}

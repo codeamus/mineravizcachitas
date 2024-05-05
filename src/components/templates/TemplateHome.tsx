@@ -54,7 +54,7 @@ const TemplateHome = () => {
           title={
             <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
               Proyecto
-              <span className="text-[#E8732D]"> Vizcachitas</span>
+              <span className="text-[#E8732C]"> Vizcachitas</span>
             </h1>
           }
           description="Minería sostenible y responsable comprometida con el desarrollo social y económico de Putaendo, San Felipe y la Región de Valparaíso. Desarrollo con las comunidades y cuidando el medio ambiente para un futuro mejor."

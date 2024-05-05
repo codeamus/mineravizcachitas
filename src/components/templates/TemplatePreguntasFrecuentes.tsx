@@ -48,7 +48,7 @@ const TemplatePreguntasFrecuentes = () => {
           title={
             <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
               Preguntas
-              <span className="text-[#E8732D]"> Frecuentes</span>
+              <span className="text-[#E8732C]"> Frecuentes</span>
             </h1>
           }
           description="Respondemos algunas de las principales consultas surgidas de nuestros diálogos permanentes con la comunidad."

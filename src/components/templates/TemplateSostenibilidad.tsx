@@ -46,7 +46,7 @@ const TemplateSostenibilidad = () => {
           title={
             <h1 className="w-full text-center text-4xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
               Proyecto Vizcachitas
-              <span className="text-[#E8732D]"> Sostenibilidad</span>
+              <span className="text-[#E8732C]"> Sostenibilidad</span>
             </h1>
           }
           description="Una nueva forma de hacer minería, comprometida con una producción que reduce impactos ambientales y genera efectos positivos sostenidos en el tiempo, tanto desde un punto de vista ambiental como comunitario."

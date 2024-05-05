@@ -23,18 +23,18 @@ const AporteRegional = ({ dataAporte }: HomeData) => {
         ))}
       </div>
       <div className="mt-10 flex w-full items-center justify-center">
-        <hr className="w-full border-[#03773A]" />
+        <hr className="w-full border-[#009145]" />
         <DefaultButton
           url={`${dataAporte?.link_button}`}
           textFirst="Ver todos los"
           textSecond="Aportes regionales"
-          backgroundColor="#03773A"
-          hoverBackgroundColor="#E8732D"
+          backgroundColor="#009145"
+          hoverBackgroundColor="#E8732C"
           customStyle={{
             minWidth: 215,
           }}
         />
-        <hr className="w-full border-[#03773A]" />
+        <hr className="w-full border-[#009145]" />
       </div>
     </section>
   )

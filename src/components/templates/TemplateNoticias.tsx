@@ -29,7 +29,7 @@ const TemplateNoticias = () => {
         />
       </Helmet>
       <ScrollToTop />
-      <Navbar position="relative" bgColor="bg-[#03773A]" />
+      <Navbar position="relative" bgColor="bg-[#009145]" />
       <main>
         <section className="bg-[#F0EFEF] p-10 lg:p-20">
           <h1 className="text-center text-5xl font-bold text-black lg:text-balance lg:text-6xl mb-10">

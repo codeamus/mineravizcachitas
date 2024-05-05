@@ -51,7 +51,7 @@ const TemplateQuienesSomos = () => {
           title={
             <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
               Proyecto Vizcachitas
-              <span className="text-[#E8732D]"> Quiénes somos</span>
+              <span className="text-[#E8732C]"> Quiénes somos</span>
             </h1>
           }
           description="Somos un proyecto que mira al futuro, desarrollando una minería sostenible y responsable con el entorno y de la mano con el progreso de los vecinos de Putaendo, San Felipe y la región de Valparaíso."

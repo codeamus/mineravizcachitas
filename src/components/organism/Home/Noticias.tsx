@@ -37,7 +37,7 @@ const Noticias = () => {
                 </Link>
               </picture>
               <div className="mt-4">
-                <h3 className="min-h-[56px] text-balance text-center text-lg font-bold text-[#E8732D] mb-4">
+                <h3 className="min-h-[56px] text-balance text-center text-lg font-bold text-[#E8732C] mb-4">
                   {noticia.title.rendered}
                 </h3>
                 <span className="block w-full text-center text-xs text-[#676767]">
@@ -52,7 +52,7 @@ const Noticias = () => {
                 <Link
                   to={`/noticias/${noticia.slug}`}
                   unstable_viewTransition
-                  className="border border-[#009145] bg-[#00914519] px-8 py-3 text-sm font-medium uppercase text-[#009145] transition-all duration-300 hover:border-[#E8732D] hover:text-[#E8732D]"
+                  className="border border-[#009145] bg-[#00914519] px-8 py-3 text-sm font-medium uppercase text-[#009145] transition-all duration-300 hover:border-[#E8732C] hover:text-[#E8732C]"
                 >
                   Leer noticia
                 </Link>
@@ -64,8 +64,8 @@ const Noticias = () => {
         <DefaultButton
           url="/noticias"
           textFirst="Ver todas las noticias"
-          backgroundColor="#03773A"
-          hoverBackgroundColor="#E8732D"
+          backgroundColor="#009145"
+          hoverBackgroundColor="#E8732C"
           customStyle={{
             paddingBlock: 4,
           }}

@@ -4,31 +4,34 @@ import ImagePreguntas from '@/assets/images/img-preguntas-frecuentes.webp'
 
 const PrincipalInfo = () => {
   return (
-    <div className='flex flex-col lg:flex-row'>
-      <BtnScrollDown section='preguntas' />
-      <div className='flex w-full flex-col items-center px-10 py-8 lg:w-1/2 lg:items-end lg:px-14'>
-        <span className='mt-10 block w-fit bg-[#03773A] px-4 py-2 text-sm font-bold uppercase text-white'>
+    <div className="flex flex-col lg:flex-row">
+      <BtnScrollDown section="preguntas" />
+      <div className="flex w-full flex-col items-center px-10 py-8 lg:w-1/2 lg:items-end lg:px-14">
+        <span className="mt-10 block w-fit bg-[#009145] px-4 py-2 text-sm font-bold uppercase text-white">
           Preguntas Frecuentes
         </span>
-        <h2 className='my-6 text-center text-4xl font-bold text-black lg:text-balance lg:text-end lg:text-5xl'>
+        <h2 className="my-6 text-center text-4xl font-bold text-black lg:text-balance lg:text-end lg:text-5xl">
           Queremos que los vecinos de Putaendo{' '}
-          <br aria-hidden className='hidden lg:block' />
-          <span className='text-[#E8732D]'>
-            se mantengan <br aria-hidden className='hidden lg:block' />
+          <br aria-hidden className="hidden lg:block" />
+          <span className="text-[#E8732C]">
+            se mantengan <br aria-hidden className="hidden lg:block" />
             Informados
           </span>
         </h2>
-        <p className='max-w-lg text-center text-lg text-black lg:text-end'>
-          Una relación basada en la confianza y transparencia es la base de un compromiso de largo plazo hacia un futuro con mejor calidad de vida.
+        <p className="max-w-lg text-center text-lg text-black lg:text-end">
+          Una relación basada en la confianza y transparencia es la base de un
+          compromiso de largo plazo hacia un futuro con mejor calidad de vida.
         </p>
-        <p className='max-w-lg text-center text-lg text-black lg:text-end'>
-          Queremos que los vecinos de Putaendo formen parte de este camino, aclarando sus dudas e inquietudes, como también escuchando sus sueños y anhelos.
+        <p className="max-w-lg text-center text-lg text-black lg:text-end">
+          Queremos que los vecinos de Putaendo formen parte de este camino,
+          aclarando sus dudas e inquietudes, como también escuchando sus sueños
+          y anhelos.
         </p>
       </div>
-      <div className='w-full lg:w-1/2'>
+      <div className="w-full lg:w-1/2">
         <LazyLoadImage
           src={ImagePreguntas}
-          alt='Imagen referencial a la sección de Preguntas Frecuentes'
+          alt="Imagen referencial a la sección de Preguntas Frecuentes"
         />
       </div>
     </div>

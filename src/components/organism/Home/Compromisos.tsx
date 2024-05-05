@@ -11,7 +11,7 @@ const Compromisos = ({ dataCompromisos }: HomeData) => {
       className="relative bg-[url(/assets/images/backgrounds/compromisos-background.webp)] bg-contain bg-fixed lg:bg-cover"
     >
       <BtnScrollDown section="compromisos" />
-      <span className="block w-fit bg-[#03773A] px-4 py-2 text-sm font-bold uppercase text-white">
+      <span className="block w-fit bg-[#009145] px-4 py-2 text-sm font-bold uppercase text-white">
         Compromisos Sostenibles
       </span>
       <div className="flex flex-col justify-center gap-10 p-10 lg:flex-row lg:gap-40">
@@ -46,7 +46,7 @@ const Compromisos = ({ dataCompromisos }: HomeData) => {
         <Link
           to={`${dataCompromisos?.link_button}`}
           unstable_viewTransition
-          className="flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400"
+          className="flex w-fit flex-row items-center justify-between border border-white bg-[#E8732C] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#009145] hover:shadow-stone-400"
         >
           <span>
             Ver todos los compromisos <br aria-hidden />

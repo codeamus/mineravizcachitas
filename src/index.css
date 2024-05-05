@@ -30,19 +30,19 @@ details > summary::-webkit-details-marker {
 }
 
 .menuLink.active {
-  color: #e8732d;
+  color: #e8732c;
   font-weight: bold;
 }
 
 .menuLink.active::after {
-  background-color: #e8732d;
+  background-color: #e8732c;
 }
 
 /* ACTIVE CLASS FOR TABS */
 .tab[data-state='active'] span {
   color: #fff;
-  background-color: #e8732d;
-  border-block: 1px solid #e8732d;
+  background-color: #e8732c;
+  border-block: 1px solid #e8732c;
 }
 
 .tab[data-state='active'] img {
@@ -75,5 +75,5 @@ details > summary::-webkit-details-marker {
 }
 
 .slider-control-bottomcenter ul .active button svg {
-  fill: #e8732d;
+  fill: #e8732c;
 }

@@ -46,18 +46,18 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
           />
         </Helmet>
         <ScrollToTop />
-        <Navbar position="relative" bgColor="bg-[#03773A]" />
+        <Navbar position="relative" bgColor="bg-[#009145]" />
         <main>
           <section className="bg-[#F0EFEF] px-10 pt-20 lg:px-20">
             <div className="block w-full mb-6">
               <Link
                 to="/noticias"
-                className="text-[#E8732C] text-sm font-bold transition-all duration-500 hover:text-[#03773A]"
+                className="text-[#E8732C] text-sm font-bold transition-all duration-500 hover:text-[#009145]"
               >
                 {`< Volver a todas las noticias`}
               </Link>
             </div>
-            <div className="flex flex-col-reverse gap-10 border-b border-[#03773A] pb-20 lg:flex-row">
+            <div className="flex flex-col-reverse gap-10 border-b border-[#009145] pb-20 lg:flex-row">
               {newBySlug?.acf.id_video ? (
                 <iframe
                   className="h-[300px] w-full lg:h-[560px] lg:w-1/2"
@@ -97,7 +97,7 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
             </div>
           </section>
           <section className="relative top-[-20px] px-10 lg:px-20">
-            <span className="mb-6 block w-fit bg-[#03773A] px-4 py-2 text-sm font-bold uppercase text-white">
+            <span className="mb-6 block w-fit bg-[#009145] px-4 py-2 text-sm font-bold uppercase text-white">
               Otras noticias
             </span>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

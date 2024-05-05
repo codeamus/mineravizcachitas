@@ -33,7 +33,7 @@ const EtapasProyecto = ({ dataEtapas }: HomeData) => {
             >
               {dataEtapas?.map((etapa, index) => (
                 <Tabs.Trigger
-                  className="tab w-fit max-w-2xl flex h-full items-center mx-3 lg:mx-10 flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0 transition-all duration-300 [&_img]:hover:scale-110 [&_span]:hover:bg-[#e8732d] [&_span]:hover:border-[#e8732d]"
+                  className="tab w-fit max-w-2xl flex h-full items-center mx-3 lg:mx-10 flex-col leading-[15px] text-white focus:outline-[0px] focus:outline-offset-0 transition-all duration-300 [&_img]:hover:scale-110 [&_span]:hover:bg-[#E8732C] [&_span]:hover:border-[#E8732C]"
                   value={`tab${index}`}
                   key={index}
                 >
