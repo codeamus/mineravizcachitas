@@ -6,6 +6,12 @@ import ImageAmbiental from '@/assets/images/compromiso-ambiental.webp'
 import ImageSocial from '@/assets/images/compromiso-responsabilidad.webp'
 
 const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
+  const handleOpenAccordion = () => {
+    const details = document.querySelectorAll('details')
+    details.forEach(detail => {
+      detail.removeAttribute('open')
+    })
+  }
   return (
     <>
       <div className="flex lg:flex-row flex-col items-center lg:items-start">
@@ -26,7 +32,11 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
         <div className="flex w-full flex-col px-4 lg:w-1/2 mt-10 lg:mt-0">
           {dataSostenibilidad?.sostenibilidad.compromisos_ambientales?.map(
             (item: any, index: number) => (
-              <details className="group mb-4" key={index}>
+              <details
+                className="group mb-4"
+                key={index}
+                onClick={handleOpenAccordion}
+              >
                 <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732C] bg-white p-3 transition-all duration-300 hover:bg-[#E8732C] [&_span.title]:hover:text-white">
                   <span className="text-sm font-bold text-black title duration-300">
                     {item.titulo}
@@ -73,7 +83,11 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
         <div className="flex w-full flex-col px-4 lg:w-1/2 mt-10">
           {dataSostenibilidad?.sostenibilidad.compromisos_sociales?.map(
             (item: any, index: number) => (
-              <details className="group mb-4" key={index}>
+              <details
+                className="group mb-4"
+                key={index}
+                onClick={handleOpenAccordion}
+              >
                 <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732C] bg-white p-3 transition-all duration-300 hover:bg-[#E8732C] [&_span.title]:hover:text-white">
                   <span className="text-sm font-bold text-black title duration-300">
                     {item.titulo}

@@ -4,6 +4,13 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { HomeData } from '@/types/HomeData'
 
 const PreguntasFrecuentes = ({ dataFaq }: HomeData) => {
+  const handleOpenAccordion = () => {
+    const details = document.querySelectorAll('details')
+    details.forEach(detail => {
+      detail.removeAttribute('open')
+    })
+  }
+
   return (
     <section
       id="preguntas"
@@ -12,12 +19,12 @@ const PreguntasFrecuentes = ({ dataFaq }: HomeData) => {
       <div className="flex w-full flex-col items-center justify-center lg:w-1/2 lg:items-end lg:justify-end">
         <h2 className="text-balance text-center text-4xl font-bold text-black lg:text-end">
           Velamos por una{' '}
-          <span className="text-[#009145]">comunidad Informada</span>
+          <span className="text-[#03773A]">comunidad Informada</span>
         </h2>
         <Link
           to={`${dataFaq?.link_button}`}
           unstable_viewTransition
-          className="mt-10 flex w-fit flex-row items-center justify-between border border-white bg-[#E8732C] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#009145] hover:shadow-stone-400"
+          className="mt-10 flex w-fit flex-row items-center justify-between border border-white bg-[#E8732D] px-3 text-center text-sm text-white shadow-xl transition-all duration-700 hover:bg-[#03773A] hover:shadow-stone-400"
         >
           <span>
             Ver todas las
@@ -33,12 +40,16 @@ const PreguntasFrecuentes = ({ dataFaq }: HomeData) => {
         </Link>
       </div>
       <div className="flex w-full flex-col">
-        <h3 className="mb-4 text-lg font-bold uppercase text-[#009145]">
+        <h3 className="mb-4 text-lg font-bold uppercase text-[#03773A]">
           Preguntas Frecuentes
         </h3>
         {dataFaq?.preguntas_frecuentes_info.map((faq, index) => (
-          <details className="group mb-4" key={index}>
-            <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732C] bg-white p-3 transition-all duration-300 hover:bg-[#E8732C] [&_span.title]:hover:text-white">
+          <details
+            className="group mb-4"
+            key={index}
+            onClick={handleOpenAccordion}
+          >
+            <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white">
               <span className="text-sm font-bold text-black title duration-300">
                 {faq.titulo}
               </span>
@@ -58,7 +69,7 @@ const PreguntasFrecuentes = ({ dataFaq }: HomeData) => {
                 </svg>
               </span>
             </summary>
-            <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732C] p-3 text-sm text-black">
+            <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black">
               {faq.content}
             </p>
           </details>
