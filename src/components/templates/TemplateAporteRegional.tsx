@@ -164,15 +164,15 @@ const TemplateAporteRegional = () => {
             </div>
           </div>
         </section>
-        <section className="relative px-10 lg:px-40 bg-[#E8E8E8] py-20">
+        <section className="relative px-10 lg:px-40 bg-[url(/assets/images/backgrounds/bg_video_aporte.webp)] bg-cover bg-no-repeat py-20">
           <div className="flex flex-col items-center">
-            <h2 className="text-3xl lg:text-5xl text-black font-bold text-center pb-10">
+            <h2 className="text-3xl lg:text-5xl text-white font-bold text-center pb-10">
               Descubre los detalle del proyecto
             </h2>
-            <p className="font-bold text-[#009145]">
+            <p className="font-bold text-white">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </p>
-            <hr className="bg-[#009145] h-[2px] block w-full max-w-xs my-2" />
+            <hr className="bg-white h-[2px] block w-full max-w-xs my-2" />
           </div>
           <div className="flex justify-center items-center mt-4">
             <iframe
