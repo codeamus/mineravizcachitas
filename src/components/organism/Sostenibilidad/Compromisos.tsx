@@ -6,11 +6,30 @@ import ImageAmbiental from '@/assets/images/compromiso-ambiental.webp'
 import ImageSocial from '@/assets/images/compromiso-responsabilidad.webp'
 
 const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
-  const handleOpenAccordion = () => {
-    const details = document.querySelectorAll('details')
+  const handleOpenAccordionAmbiental = (index: number) => {
+    const details = document.querySelectorAll('.ambiental')
     details.forEach(detail => {
+      detail?.children[0].classList.remove('bg-[#E8732D]')
+      detail?.children[0].children[0].classList.remove('text-white')
       detail.removeAttribute('open')
     })
+
+    const clickAmbiental = document.getElementById(`ambiental-${index}`)
+    clickAmbiental?.children[0].classList.add('bg-[#E8732D]')
+    clickAmbiental?.children[0].children[0].classList.add('text-white')
+  }
+
+  const handleOpenAccordionSocial = (index: number) => {
+    const details = document.querySelectorAll('.social')
+    details.forEach(detail => {
+      detail?.children[0].classList.remove('bg-[#E8732D]')
+      detail?.children[0].children[0].classList.remove('text-white')
+      detail.removeAttribute('open')
+    })
+
+    const clickSocial = document.getElementById(`social-${index}`)
+    clickSocial?.children[0].classList.add('bg-[#E8732D]')
+    clickSocial?.children[0].children[0].classList.add('text-white')
   }
   return (
     <>
@@ -33,11 +52,12 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
           {dataSostenibilidad?.sostenibilidad.compromisos_ambientales?.map(
             (item: any, index: number) => (
               <details
-                className="group mb-4"
+                id={`ambiental-${index}`}
+                className="ambiental group mb-4"
                 key={index}
-                onClick={handleOpenAccordion}
+                onClick={() => handleOpenAccordionAmbiental(index)}
               >
-                <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732C] bg-white p-3 transition-all duration-300 hover:bg-[#E8732C] [&_span.title]:hover:text-white">
+                <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732C] p-3 transition-all duration-300 hover:bg-[#E8732C] [&_span.title]:hover:text-white">
                   <span className="text-sm font-bold text-black title duration-300">
                     {item.titulo}
                   </span>
@@ -57,7 +77,7 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
                     </svg>
                   </span>
                 </summary>
-                <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732C] p-3 text-sm text-black">
+                <p className="group-open:animate-fadeIn border-b border-l border-r bg-[#E8E8E8] border-[#E8732C] p-3 text-sm text-black">
                   {item.content}
                 </p>
               </details>
@@ -84,11 +104,12 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
           {dataSostenibilidad?.sostenibilidad.compromisos_sociales?.map(
             (item: any, index: number) => (
               <details
-                className="group mb-4"
+                id={`social-${index}`}
+                className="social group mb-4"
                 key={index}
-                onClick={handleOpenAccordion}
+                onClick={() => handleOpenAccordionSocial(index)}
               >
-                <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732C] bg-white p-3 transition-all duration-300 hover:bg-[#E8732C] [&_span.title]:hover:text-white">
+                <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732C] p-3 transition-all duration-300 hover:bg-[#E8732C] [&_span.title]:hover:text-white">
                   <span className="text-sm font-bold text-black title duration-300">
                     {item.titulo}
                   </span>
@@ -108,7 +129,7 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
                     </svg>
                   </span>
                 </summary>
-                <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732C] p-3 text-sm text-black">
+                <p className="group-open:animate-fadeIn border-b border-l border-r bg-[#E8E8E8] border-[#E8732C] p-3 text-sm text-black">
                   {item.content}
                 </p>
               </details>

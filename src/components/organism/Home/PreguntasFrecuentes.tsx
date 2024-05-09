@@ -4,11 +4,17 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { HomeData } from '@/types/HomeData'
 
 const PreguntasFrecuentes = ({ dataFaq }: HomeData) => {
-  const handleOpenAccordion = () => {
+  const handleOpenAccordion = (index: number) => {
     const details = document.querySelectorAll('details')
     details.forEach(detail => {
+      detail?.children[0].classList.remove('bg-[#E8732D]')
+      detail?.children[0].children[0].classList.remove('text-white')
       detail.removeAttribute('open')
     })
+
+    const clickFaq = document.getElementById(`faq-${index}`)
+    clickFaq?.children[0].classList.add('bg-[#E8732D]')
+    clickFaq?.children[0].children[0].classList.add('text-white')
   }
 
   return (
@@ -45,11 +51,12 @@ const PreguntasFrecuentes = ({ dataFaq }: HomeData) => {
         </h3>
         {dataFaq?.preguntas_frecuentes_info.map((faq, index) => (
           <details
+            id={`faq-${index}`}
             className="group mb-4"
             key={index}
-            onClick={handleOpenAccordion}
+            onClick={() => handleOpenAccordion(index)}
           >
-            <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] bg-white p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white">
+            <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732D] p-3 transition-all duration-300 hover:bg-[#E8732D] [&_span.title]:hover:text-white">
               <span className="text-sm font-bold text-black title duration-300">
                 {faq.titulo}
               </span>
@@ -69,7 +76,7 @@ const PreguntasFrecuentes = ({ dataFaq }: HomeData) => {
                 </svg>
               </span>
             </summary>
-            <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black">
+            <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black bg-[#E8E8E8]">
               {faq.content}
             </p>
           </details>

@@ -1,11 +1,17 @@
 import { Faq, PreguntasFrecuentesType } from '@/types/Faq'
 
 const TodasPreguntas = ({ dataFaq }: PreguntasFrecuentesType) => {
-  const handleOpenAccordion = () => {
+  const handleOpenAccordion = (index: number) => {
     const details = document.querySelectorAll('details')
     details.forEach(detail => {
+      detail?.children[0].classList.remove('bg-[#E8732D]')
+      detail?.children[0].children[0].classList.remove('text-white')
       detail.removeAttribute('open')
     })
+
+    const clickFaq = document.getElementById(`faq-${index}`)
+    clickFaq?.children[0].classList.add('bg-[#E8732D]')
+    clickFaq?.children[0].children[0].classList.add('text-white')
   }
   return (
     <div className="relative">
@@ -15,11 +21,12 @@ const TodasPreguntas = ({ dataFaq }: PreguntasFrecuentesType) => {
       <div className="my-10 flex flex-col items-center justify-center px-4">
         {dataFaq?.faq.map(({ titulo, content }: Faq, index: number) => (
           <details
+            id={`faq-${index}`}
             className="group mb-4 w-full max-w-3xl"
             key={index}
-            onClick={handleOpenAccordion}
+            onClick={() => handleOpenAccordion(index)}
           >
-            <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732C] bg-white p-3 transition-all duration-300 hover:bg-[#E8732C] [&_span.title]:hover:text-white">
+            <summary className="flex cursor-pointer list-none items-start justify-between rounded-none border border-[#E8732C] p-3 transition-all duration-300 hover:bg-[#E8732C] [&_span.title]:hover:text-white">
               <span className="text-sm font-bold text-black title duration-300">
                 {titulo}
               </span>
@@ -39,7 +46,7 @@ const TodasPreguntas = ({ dataFaq }: PreguntasFrecuentesType) => {
                 </svg>
               </span>
             </summary>
-            <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732C] p-3 text-sm text-black">
+            <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732C] p-3 text-sm text-black bg-[#E8E8E8]">
               {content}
             </p>
           </details>
