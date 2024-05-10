@@ -7,30 +7,45 @@ import ImageSocial from '@/assets/images/compromiso-responsabilidad.webp'
 
 const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
   const handleOpenAccordionAmbiental = (index: number) => {
+    const clickAmbiental = document.getElementById(`ambiental-${index}`)
+    if (clickAmbiental?.hasAttribute('open')) {
+      clickAmbiental?.children[0].classList.remove('bg-[#E8732D]')
+      clickAmbiental?.children[0].children[0].classList.remove('text-white')
+    } else {
+      clickAmbiental?.children[0].classList.add('bg-[#E8732D]')
+      clickAmbiental?.children[0].children[0].classList.add('text-white')
+    }
+
     const details = document.querySelectorAll('.ambiental')
     details.forEach(detail => {
-      detail?.children[0].classList.remove('bg-[#E8732D]')
-      detail?.children[0].children[0].classList.remove('text-white')
-      detail.removeAttribute('open')
+      if (detail.id !== `ambiental-${index}`) {
+        detail.removeAttribute('open')
+        detail.children[0].classList.remove('bg-[#E8732D]')
+        detail.children[0].children[0].classList.remove('text-white')
+      }
     })
-
-    const clickAmbiental = document.getElementById(`ambiental-${index}`)
-    clickAmbiental?.children[0].classList.add('bg-[#E8732D]')
-    clickAmbiental?.children[0].children[0].classList.add('text-white')
   }
 
   const handleOpenAccordionSocial = (index: number) => {
+    const clickSocial = document.getElementById(`social-${index}`)
+    if (clickSocial?.hasAttribute('open')) {
+      clickSocial?.children[0].classList.remove('bg-[#E8732D]')
+      clickSocial?.children[0].children[0].classList.remove('text-white')
+    } else {
+      clickSocial?.children[0].classList.add('bg-[#E8732D]')
+      clickSocial?.children[0].children[0].classList.add('text-white')
+    }
+
     const details = document.querySelectorAll('.social')
     details.forEach(detail => {
-      detail?.children[0].classList.remove('bg-[#E8732D]')
-      detail?.children[0].children[0].classList.remove('text-white')
-      detail.removeAttribute('open')
+      if (detail.id !== `social-${index}`) {
+        detail.removeAttribute('open')
+        detail.children[0].classList.remove('bg-[#E8732D]')
+        detail.children[0].children[0].classList.remove('text-white')
+      }
     })
-
-    const clickSocial = document.getElementById(`social-${index}`)
-    clickSocial?.children[0].classList.add('bg-[#E8732D]')
-    clickSocial?.children[0].children[0].classList.add('text-white')
   }
+
   return (
     <>
       <div className="flex lg:flex-row flex-col items-center lg:items-start">

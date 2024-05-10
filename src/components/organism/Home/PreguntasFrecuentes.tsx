@@ -5,16 +5,23 @@ import { HomeData } from '@/types/HomeData'
 
 const PreguntasFrecuentes = ({ dataFaq }: HomeData) => {
   const handleOpenAccordion = (index: number) => {
+    const clickFaq = document.getElementById(`faq-${index}`)
+    if (clickFaq?.hasAttribute('open')) {
+      clickFaq?.children[0].classList.remove('bg-[#E8732D]')
+      clickFaq?.children[0].children[0].classList.remove('text-white')
+    } else {
+      clickFaq?.children[0].classList.add('bg-[#E8732D]')
+      clickFaq?.children[0].children[0].classList.add('text-white')
+    }
+
     const details = document.querySelectorAll('details')
     details.forEach(detail => {
-      detail?.children[0].classList.remove('bg-[#E8732D]')
-      detail?.children[0].children[0].classList.remove('text-white')
-      detail.removeAttribute('open')
+      if (detail.id !== `faq-${index}`) {
+        detail.removeAttribute('open')
+        detail.children[0].classList.remove('bg-[#E8732D]')
+        detail.children[0].children[0].classList.remove('text-white')
+      }
     })
-
-    const clickFaq = document.getElementById(`faq-${index}`)
-    clickFaq?.children[0].classList.add('bg-[#E8732D]')
-    clickFaq?.children[0].children[0].classList.add('text-white')
   }
 
   return (
