@@ -1,5 +1,4 @@
 import { getDataPage } from '@/api/page'
-import VideoMP4 from '@/assets/videos/preguntas.mp4'
 import BackToTop from '@/components/molecules/BackToTop'
 import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'
@@ -37,20 +36,20 @@ const TemplatePreguntasFrecuentes = () => {
       <main>
         {dataFaq?.seccion_principal ? (
           <VideoBanner
-            videoMP4={VideoMP4}
-            poster={dataFaq?.seccion_principal.video_cover}
-            bgMobile={dataFaq?.seccion_principal.video_cover}
-            title={dataFaq?.seccion_principal.title}
-            titleDestacado={dataFaq?.seccion_principal.titulo_destacado}
-            description={dataFaq?.seccion_principal.content}
+            videoMP4={dataFaq?.seccion_principal.video_banner}
+            title={dataFaq?.seccion_principal.titulo}
+            description={dataFaq?.seccion_principal.contenido}
             list={dataFaq?.seccion_principal.iconos}
+            poster={`${
+              import.meta.env.VITE_BASE_URL
+            }/assets/images/posters/poster-video-preguntas-desktop.webp`}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
             <img
               src={`${
                 import.meta.env.VITE_BASE_URL
-              }/assets/images/posters/poster-video-home-desktop.webp`}
+              }/assets/images/posters/poster-video-preguntas-desktop.webp`}
               alt="video cover"
               className="h-[100vh] w-full object-cover brightness-50"
             />
