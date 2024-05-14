@@ -1,7 +1,4 @@
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
-import IconAmbiental from '@/assets/icons/icon-ambiental-black.svg'
-import IconSocial from '@/assets/icons/icon-social-black.svg'
-import ImgSomosPicture from '@/assets/images/bg_mar.webp'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import { QuienesSomosType } from '@/types/QuienesSomos'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
