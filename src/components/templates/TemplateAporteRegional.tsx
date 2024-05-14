@@ -14,6 +14,7 @@ import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
+import parse from 'html-react-parser'
 
 const TemplateAporteRegional = () => {
   const [dataAporte, setDataAporte] = useState(null as any | null)
@@ -67,8 +68,10 @@ const TemplateAporteRegional = () => {
         >
           <BtnScrollDown section="aporte" />
           <h2 className="text-center text-4xl lg:text-5xl font-bold text-black">
-            ¿Por qué el proyecto es <br aria-hidden />
-            <span className="text-[#E8732C]">un aporte a la región?</span>
+            {dataAporte?.primera_seccion?.titulo} <br aria-hidden />
+            <span className="text-[#E8732C]">
+              {dataAporte?.primera_seccion?.titulo_destacado}
+            </span>
           </h2>
           <div className="my-8 flex flex-col lg:flex-row max-w-2xl items-start lg:items-center justify-center lg:border-t border-[#009145]">
             <img
@@ -76,94 +79,66 @@ const TemplateAporteRegional = () => {
               src={IconReporte}
               alt="Icono para aporte regional"
             />
-            <p className="relative text-md text-pretty border-[#009145] p-1 lg:p-6 text-black lg:border-l lg:after:content-[''] after:absolute lg:after:h-[10px] lg:after:w-[10px] after:bottom-0 after:bg-[#009145] after:rounded-full after:-left-[5px]">
-              El proyecto Vizcachitas generará un aumento de más del 3% en el
-              PIB de la Región de Valparaíso, crecimiento que, además, será
-              sostenible y con capacidad de generar prosperidad y oportunidades
-              en el corto, mediano y largo plazo.
-            </p>
+            {dataAporte?.primera_seccion?.contenido_encabezado && (
+              <div className="relative text-md text-pretty border-[#009145] p-1 lg:p-6 text-black lg:border-l lg:after:content-[''] after:absolute lg:after:h-[10px] lg:after:w-[10px] after:bottom-0 after:bg-[#009145] after:rounded-full after:-left-[5px]">
+                {parse(dataAporte?.primera_seccion?.contenido_encabezado)}
+              </div>
+            )}
           </div>
           <div className="block relative lg:mr-28">
-            <div className="flex flex-col lg:flex-row items-start justify-center gap-1 lg:gap-8 mb-5">
-              <img
-                className="size-20 lg:block"
-                src={IconGraph}
-                alt="Icono para aporte regional"
-              />
-              <div>
-                <p className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
-                  La rentabilidad social que generará el proyecto en la región
-                  es{' '}
-                  <strong className="text-[#E8732C]">
-                    2,31 veces superior a la inversión privada (cerca de US$
-                    6.400 millones).
-                  </strong>
-                </p>
-                <div className="relative after:content-[''] after:absolute after:h-[10px] after:w-[10px] after:ml-[55.5px] after:bottom-0 after:bg-[#009145] after:rounded-full">
-                  <hr className="w-[1px] h-[60px] border-l border-[#009145] ml-[60px] -top-[0px] " />
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col lg:flex-row items-start justify-center gap-1 lg:gap-8 mb-5 lg:ml-[250px]">
-              <img
-                className="size-20 lg:block"
-                src={IconPeople}
-                alt="Icono para aporte regional"
-              />
-              <div>
-                <p className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
-                  Vizcachitas{' '}
-                  <strong className="text-[#E8732C]">
-                    aumentaría en 15,6% el número de trabajadores en Putaendo,
-                  </strong>{' '}
-                  reduciendo en 0,2% la tasa de desocupación de la Región de
-                  Valparaíso
-                </p>
-                <div className="relative after:content-[''] after:absolute after:h-[10px] after:w-[10px] after:ml-[55.5px] after:bottom-0 after:bg-[#009145] after:rounded-full">
-                  <hr className="w-[1px] h-[60px] border-l border-[#009145] ml-[60px] -top-[0px] " />
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col lg:flex-row items-start justify-center gap-1 lg:gap-8 mb-5">
-              <img
-                className="size-20 lg:block"
-                src={IconPrice}
-                alt="Icono para aporte regional"
-              />
-              <div>
-                <p className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
-                  El Proyecto{' '}
-                  <strong className="text-[#E8732C]">
-                    permitiría disminuir la pobreza por ingresos de 9,3% en
-                    Putaendo
-                  </strong>{' '}
-                  a 3,3%, sólo si se considera el aumento de remuneraciones
-                  directas.
-                </p>
-                <div className="relative after:content-[''] after:absolute after:h-[10px] after:w-[10px] after:ml-[55.5px] after:bottom-0 after:bg-[#009145] after:rounded-full">
-                  <hr className="w-[1px] h-[60px] border-l border-[#009145] ml-[60px] -top-[0px] " />
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col lg:flex-row items-start justify-center gap-1 lg:gap-8 mb-5 lg:ml-[250px]">
-              <img
-                className="size-20 lg:block"
-                src={IconHouse}
-                alt="Icono para aporte regional"
-              />
-              <div>
-                <p className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
-                  Se generará un{' '}
-                  <strong className="text-[#E8732C]">
-                    mayor desarrollo en una de las comunas más vulnerables de la
-                    región.
-                  </strong>
-                </p>
-                <div className="">
-                  <hr className="hidden lg:block w-[1px] h-[60px] border-b border-[#009145] ml-[60px] -top-[0px] " />
-                </div>
-              </div>
-            </div>
+            {dataAporte?.primera_seccion?.infografia.map(
+              (item: any, index: number) =>
+                index % 2 === 0 ? (
+                  <div className="flex flex-col lg:flex-row items-start justify-center gap-1 lg:gap-8 mb-5">
+                    <img
+                      className="size-20 lg:block"
+                      src={item.primer_icono}
+                      alt="Icono para aporte regional"
+                    />
+                    <div>
+                      <div className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
+                        {parse(item.contenido)}
+                      </div>
+                      <div className="relative after:content-[''] after:absolute after:h-[10px] after:w-[10px] after:ml-[55.5px] after:bottom-0 after:bg-[#009145] after:rounded-full">
+                        <hr className="w-[1px] h-[60px] border-l border-[#009145] ml-[60px] -top-[0px] " />
+                      </div>
+                    </div>
+                  </div>
+                ) : index + 1 ===
+                  dataAporte?.primera_seccion?.infografia.length ? (
+                  <div className="flex flex-col lg:flex-row items-start justify-center gap-1 lg:gap-8 mb-5 lg:ml-[250px]">
+                    <img
+                      className="size-20 lg:block"
+                      src={item.primer_icono}
+                      alt="Icono para aporte regional"
+                    />
+                    <div>
+                      <div className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
+                        {parse(item.contenido)}
+                      </div>
+                      <div className="">
+                        <hr className="hidden lg:block w-[1px] h-[60px] border-b border-[#009145] ml-[60px] -top-[0px] " />
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="flex flex-col lg:flex-row items-start justify-center gap-1 lg:gap-8 mb-5 lg:ml-[250px]">
+                    <img
+                      className="size-20 lg:block"
+                      src={item.primer_icono}
+                      alt="Icono para aporte regional"
+                    />
+                    <div>
+                      <div className="text-md text-pretty border-[#009145] p-1 lg:p-3 text-black border-b max-w-lg">
+                        {parse(item.contenido)}
+                      </div>
+                      <div className="relative after:content-[''] after:absolute after:h-[10px] after:w-[10px] after:ml-[55.5px] after:bottom-0 after:bg-[#009145] after:rounded-full">
+                        <hr className="w-[1px] h-[60px] border-l border-[#009145] ml-[60px] -top-[0px] " />
+                      </div>
+                    </div>
+                  </div>
+                )
+            )}
           </div>
         </section>
         <section className="relative px-10 lg:px-40 bg-[url(/assets/images/backgrounds/bg_video_aporte.webp)] bg-cover bg-no-repeat py-20">
