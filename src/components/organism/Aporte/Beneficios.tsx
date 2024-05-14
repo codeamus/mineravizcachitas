@@ -54,8 +54,8 @@ const Beneficios = ({ dataAporte }: BeneficiosTypes) => {
                         </h3>
                       )}
                     </div>
-                    <div className="w-full border-white lg:w-1/2 lg:border-l lg:pl-10">
-                      <p className="text-pretty text-sm leading-loose text-white lg:min-h-[400px]">
+                    <div className="w-full border-white lg:w-1/2 lg:border-l lg:pl-10 flex items-center lg:min-h-[400px]">
+                      <p className="text-pretty text-sm leading-loose text-white">
                         {beneficio.content}
                       </p>
                     </div>

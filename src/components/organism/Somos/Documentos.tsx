@@ -11,7 +11,7 @@ const Documentos = ({ dataDocumentos }: QuienesSomosType) => {
     >
       <BtnScrollDown section="documentos" />
       <div className="flex flex-col lg:flex-row">
-        <div className="flex w-full flex-col items-center border-r border-none border-[#009145] lg:w-1/2 lg:items-end lg:border-solid lg:pr-10">
+        <div className="flex w-full flex-col justify-center items-center border-r border-none border-[#009145] lg:w-1/2 lg:items-end lg:border-solid lg:pr-10">
           <span className="block w-fit bg-[#009145] px-4 py-2 text-sm font-bold uppercase text-white">
             Transparencia
           </span>

@@ -49,7 +49,7 @@ const EtapasProyecto = ({ dataEtapas }: HomeData) => {
               ))}
             </Tabs.List>
           </div>
-          <div className="w-full flex gap-10">
+          <div className="w-full flex gap-10 items-center">
             {dataEtapas?.map((etapa, index) => (
               <Tabs.Content
                 className="grow rounded-b-md p-5 outline-none"
