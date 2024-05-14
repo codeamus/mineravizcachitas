@@ -22,47 +22,50 @@ const PresentacionUbicacion = ({ dataPresentacion }: HomeData) => {
             </h2>
 
             <hr className="my-4 w-full border-[#009145]" />
-            <p className="lg:max-w-2xl text-pretty pr-0 text-center text-sm leading-relaxed text-black lg:pr-4 lg:text-end w-full">
-              {dataPresentacion?.first_description ? (
-                dataPresentacion?.first_description
-              ) : (
-                <>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                </>
-              )}
-            </p>
+            {dataPresentacion?.first_description ? (
+              <p
+                className="lg:max-w-2xl text-pretty pr-0 text-center text-sm leading-relaxed text-black lg:pr-4 lg:text-end w-full"
+                dangerouslySetInnerHTML={{
+                  __html: dataPresentacion?.first_description,
+                }}
+              />
+            ) : (
+              <>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+              </>
+            )}
           </div>
         </div>
         <picture className="w-full lg:w-1/2">
@@ -103,47 +106,50 @@ const PresentacionUbicacion = ({ dataPresentacion }: HomeData) => {
               )}
             </h2>
             <hr className="my-4 w-full border-[#009145]" />
-            <p className="pl-4 text-sm leading-relaxed text-black">
-              {dataPresentacion?.second_description ? (
-                dataPresentacion?.second_description
-              ) : (
-                <>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                  <div className="mb-2">
-                    <LoaderSkeleton height={10} />
-                  </div>
-                </>
-              )}
-            </p>
+            {dataPresentacion?.second_description ? (
+              <p
+                className="pl-4 text-sm leading-relaxed text-black"
+                dangerouslySetInnerHTML={{
+                  __html: dataPresentacion?.second_description,
+                }}
+              />
+            ) : (
+              <>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+                <div className="mb-2">
+                  <LoaderSkeleton height={10} />
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

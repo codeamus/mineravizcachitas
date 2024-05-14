@@ -42,7 +42,12 @@ const Info = ({ dataSostenibilidad }: SostenibilidadProps) => {
                     </h3>
                   </div>
                   <hr className="my-3 border-[#009145]" />
-                  <p className="pl-4 text-sm text-black">{item.content}</p>
+                  <p
+                    className="pl-4 text-sm text-black"
+                    dangerouslySetInnerHTML={{
+                      __html: item.content,
+                    }}
+                  />
                 </div>
               </div>
             )

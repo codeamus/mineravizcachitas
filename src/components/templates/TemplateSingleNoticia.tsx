@@ -88,11 +88,12 @@ const TemplateSingleNoticia = ({ slug }: TemplateSingleBlogProps) => {
                 <span className="my-4 mb-10 block text-xs font-bold text-black">
                   {newBySlug?.acf.date}
                 </span>
-                <div className="border-t border-[#E8732C] pt-6">
-                  <p className="text-balance text-sm leading-relaxed text-black">
-                    {newBySlug?.acf.content_noticia}
-                  </p>
-                </div>
+                <div
+                  className="border-t border-[#E8732C] pt-6 text-balance text-sm leading-relaxed text-black"
+                  dangerouslySetInnerHTML={{
+                    __html: newBySlug?.acf.content_noticia,
+                  }}
+                />
               </div>
             </div>
           </section>

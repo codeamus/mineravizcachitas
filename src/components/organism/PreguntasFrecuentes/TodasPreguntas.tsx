@@ -53,9 +53,12 @@ const TodasPreguntas = ({ dataFaq }: PreguntasFrecuentesType) => {
                 </svg>
               </span>
             </summary>
-            <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732C] p-3 text-sm text-black bg-[#E8E8E8]">
-              {content}
-            </p>
+            <p
+              className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732C] p-3 text-sm text-black bg-[#E8E8E8]"
+              dangerouslySetInnerHTML={{
+                __html: content,
+              }}
+            />
           </details>
         ))}
       </div>

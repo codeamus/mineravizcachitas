@@ -44,7 +44,7 @@ const TemplateNoticias = () => {
                   title={noticia.title.rendered}
                   slug={noticia.slug}
                   image={noticia.acf.image.url}
-                  content={noticia.acf.content_noticia}
+                  content={`${noticia.acf.content_noticia.substring(0, 150)}`}
                   date={noticia.acf.date}
                 />
               ))}

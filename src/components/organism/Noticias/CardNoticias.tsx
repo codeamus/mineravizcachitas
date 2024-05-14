@@ -8,7 +8,7 @@ interface CardProps {
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 import IconArrow from '@/assets/icons/arrow-right-bold.svg'
-import { formatDate } from '@/utils/format'
+import parse from 'html-react-parser'
 const CardBlog = ({ title, image, slug, content, date }: CardProps) => {
   return (
     <article>
@@ -24,14 +24,13 @@ const CardBlog = ({ title, image, slug, content, date }: CardProps) => {
           {title}
         </h2>
         <span className="my-2 block w-full text-center text-xs font-bold text-[#E8732C]">
-          {formatDate(date)}
+          {date}
         </span>
       </div>
       <div className="flex flex-col items-center">
-        <p className="mt-4 text-center text-sm text-black min-h-[60px]">{`${content.substring(
-          0,
-          150
-        )} ...`}</p>
+        <p className="mt-4 text-center text-sm text-black min-h-[60px]">
+          {parse(content)}
+        </p>
         <Link
           to={`/noticias/${slug}`}
           unstable_viewTransition

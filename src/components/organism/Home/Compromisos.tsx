@@ -35,9 +35,12 @@ const Compromisos = ({ dataCompromisos }: HomeData) => {
                   {compromiso.title}
                 </h2>
               </div>
-              <p className="text-balance text-white">
-                {compromiso.description}
-              </p>
+              <p
+                className="text-balance text-white"
+                dangerouslySetInnerHTML={{
+                  __html: compromiso.description,
+                }}
+              />
             </div>
           </article>
         ))}

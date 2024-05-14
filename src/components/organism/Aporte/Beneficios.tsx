@@ -55,9 +55,12 @@ const Beneficios = ({ dataAporte }: BeneficiosTypes) => {
                       )}
                     </div>
                     <div className="w-full border-white lg:w-1/2 lg:border-l lg:pl-10 flex items-center lg:min-h-[400px]">
-                      <p className="text-pretty text-sm leading-loose text-white">
-                        {beneficio.content}
-                      </p>
+                      <p
+                        className="text-pretty text-sm leading-loose text-white"
+                        dangerouslySetInnerHTML={{
+                          __html: beneficio.content,
+                        }}
+                      />
                     </div>
                   </div>
                 </Tabs.Content>

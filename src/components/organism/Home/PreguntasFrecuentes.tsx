@@ -83,9 +83,12 @@ const PreguntasFrecuentes = ({ dataFaq }: HomeData) => {
                 </svg>
               </span>
             </summary>
-            <p className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black bg-[#E8E8E8]">
-              {faq.content}
-            </p>
+            <p
+              className="group-open:animate-fadeIn border-b border-l border-r border-[#E8732D] p-3 text-sm text-black bg-[#E8E8E8]"
+              dangerouslySetInnerHTML={{
+                __html: faq.content,
+              }}
+            />
           </details>
         ))}
       </div>

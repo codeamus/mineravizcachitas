@@ -92,9 +92,12 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
                     </svg>
                   </span>
                 </summary>
-                <p className="group-open:animate-fadeIn border-b border-l border-r bg-[#E8E8E8] border-[#E8732C] p-3 text-sm text-black">
-                  {item.content}
-                </p>
+                <p
+                  className="group-open:animate-fadeIn border-b border-l border-r bg-[#E8E8E8] border-[#E8732C] p-3 text-sm text-black"
+                  dangerouslySetInnerHTML={{
+                    __html: item.content,
+                  }}
+                />
               </details>
             )
           )}
@@ -144,9 +147,12 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
                     </svg>
                   </span>
                 </summary>
-                <p className="group-open:animate-fadeIn border-b border-l border-r bg-[#E8E8E8] border-[#E8732C] p-3 text-sm text-black">
-                  {item.content}
-                </p>
+                <p
+                  className="group-open:animate-fadeIn border-b border-l border-r bg-[#E8E8E8] border-[#E8732C] p-3 text-sm text-black"
+                  dangerouslySetInnerHTML={{
+                    __html: item.content,
+                  }}
+                />
               </details>
             )
           )}

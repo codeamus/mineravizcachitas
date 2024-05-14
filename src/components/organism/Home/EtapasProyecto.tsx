@@ -63,9 +63,12 @@ const EtapasProyecto = ({ dataEtapas }: HomeData) => {
                         {etapa.title_content}
                       </h3>
                     )}
-                    <p className="text-pretty text-sm lg:text-end leading-loose text-white">
-                      {etapa.content}
-                    </p>
+                    <p
+                      className="text-pretty text-sm lg:text-end leading-loose text-white"
+                      dangerouslySetInnerHTML={{
+                        __html: etapa.content,
+                      }}
+                    />
                   </div>
                 </div>
               </Tabs.Content>

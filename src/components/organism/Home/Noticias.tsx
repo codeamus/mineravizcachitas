@@ -44,9 +44,15 @@ const Noticias = () => {
                   {noticia.acf.date}
                 </span>
                 <hr className="my-4 border-t-2 border-black" />
-                <p className="text-balance text-center text-sm text-black min-h-[60px]">
-                  {`${noticia.acf.content_noticia.substring(0, 150)} ...`}
-                </p>
+                <p
+                  className="text-balance text-center text-sm text-black min-h-[60px]"
+                  dangerouslySetInnerHTML={{
+                    __html: `${noticia.acf.content_noticia.substring(
+                      0,
+                      150
+                    )} ...`,
+                  }}
+                />
               </div>
               <div className="mt-4 flex justify-center">
                 <Link
