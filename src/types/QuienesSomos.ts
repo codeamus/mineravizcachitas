@@ -1,4 +1,5 @@
 export interface TemplateQuienesSomosType {
+  informacion_quienes_somos: any
   team: any
   documentation: any
   form: any
@@ -9,6 +10,7 @@ export interface QuienesSomosType {
   dataDocumentos?: any
   dataTeam?: any
   dataFormulario?: any
+  dataInformacion?: any
 }
 
 export interface TeamType {

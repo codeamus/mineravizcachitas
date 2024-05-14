@@ -62,7 +62,7 @@ const TemplateQuienesSomos = () => {
           </section>
         )}
 
-        <Sobre />
+        <Sobre dataInformacion={dataQuienesSomos?.informacion_quienes_somos} />
         <Equipo dataTeam={dataQuienesSomos?.team} />
         <Documentos dataDocumentos={dataQuienesSomos?.documentation} />
         <Contacto dataFormulario={dataQuienesSomos?.form} />
