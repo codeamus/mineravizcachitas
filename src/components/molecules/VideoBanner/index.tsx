@@ -1,22 +1,18 @@
 type VideoProps = {
   videoMP4: string
-  videoWEBM: string
   bgMobile: string
-  title: React.ReactNode
+  title: string
+  titleDestacado: string
   description: string
-  list?: boolean
+  list?: any[]
   poster?: string
 }
-import IconEconomico from '@/assets/icons/icon-economico.svg'
-import IconEmpleabilidad from '@/assets/icons/icon-empleabilidad.svg'
-import IconAmbiente from '@/assets/icons/icon-ambiente.svg'
-import IconCalidad from '@/assets/icons/icon-calidad.svg'
-
+import parse from 'html-react-parser'
 const VideoBanner = ({
   videoMP4,
-  videoWEBM,
   bgMobile,
   title,
+  titleDestacado,
   description,
   list,
   poster,
@@ -34,7 +30,6 @@ const VideoBanner = ({
           poster={poster}
         >
           <source src={videoMP4} type="video/mp4" />
-          <source src={videoWEBM} type="video/webm" />
         </video>
       </div>
       <div
@@ -46,55 +41,33 @@ const VideoBanner = ({
         }}
       >
         <div className="mb-10 flex flex-col items-center gap-10 lg:mb-0 lg:flex-row lg:gap-20">
-          {title}
+          <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
+            {title}
+            <span className="text-[#E8732C]">{` ${titleDestacado}`}</span>
+          </h1>
           <div className="w-full lg:w-1/2">
             <p className=" my-4 text-pretty border-b border-t border-[#E8732C] py-4 text-center text-sm leading-normal text-white lg:my-0 lg:text-start lg:text-lg lg:leading-10">
-              {description}
+              {parse(description)}
             </p>
           </div>
         </div>
         {list && (
           <ul className="grid grid-cols-2 place-content-between gap-0 pt-6 md:grid-cols-4 md:gap-20 lg:pt-20">
-            <li className="mb-8 flex flex-col items-center justify-center md:mb-0">
-              <img
-                className="size-16"
-                src={IconEconomico}
-                alt="Icono referencial a Desarrollo Económico"
-              />
-              <p className="pt-4 text-center text-lg text-white">
-                Desarrollo <br aria-hidden /> económico
-              </p>
-            </li>
-            <li className="mb-8 flex flex-col items-center justify-center md:mb-0">
-              <img
-                className="size-16"
-                src={IconEmpleabilidad}
-                alt="Icono referencial a Desarrollo Económico"
-              />
-              <p className="pt-4 text-center text-lg text-white">
-                Empleabilidad
-              </p>
-            </li>
-            <li className="mb-8 flex flex-col items-center justify-center md:mb-0">
-              <img
-                className="size-16"
-                src={IconAmbiente}
-                alt="Icono referencial a Desarrollo Económico"
-              />
-              <p className="pt-4 text-center text-lg text-white">
-                Medio <br aria-hidden /> Ambiente
-              </p>
-            </li>
-            <li className="mb-8 flex flex-col items-center justify-center md:mb-0">
-              <img
-                className="size-16"
-                src={IconCalidad}
-                alt="Icono referencial a Desarrollo Económico"
-              />
-              <p className="pt-4 text-center text-lg text-white">
-                Calidad de vida
-              </p>
-            </li>
+            {list.map((item, index) => (
+              <li
+                className="mb-8 flex flex-col items-center justify-center md:mb-0"
+                key={index}
+              >
+                <img
+                  className="size-16"
+                  src={item.icono}
+                  alt="Icono referencial a Desarrollo Económico"
+                />
+                <p className="pt-4 text-center text-lg text-white">
+                  {parse(item.texto)}
+                </p>
+              </li>
+            ))}
           </ul>
         )}
       </div>

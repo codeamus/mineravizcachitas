@@ -38,10 +38,10 @@ const TemplateSostenibilidad = () => {
           videoMP4={VideoMP4}
           videoWEBM={VideoWebm}
           poster={`${
-            import.meta.env.BASE_URL
+            import.meta.env.VITE_BASE_URL
           }/assets/images/posters/poster-video-sostenibilidad-desktop.webp`}
           bgMobile={`${
-            import.meta.env.BASE_URL
+            import.meta.env.VITE_BASE_URL
           }/assets/images/posters/poster-video-sostenibilidad-mobile.webp`}
           title={
             <h1 className="w-full text-center text-4xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">

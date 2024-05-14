@@ -42,24 +42,27 @@ const TemplateHome = () => {
       <ScrollToTop />
       <Navbar />
       <main>
-        <VideoBanner
-          videoMP4={VideoMP4}
-          videoWEBM={VideoWebm}
-          poster={`${
-            import.meta.env.BASE_URL
-          }/assets/images/posters/poster-video-home-desktop.webp`}
-          bgMobile={`${
-            import.meta.env.BASE_URL
-          }/assets/images/posters/poster-video-home-mobile.webp`}
-          title={
-            <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
-              Proyecto
-              <span className="text-[#E8732C]"> Vizcachitas</span>
-            </h1>
-          }
-          description="Minería sostenible y responsable comprometida con el desarrollo social y económico de Putaendo, San Felipe y la Región de Valparaíso. Desarrollo con las comunidades y cuidando el medio ambiente para un futuro mejor."
-          list={true}
-        />
+        {dataHome?.seccion_principal ? (
+          <VideoBanner
+            videoMP4={VideoMP4}
+            poster={dataHome?.seccion_principal.video_cover}
+            bgMobile={dataHome?.seccion_principal.video_cover}
+            title={dataHome?.seccion_principal.title}
+            titleDestacado={dataHome?.seccion_principal.titulo_destacado}
+            description={dataHome?.seccion_principal.content}
+            list={dataHome?.seccion_principal.iconos}
+          />
+        ) : (
+          <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
+            <img
+              src={`${
+                import.meta.env.VITE_BASE_URL
+              }/assets/images/posters/poster-video-home-desktop.webp`}
+              alt="video cover"
+              className="h-[100vh] w-full object-cover brightness-50"
+            />
+          </section>
+        )}
         <PresentacionUbicacion
           dataPresentacion={dataHome?.presentacion_y_ubicacion}
         />

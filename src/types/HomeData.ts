@@ -1,6 +1,7 @@
 import { Faq } from './Faq'
 
 export interface TemplateHomeType {
+  seccion_principal: any
   presentacion_y_ubicacion: any
   section_navega: any
   compromisos: any

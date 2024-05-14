@@ -43,10 +43,10 @@ const TemplateQuienesSomos = () => {
           videoMP4={VideoMP4}
           videoWEBM={VideoWebm}
           poster={`${
-            import.meta.env.BASE_URL
+            import.meta.env.VITE_BASE_URL
           }/assets/images/posters/poster-video-somos-desktop.webp`}
           bgMobile={`${
-            import.meta.env.BASE_URL
+            import.meta.env.VITE_BASE_URL
           }/assets/images/posters/poster-video-somos-mobile.webp`}
           title={
             <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">

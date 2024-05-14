@@ -12,10 +12,10 @@ const EtapasProyecto = ({ dataEtapas }: HomeData) => {
         backgroundImage: `${
           window.innerWidth < 768
             ? `url(${
-                import.meta.env.BASE_URL
+                import.meta.env.VITE_BASE_URL
               }/assets/images/backgrounds/bg-etapas-mobile.webp)`
             : `url(${
-                import.meta.env.BASE_URL
+                import.meta.env.VITE_BASE_URL
               }/assets/images/backgrounds/bg-etapas.webp)`
         }`,
       }}
