@@ -1,5 +1,4 @@
 import { getDataPage } from '@/api/page'
-import VideoMP4 from '@/assets/videos/home.mp4'
 import BackToTop from '@/components/molecules/BackToTop'
 import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'
@@ -43,10 +42,13 @@ const TemplateHome = () => {
       <main>
         {dataHome?.seccion_principal ? (
           <VideoBanner
-            videoMP4={VideoMP4}
+            videoMP4={dataHome?.seccion_principal.video_banner}
             title={dataHome?.seccion_principal.titulo}
             description={dataHome?.seccion_principal.contenido}
             list={dataHome?.seccion_principal.iconos}
+            poster={`${
+              import.meta.env.VITE_BASE_URL
+            }/assets/images/posters/poster-video-home-desktop.webp`}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">

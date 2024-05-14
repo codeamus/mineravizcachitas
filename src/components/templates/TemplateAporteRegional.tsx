@@ -1,6 +1,5 @@
 import { getDataPage } from '@/api/page'
 import IconReporte from '@/assets/icons/icon-report.svg'
-import VideoMP4 from '@/assets/videos/aporte.mp4'
 import BackToTop from '@/components/molecules/BackToTop'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import ScrollToTop from '@/components/molecules/ScrollTop'
@@ -39,20 +38,20 @@ const TemplateAporteRegional = () => {
       <main>
         {dataAporte?.seccion_principal ? (
           <VideoBanner
-            videoMP4={VideoMP4}
-            poster={dataAporte?.seccion_principal.video_cover}
-            bgMobile={dataAporte?.seccion_principal.video_cover}
-            title={dataAporte?.seccion_principal.title}
-            titleDestacado={dataAporte?.seccion_principal.titulo_destacado}
-            description={dataAporte?.seccion_principal.content}
+            videoMP4={dataAporte?.seccion_principal.video_banner}
+            title={dataAporte?.seccion_principal.titulo}
+            description={dataAporte?.seccion_principal.contenido}
             list={dataAporte?.seccion_principal.iconos}
+            poster={`${
+              import.meta.env.VITE_BASE_URL
+            }/assets/images/posters/poster-video-home-desktop.webp`}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
             <img
               src={`${
                 import.meta.env.VITE_BASE_URL
-              }/assets/images/posters/poster-video-home-desktop.webp`}
+              }/assets/images/posters/poster-video-aporte-desktop.webp`}
               alt="video cover"
               className="h-[100vh] w-full object-cover brightness-50"
             />

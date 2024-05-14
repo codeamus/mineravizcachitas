@@ -3,9 +3,16 @@ type VideoProps = {
   title: string
   description: string
   list?: any[]
+  poster?: string
 }
 import parse from 'html-react-parser'
-const VideoBanner = ({ videoMP4, title, description, list }: VideoProps) => {
+const VideoBanner = ({
+  videoMP4,
+  title,
+  description,
+  list,
+  poster,
+}: VideoProps) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
       <div className="absolute top-0 hidden w-full md:block">
@@ -16,6 +23,7 @@ const VideoBanner = ({ videoMP4, title, description, list }: VideoProps) => {
           playsInline
           preload="metadata"
           className="h-[100vh] w-full object-cover brightness-50"
+          poster={poster}
         >
           <source src={videoMP4} type="video/mp4" />
         </video>

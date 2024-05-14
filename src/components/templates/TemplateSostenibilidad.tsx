@@ -1,5 +1,4 @@
 import { getDataPage } from '@/api/page'
-import VideoMP4 from '@/assets/videos/sostenibilidad.mp4'
 import BackToTop from '@/components/molecules/BackToTop'
 import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'
@@ -37,12 +36,17 @@ const TemplateSostenibilidad = () => {
       <main>
         {dataSostenibilidad?.sostenibilidad?.seccion_principal ? (
           <VideoBanner
-            videoMP4={VideoMP4}
+            videoMP4={
+              dataSostenibilidad?.sostenibilidad?.seccion_principal.video_banner
+            }
             title={dataSostenibilidad?.sostenibilidad?.seccion_principal.titulo}
             description={
               dataSostenibilidad?.sostenibilidad?.seccion_principal.contenido
             }
             list={dataSostenibilidad?.sostenibilidad?.seccion_principal.iconos}
+            poster={`${
+              import.meta.env.VITE_BASE_URL
+            }/assets/images/posters/poster-video-sostenibilidad-desktop.webp`}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
