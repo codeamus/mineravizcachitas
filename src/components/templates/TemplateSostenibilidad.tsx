@@ -35,24 +35,21 @@ const TemplateSostenibilidad = () => {
       <ScrollToTop />
       <Navbar />
       <main>
-        {dataSostenibilidad?.seccion_principal ? (
+        {dataSostenibilidad?.sostenibilidad?.seccion_principal ? (
           <VideoBanner
             videoMP4={VideoMP4}
-            poster={dataSostenibilidad?.seccion_principal.video_cover}
-            bgMobile={dataSostenibilidad?.seccion_principal.video_cover}
-            title={dataSostenibilidad?.seccion_principal.title}
-            titleDestacado={
-              dataSostenibilidad?.seccion_principal.titulo_destacado
+            title={dataSostenibilidad?.sostenibilidad?.seccion_principal.titulo}
+            description={
+              dataSostenibilidad?.sostenibilidad?.seccion_principal.contenido
             }
-            description={dataSostenibilidad?.seccion_principal.content}
-            list={dataSostenibilidad?.seccion_principal.iconos}
+            list={dataSostenibilidad?.sostenibilidad?.seccion_principal.iconos}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
             <img
               src={`${
                 import.meta.env.VITE_BASE_URL
-              }/assets/images/posters/poster-video-home-desktop.webp`}
+              }/assets/images/posters/poster-video-sostenibilidad-desktop.webp`}
               alt="video cover"
               className="h-[100vh] w-full object-cover brightness-50"
             />
