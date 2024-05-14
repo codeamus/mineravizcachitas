@@ -1,4 +1,3 @@
-import VideoMP4 from '@/assets/videos/quienes-somos.mp4'
 import VideoBanner from '@/components/molecules/VideoBanner'
 import Footer from '@/components/organism/Footer'
 import Navbar from '@/components/organism/MenuNav'
@@ -40,22 +39,20 @@ const TemplateQuienesSomos = () => {
       <main>
         {dataQuienesSomos?.seccion_principal ? (
           <VideoBanner
-            videoMP4={VideoMP4}
-            poster={dataQuienesSomos?.seccion_principal.video_cover}
-            bgMobile={dataQuienesSomos?.seccion_principal.video_cover}
-            title={dataQuienesSomos?.seccion_principal.title}
-            titleDestacado={
-              dataQuienesSomos?.seccion_principal.titulo_destacado
-            }
-            description={dataQuienesSomos?.seccion_principal.content}
+            videoMP4={dataQuienesSomos?.seccion_principal.video_banner}
+            title={dataQuienesSomos?.seccion_principal.titulo}
+            description={dataQuienesSomos?.seccion_principal.contenido}
             list={dataQuienesSomos?.seccion_principal.iconos}
+            poster={`${
+              import.meta.env.VITE_BASE_URL
+            }/assets/images/posters/poster-video-somos-desktop.webp`}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
             <img
               src={`${
                 import.meta.env.VITE_BASE_URL
-              }/assets/images/posters/poster-video-home-desktop.webp`}
+              }/assets/images/posters/poster-video-somos-desktop.webp`}
               alt="video cover"
               className="h-[100vh] w-full object-cover brightness-50"
             />
