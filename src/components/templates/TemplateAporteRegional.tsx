@@ -140,7 +140,7 @@ const TemplateAporteRegional = () => {
         <section className="relative px-10 lg:px-40 bg-[url(/assets/images/backgrounds/bg_video_aporte.webp)] bg-cover bg-no-repeat py-20">
           <div className="flex flex-col items-center">
             <h2 className="text-3xl lg:text-5xl text-white font-bold text-center pb-10">
-              Descubre los detalle del proyecto
+              {dataAporte?.detalles_aporte?.titulo}
             </h2>
             <p className="font-bold text-white">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -150,7 +150,7 @@ const TemplateAporteRegional = () => {
           <div className="flex justify-center items-center mt-4">
             <iframe
               className="h-[300px] w-full lg:h-[560px] max-w-[1000px]"
-              src="https://www.youtube.com/embed/1l1J1k1J1l1"
+              src={`https://www.youtube.com/embed/${dataAporte?.detalles_aporte?.video}`}
               title="Test"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
