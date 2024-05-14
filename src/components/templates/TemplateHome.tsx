@@ -44,11 +44,8 @@ const TemplateHome = () => {
         {dataHome?.seccion_principal ? (
           <VideoBanner
             videoMP4={VideoMP4}
-            poster={dataHome?.seccion_principal.video_cover}
-            bgMobile={dataHome?.seccion_principal.video_cover}
-            title={dataHome?.seccion_principal.title}
-            titleDestacado={dataHome?.seccion_principal.titulo_destacado}
-            description={dataHome?.seccion_principal.content}
+            title={dataHome?.seccion_principal.titulo}
+            description={dataHome?.seccion_principal.contenido}
             list={dataHome?.seccion_principal.iconos}
           />
         ) : (
