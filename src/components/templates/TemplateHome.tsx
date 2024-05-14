@@ -1,6 +1,5 @@
 import { getDataPage } from '@/api/page'
 import VideoMP4 from '@/assets/videos/home.mp4'
-import VideoWebm from '@/assets/videos/home.webm'
 import BackToTop from '@/components/molecules/BackToTop'
 import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'

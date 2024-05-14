@@ -4,27 +4,21 @@ interface MenuNavProps {
 }
 
 import { getDataMenuNav } from '@/api/page'
-import FBIcon from '@/assets/icons/icon-fb.svg'
-import InstaIcon from '@/assets/icons/icon-instagram.svg'
-import { MENU } from '@/const/menu'
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import parse from 'html-react-parser'
+import { MenuType } from '@/types/MenuNav'
 
 const Navbar = ({ position = 'absolute', bgColor }: MenuNavProps) => {
-  const [dataMenuNav, setDataMenuNav] = useState(null)
+  const [dataMenuNav, setDataMenuNav] = useState(null as MenuType | null)
 
   useEffect(() => {
-    const fetchDataHome = async () => {
+    const fetchDataMenu = async () => {
       const result = await getDataMenuNav()
       setDataMenuNav(result)
     }
-    fetchDataHome()
+    fetchDataMenu()
   }, [])
-
-  useEffect(() => {
-    console.log(dataMenuNav)
-  }, [dataMenuNav])
 
   return (
     dataMenuNav && (

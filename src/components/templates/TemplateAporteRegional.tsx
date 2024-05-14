@@ -5,7 +5,6 @@ import IconPeople from '@/assets/icons/icon-people.svg'
 import IconPrice from '@/assets/icons/icon-price.svg'
 import IconHouse from '@/assets/icons/icon-house.svg'
 import VideoMP4 from '@/assets/videos/aporte.mp4'
-import VideoWebm from '@/assets/videos/aporte.webm'
 import BackToTop from '@/components/molecules/BackToTop'
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import ScrollToTop from '@/components/molecules/ScrollTop'
@@ -17,7 +16,7 @@ import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const TemplateAporteRegional = () => {
-  const [dataAporte, setDataAporte] = useState(null)
+  const [dataAporte, setDataAporte] = useState(null as any | null)
 
   useEffect(() => {
     const fetchAporteRegional = async () => {
@@ -41,24 +40,27 @@ const TemplateAporteRegional = () => {
       <ScrollToTop />
       <Navbar />
       <main>
-        <VideoBanner
-          videoMP4={VideoMP4}
-          videoWEBM={VideoWebm}
-          poster={`${
-            import.meta.env.VITE_BASE_URL
-          }/assets/images/posters/poster-video-aporte-desktop.webp`}
-          bgMobile={`${
-            import.meta.env.VITE_BASE_URL
-          }/assets/images/posters/poster-video-aporte-mobile.webp`}
-          title={
-            <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
-              Proyecto Vizcachitas
-              <span className="text-[#E8732C]"> Aporte regional</span>
-            </h1>
-          }
-          description="Un potente impulso económico para la Región Valparaíso, a través de la generación de empleos, oportunidades para proveedores y encadenamientos productivos, y desarrollo de proyectos de responsabilidad social empresarial."
-          list={false}
-        />
+        {dataAporte?.seccion_principal ? (
+          <VideoBanner
+            videoMP4={VideoMP4}
+            poster={dataAporte?.seccion_principal.video_cover}
+            bgMobile={dataAporte?.seccion_principal.video_cover}
+            title={dataAporte?.seccion_principal.title}
+            titleDestacado={dataAporte?.seccion_principal.titulo_destacado}
+            description={dataAporte?.seccion_principal.content}
+            list={dataAporte?.seccion_principal.iconos}
+          />
+        ) : (
+          <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
+            <img
+              src={`${
+                import.meta.env.VITE_BASE_URL
+              }/assets/images/posters/poster-video-home-desktop.webp`}
+              alt="video cover"
+              className="h-[100vh] w-full object-cover brightness-50"
+            />
+          </section>
+        )}
         <section
           id="aporte"
           className="relative flex flex-col items-center bg-[#F0EFEF] px-10 pb-10 pt-20 lg:px-20"

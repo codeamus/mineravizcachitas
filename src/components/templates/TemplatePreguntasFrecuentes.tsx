@@ -1,6 +1,5 @@
 import { getDataPage } from '@/api/page'
 import VideoMP4 from '@/assets/videos/preguntas.mp4'
-import VideoWebm from '@/assets/videos/preguntas.webm'
 import BackToTop from '@/components/molecules/BackToTop'
 import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'
@@ -12,7 +11,7 @@ import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const TemplatePreguntasFrecuentes = () => {
-  const [dataFaq, setDataFaq] = useState(null)
+  const [dataFaq, setDataFaq] = useState(null as any | null)
 
   useEffect(() => {
     const fetchPreguntasFrecuentes = async () => {
@@ -36,24 +35,27 @@ const TemplatePreguntasFrecuentes = () => {
       <ScrollToTop />
       <Navbar />
       <main>
-        <VideoBanner
-          videoMP4={VideoMP4}
-          videoWEBM={VideoWebm}
-          poster={`${
-            import.meta.env.VITE_BASE_URL
-          }/assets/images/posters/poster-video-preguntas-desktop.webp`}
-          bgMobile={`${
-            import.meta.env.VITE_BASE_URL
-          }/assets/images/posters/poster-video-preguntas-mobile.webp`}
-          title={
-            <h1 className="w-full text-center text-5xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
-              Preguntas
-              <span className="text-[#E8732C]"> Frecuentes</span>
-            </h1>
-          }
-          description="Respondemos algunas de las principales consultas surgidas de nuestros diálogos permanentes con la comunidad."
-          list={false}
-        />
+        {dataFaq?.seccion_principal ? (
+          <VideoBanner
+            videoMP4={VideoMP4}
+            poster={dataFaq?.seccion_principal.video_cover}
+            bgMobile={dataFaq?.seccion_principal.video_cover}
+            title={dataFaq?.seccion_principal.title}
+            titleDestacado={dataFaq?.seccion_principal.titulo_destacado}
+            description={dataFaq?.seccion_principal.content}
+            list={dataFaq?.seccion_principal.iconos}
+          />
+        ) : (
+          <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
+            <img
+              src={`${
+                import.meta.env.VITE_BASE_URL
+              }/assets/images/posters/poster-video-home-desktop.webp`}
+              alt="video cover"
+              className="h-[100vh] w-full object-cover brightness-50"
+            />
+          </section>
+        )}
         <section
           id="preguntas"
           className="relative bg-[url(/assets/images/backgrounds/bg-sostenibilidad.webp)] bg-contain bg-fixed lg:bg-cover"

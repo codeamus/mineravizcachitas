@@ -2,6 +2,7 @@ export interface TemplateQuienesSomosType {
   team: any
   documentation: any
   form: any
+  seccion_principal: any
 }
 
 export interface QuienesSomosType {

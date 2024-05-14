@@ -1,6 +1,5 @@
 import { getDataPage } from '@/api/page'
 import VideoMP4 from '@/assets/videos/sostenibilidad.mp4'
-import VideoWebm from '@/assets/videos/sostenibilidad.webm'
 import BackToTop from '@/components/molecules/BackToTop'
 import ScrollToTop from '@/components/molecules/ScrollTop'
 import VideoBanner from '@/components/molecules/VideoBanner'
@@ -11,7 +10,9 @@ import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 const TemplateSostenibilidad = () => {
-  const [dataSostenibilidad, setDataSostenibilidad] = useState(null)
+  const [dataSostenibilidad, setDataSostenibilidad] = useState(
+    null as any | null
+  )
 
   useEffect(() => {
     const fetchDataHome = async () => {
@@ -34,23 +35,29 @@ const TemplateSostenibilidad = () => {
       <ScrollToTop />
       <Navbar />
       <main>
-        <VideoBanner
-          videoMP4={VideoMP4}
-          videoWEBM={VideoWebm}
-          poster={`${
-            import.meta.env.VITE_BASE_URL
-          }/assets/images/posters/poster-video-sostenibilidad-desktop.webp`}
-          bgMobile={`${
-            import.meta.env.VITE_BASE_URL
-          }/assets/images/posters/poster-video-sostenibilidad-mobile.webp`}
-          title={
-            <h1 className="w-full text-center text-4xl font-bold text-white lg:w-1/2 lg:text-balance lg:text-end lg:text-6xl">
-              Proyecto Vizcachitas
-              <span className="text-[#E8732C]"> Sostenibilidad</span>
-            </h1>
-          }
-          description="Una nueva forma de hacer minería, comprometida con una producción que reduce impactos ambientales y genera efectos positivos sostenidos en el tiempo, tanto desde un punto de vista ambiental como comunitario."
-        />
+        {dataSostenibilidad?.seccion_principal ? (
+          <VideoBanner
+            videoMP4={VideoMP4}
+            poster={dataSostenibilidad?.seccion_principal.video_cover}
+            bgMobile={dataSostenibilidad?.seccion_principal.video_cover}
+            title={dataSostenibilidad?.seccion_principal.title}
+            titleDestacado={
+              dataSostenibilidad?.seccion_principal.titulo_destacado
+            }
+            description={dataSostenibilidad?.seccion_principal.content}
+            list={dataSostenibilidad?.seccion_principal.iconos}
+          />
+        ) : (
+          <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
+            <img
+              src={`${
+                import.meta.env.VITE_BASE_URL
+              }/assets/images/posters/poster-video-home-desktop.webp`}
+              alt="video cover"
+              className="h-[100vh] w-full object-cover brightness-50"
+            />
+          </section>
+        )}
         <Info dataSostenibilidad={dataSostenibilidad} />
         <BackToTop />
       </main>
