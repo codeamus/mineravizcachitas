@@ -64,7 +64,7 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
           </div>
         </picture>
         <div className="flex w-full flex-col px-4 lg:w-1/2 mt-10 lg:mt-0">
-          {dataSostenibilidad?.sostenibilidad.compromisos_ambientales?.map(
+          {dataSostenibilidad?.sostenibilidad.informacion_ambientales.compromisos_ambientales?.map(
             (item: any, index: number) => (
               <details
                 id={`ambiental-${index}`}
@@ -119,7 +119,7 @@ const Compromisos = ({ dataSostenibilidad }: SostenibilidadProps) => {
           </div>
         </picture>
         <div className="flex w-full flex-col px-4 lg:w-1/2 mt-10">
-          {dataSostenibilidad?.sostenibilidad.compromisos_sociales?.map(
+          {dataSostenibilidad?.sostenibilidad.informacion_sociales.compromisos_sociales?.map(
             (item: any, index: number) => (
               <details
                 id={`social-${index}`}

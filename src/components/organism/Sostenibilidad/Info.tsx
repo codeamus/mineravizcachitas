@@ -5,7 +5,7 @@ interface SostenibilidadProps {
 import BtnScrollDown from '@/components/molecules/BtnScrollDown'
 import Compromisos from '@/components/organism/Sostenibilidad/Compromisos'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
+import parse from 'html-react-parser'
 const Info = ({ dataSostenibilidad }: SostenibilidadProps) => {
   return (
     <section
@@ -16,12 +16,13 @@ const Info = ({ dataSostenibilidad }: SostenibilidadProps) => {
       <div className="flex w-full flex-col items-center justify-between pt-20 lg:flex-row">
         <div className="flex w-full flex-col items-center justify-center lg:w-[43.6%]">
           <span className="w-fit bg-[#009145] px-12 py-2 text-center text-sm font-bold uppercase text-white">
-            Pilares Sostenibles
+            {dataSostenibilidad?.sostenibilidad.pilares.titulo}
           </span>
-          <h2 className="mt-4 whitespace-nowrap text-3xl font-bold uppercase text-black lg:text-4xl">
-            ¿Por qué es <br aria-hidden /> un proyecto <br aria-hidden />
-            sostenible?
-          </h2>
+          {dataSostenibilidad?.sostenibilidad?.pilares?.subtitulo && (
+            <h2 className="mt-4 whitespace-nowrap text-3xl font-bold uppercase text-black lg:text-4xl">
+              {parse(dataSostenibilidad?.sostenibilidad?.pilares?.subtitulo)}
+            </h2>
+          )}
         </div>
         <div className="mt-14 flex w-full flex-col px-8 lg:mt-0 lg:w-[56.4%] lg:px-0">
           {dataSostenibilidad?.sostenibilidad.informacion.map(
