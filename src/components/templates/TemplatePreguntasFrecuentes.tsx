@@ -59,7 +59,7 @@ const TemplatePreguntasFrecuentes = () => {
           id="preguntas"
           className="relative bg-[url(/assets/images/backgrounds/bg-sostenibilidad.webp)] bg-contain bg-fixed lg:bg-cover"
         >
-          <PrincipalInfo />
+          <PrincipalInfo dataFaq={dataFaq} />
           <TodasPreguntas dataFaq={dataFaq} />
         </section>
         <BackToTop />
