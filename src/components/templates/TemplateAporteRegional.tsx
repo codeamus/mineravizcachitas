@@ -142,7 +142,7 @@ const TemplateAporteRegional = () => {
               {dataAporte?.detalles_aporte?.titulo}
             </h2>
             <p className="font-bold text-white">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              {dataAporte?.detalles_aporte?.descripcion}
             </p>
             <hr className="bg-white h-[2px] block w-full max-w-xs my-2" />
           </div>
