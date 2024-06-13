@@ -13,8 +13,15 @@ const VideoBanner = ({
   list,
   poster,
 }: VideoProps) => {
+  const style = {
+    backgroundImage: `url(${poster})`,
+  }
+
   return (
-    <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
+    <section
+      className="relative flex h-full w-full items-center justify-center lg:h-[100vh] lg:bg-none"
+      style={style}
+    >
       <div className="absolute top-0 hidden w-full md:block">
         <video
           autoPlay

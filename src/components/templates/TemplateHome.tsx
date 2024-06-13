@@ -48,14 +48,14 @@ const TemplateHome = () => {
             list={dataHome?.seccion_principal.iconos}
             poster={`${
               import.meta.env.VITE_BASE_URL
-            }/assets/images/posters/poster-video-home-desktop.webp`}
+            }/assets/images/posters/poster-video-home-mobile.webp`}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
             <img
               src={`${
                 import.meta.env.VITE_BASE_URL
-              }/assets/images/posters/poster-video-home-desktop.webp`}
+              }/assets/images/posters/poster-video-mobile-desktop.webp`}
               alt="video cover"
               className="h-[100vh] w-full object-cover brightness-50"
             />

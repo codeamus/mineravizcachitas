@@ -46,14 +46,14 @@ const TemplateSostenibilidad = () => {
             list={dataSostenibilidad?.sostenibilidad?.seccion_principal.iconos}
             poster={`${
               import.meta.env.VITE_BASE_URL
-            }/assets/images/posters/poster-video-sostenibilidad-desktop.webp`}
+            }/assets/images/posters/poster-video-sostenibilidad-mobile.webp`}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
             <img
               src={`${
                 import.meta.env.VITE_BASE_URL
-              }/assets/images/posters/poster-video-sostenibilidad-desktop.webp`}
+              }/assets/images/posters/poster-video-sostenibilidad-mobile.webp`}
               alt="video cover"
               className="h-[100vh] w-full object-cover brightness-50"
             />

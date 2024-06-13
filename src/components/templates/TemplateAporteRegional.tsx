@@ -44,7 +44,7 @@ const TemplateAporteRegional = () => {
             list={dataAporte?.seccion_principal.iconos}
             poster={`${
               import.meta.env.VITE_BASE_URL
-            }/assets/images/posters/poster-video-aporte-desktop.webp`}
+            }/assets/images/posters/poster-video-aporte-mobile.webp`}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">

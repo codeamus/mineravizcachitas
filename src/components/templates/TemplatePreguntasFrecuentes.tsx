@@ -42,7 +42,7 @@ const TemplatePreguntasFrecuentes = () => {
             list={dataFaq?.seccion_principal.iconos}
             poster={`${
               import.meta.env.VITE_BASE_URL
-            }/assets/images/posters/poster-video-preguntas-desktop.webp`}
+            }/assets/images/posters/poster-video-preguntas-mobile.webp`}
           />
         ) : (
           <section className="relative flex h-full w-full items-center justify-center lg:h-[100vh]">
