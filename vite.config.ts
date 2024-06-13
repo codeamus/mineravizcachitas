@@ -5,6 +5,7 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: 'https://www.mineravizcachitas.cl/',
   plugins: [million.vite({ auto: true }), react()],
   resolve: {
     alias: {
