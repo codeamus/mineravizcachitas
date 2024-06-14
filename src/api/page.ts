@@ -10,8 +10,8 @@ const getDataPage = async (slugPage: string) => {
 
 const getDataMenuNav = async () => {
   const response = await fetch(import.meta.env.VITE_BASE_API_MENU)
-  const news = await response.json()
-  return news
+  const data = await response.json()
+  return data
 }
 
 export { getDataPage, getDataMenuNav }

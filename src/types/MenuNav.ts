@@ -7,3 +7,7 @@ export interface MenuType {
   icono_facebook: string
   url_facebook: string
 }
+
+export interface FooterType {
+  footer: any
+}
