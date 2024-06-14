@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import InstaIcon from '@/assets/icons/icon-instagram.svg'
 import FBIcon from '@/assets/icons/icon-fb.svg'
 import { FooterType } from '@/types/MenuNav'
-import { useEffect, useState } from 'react'
+import { Key, useEffect, useState } from 'react'
 import { getDataMenuNav } from '@/api/page'
 import parse from 'html-react-parser'
 
@@ -35,7 +35,14 @@ const Footer = () => {
         <div>
           <ul className="flex flex-col gap-2">
             {dataFooter?.footer.primera_columna.links.map(
-              (item, index): any => (
+              (
+                item: {
+                  link: string
+                  nueva_pagina: boolean
+                  titulo: string
+                },
+                index: Key | null | undefined
+              ) => (
                 <li key={index}>
                   <Link
                     className="text-xs uppercase text-white transition-colors duration-300 hover:text-[#E8732C]"
